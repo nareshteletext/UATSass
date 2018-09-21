@@ -1,0 +1,48 @@
+.call-now-small {
+  padding:15px 0 45px 0;
+  display:flex;
+  justify-content:center;
+  .call-to-book {
+    top:-3px;
+    font-size:32px;
+    padding-right:60px;
+    letter-spacing:-0.7px;
+  }
+  .deposit-options, .pay-monthly, .no-debit {
+    align-self:center;
+    img {
+      width:30px;
+      margin-right:10px;
+    }
+    i {
+      font-size:32px;
+      color:$txt-cornflower-blue;
+    }
+  }
+  .pay-monthly {
+    padding:0 50px;
+  }
+  .no-debit-label {
+    align-self:center;
+    margin-left:10px;
+  }
+  .medium-txt {
+    font-family:$font-semibold;
+  }
+
+  @include breakpoint (small-desktop) {
+      padding:24px 0 30px 0;
+      display:block;
+      .call-now-options {
+        padding-top:26px;
+        justify-content:center;
+      }
+      .call-now-small {
+          margin:0 8%;
+          flex:none;
+      }
+      .call-now-small  {
+        padding-right:0;
+      }
+  }
+}

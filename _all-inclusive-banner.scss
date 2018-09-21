@@ -1,0 +1,49 @@
+.all-inclusive-banner{
+  background-repeat:no-repeat;
+  height:486px;
+  background-size:cover;
+  top:-1px;
+  .banner-slogan {
+    padding:185px 0 55px 0;
+   }
+   .slogan-big,.slogan-small{
+    background:rgba(0,0,0,0.3);
+  }
+  .slogan-big{
+    padding:4px 15px;
+    font-size:34px;
+    margin: 0;
+  }
+  .slogan-small{
+    padding:4px 15px;
+    margin:1px 0 0 0;
+    overflow:hidden;
+    font-size:22px;
+    }
+ }
+
+
+@media(max-width:991px){
+.all-inclusive-banner{
+  height:428px;
+  .banner-slogan{
+    padding-top:130px;
+  }
+ }
+}
+@media (max-width:767px){
+.all-inclusive-banner{
+  .banner-slogan{
+    padding:68px 0 0 0;
+    text-align: center;
+    }
+  .slogan-small{
+    display:none;
+   }
+  .slogan-big {
+     font-size:21px;
+     padding-bottom:14px;
+     background:none;
+   }
+  }
+ }

@@ -1,0 +1,48 @@
+.carousel-title-2 {
+  padding:0 0 45px 0;
+  //margin:50px 0 0 0;
+  .carousel-heading {
+    line-height:35px;
+    span {
+      font-size:20px;
+      padding:0 15px;
+      color:$txt-light-purple;
+    }
+  }
+  h2 {
+    font-size:36px;
+    color:$txt-purple;
+  }
+  p {
+    line-height:24px;
+    font-size:16px;
+    padding-top:30px;
+  }
+  hr {
+    width:400px;
+    top:17px;
+    opacity:0.2;
+  }
+  @include breakpoint(mobile) {
+    text-align:left;
+    padding-bottom:24px;
+    hr {
+      width:60px;
+      top:38px;
+    }
+    p {
+      padding-top:15px;
+    }
+    .carousel-heading {
+      line-height:28px;
+      width:100%;
+      span {
+        font-size:16px;
+        padding:0;
+      }
+    }
+    h2 {
+      font-size:28px;
+    }
+  }
+}

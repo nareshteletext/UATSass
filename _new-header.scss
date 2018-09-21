@@ -1,0 +1,133 @@
+$value:48px;
+.header {
+  bottom:auto;
+  z-index:111;
+  padding-top:10px;
+  background-color:$bgnd-header;
+  @include transition();
+  .tth-logo {
+    width:184px;
+    height:23px;
+    left:$value;
+    top:23px;
+    background-position:-2px -4px;
+    img {
+      object-fit:inherit;
+    }
+  }
+  .dd-nav-active {
+    border-bottom:solid #fbdb3e 3px;
+  }
+  .level2 {
+    .nav-item {
+      font-size:15px;
+      margin:0 10px;
+      padding:10px 0 12px 0;
+      font-family:$font-semibold;
+    }
+    .top-nav-sale {
+      background:$bgnd-red-light;
+      padding:3px 7px 1px;
+      @include border-radius(2px);
+    }
+  }
+  .new-tag {
+    right:0;
+    top:0px;
+    font-size:11px;
+    background-color:$bgnd-red;
+    padding:0px 3px;
+  }
+  .level1 {
+    margin:-4px 0 0 20px;
+    i {
+      padding:0 5px 0 6px;
+      z-index:5;
+    }
+    .non-clickable {
+      opacity:1;
+    }
+    .separator {
+      opacity:0.5;
+      padding:0 5px;
+    }
+    ul {
+      right:-10px;
+      top:-10px;
+      width:155px;
+      padding:32px 0 20px 15px;
+      display:none;
+      z-index:4;
+      li {
+        display:block;
+        margin-top:10px;
+        opacity:0.7;
+      }
+    }
+    .top-nav-customer-support {
+      &:hover {
+        color:$txt-default;
+        > span {
+          z-index:5;
+          color:$txt-default;
+        }
+        ul {
+          display:block;
+        }
+        i {
+          @include rotate(180deg);
+        }
+      }
+    }
+  }
+  .nav-list-wrapper {
+    right:$value;
+  }
+  .desktop-menu-icon {
+    width:30px;
+    height:30px;
+    top:-3px;
+    span {
+      height:2px;
+      margin-top:3px;
+      z-index:1;
+    }
+    .menu-bars-fix {
+      width:18px;
+      margin:7px 0 0 0;
+    }
+  }
+  .tth-users-container {
+    width:20px;
+    height:20px;
+    margin-left:21px;
+    @include border-radius(100px);
+  }
+  @include breakpoint(landscape-tablet) {
+    .tth-logo {
+      left:25px;
+    }
+    .nav-list-wrapper {
+      right:25px;
+    }
+    .level2  {
+      .nav-item {
+        margin:0 7px;
+      }
+    }
+  }
+  @include breakpoint(portrait-tablet) {
+    .top-nav-latedeals, .top-nav-hotel, .top-nav-blog, .top-nav-cruise {
+      display:none;
+    }
+    .tth-logo {
+      left:22px;
+    }
+    .nav-list-wrapper {
+      right:22px;
+    }
+  }
+  @include breakpoint(mobile) {
+    display:none;
+  }
+}

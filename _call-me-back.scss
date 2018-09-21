@@ -1,0 +1,475 @@
+.call-request {
+  bottom: 50px;
+  right: 50px;
+  z-index: 113;
+  .call-me-back-button .bgnd-light-purple {
+    width: 56px;
+    height: 56px;
+    border-radius: 100px;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 2px 4px 0 rgba(102, 119, 231, 0.5);
+  }
+  .call-me-data-open {
+    box-shadow: 0 2px 4px 0 rgba(110, 61, 124, 0.5);
+    background-color: #fff;
+  }
+  .call-icon {
+    background-position: -216px -458px;
+    width: 19px;
+    height: 19px;
+    top: 19px;
+  }
+  .call-hover-txt {
+    right: 1px;
+    bottom: 0;
+    width: 171px;
+    padding: 7px 25px 8px;
+    border-radius: 100px;
+    line-height: 13px;
+    box-shadow: 0 15px 37px 0 rgba(102, 119, 231, 0.21);
+    .dblock {
+      padding-bottom: 2px;
+    }
+  }
+  .call-small-txt {
+    font-size: 12px;
+    line-height: 13px;
+    color: #a7a7a9;
+  }
+  .call-me-data,
+  .conformation-msg {
+    width: 480px;
+    height: 550px;
+    border-radius: 5px;
+    bottom: 70px;
+    right: 0;
+  }
+  .gutter {
+    padding: 25px 37px 40px;
+  }
+  .popup-heading {
+    font-size: 20px;
+    padding-bottom: 2px;
+  }
+  .popup-description {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .input-group {
+    width: 100%;
+    padding: 32px 0 5px;
+    border-bottom: solid #979797 2px;
+    .anim-line {
+      height: 2px;
+      background-color: #886093;
+      left: 0;
+      bottom: -2px;
+      right: 0;
+      width: 0;
+    }
+  }
+  .anim-line-active .anim-line {
+    height: 1px;
+    background-color: #fff;
+  }
+  .error-msg {
+    font-size: 12px;
+    bottom: -19px;
+    left: 0;
+  }
+  .global-error-msg {
+    margin-top: -4px;
+  }
+  .global-error .input-group {
+    border-color: #cb3544;
+  }
+  .input-group label {
+    bottom: 3px;
+    left: 0;
+  }
+  .input-active {
+    label {
+      bottom: 27px;
+      left: 0;
+      color: #6e3d7c;
+    }
+    .anim-line {
+      width: 100%;
+    }
+  }
+  input[type=text] {
+    height: inherit;
+    padding: 0;
+    background-color: transparent;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+  }
+  .form-conatainer {
+    margin-top: 8px;
+  }
+  .call-timings {
+    padding: 21px 0 0;
+  }
+  .time-tag {
+    border: solid #b6bbc1 1px;
+    padding: 2px 10px;
+    border-radius: 100px;
+    margin: 0 6px 5px 0;
+    &:hover {
+      color: #fff;
+      background: #886093;
+      border-color: #886093;
+      cursor: pointer;
+    }
+  }
+  .time-tag-active {
+    background: #886093;
+    border-color: #886093;
+    cursor: default;
+    color: #fff;
+  }
+  .call-timings .dblock {
+    padding-bottom: 10px;
+  }
+  .button-row {
+    margin-top: 23px;
+  }
+  button {
+    border: none;
+    padding: 8px 25px;
+    font-size: 20px;
+    border-radius: 2px;
+    &:hover {
+      box-shadow: 0 15px 20px 0 rgba(154, 200, 84, 0.34);
+    }
+  }
+  .call-me-back-button {
+    cursor: pointer;
+  }
+  .call-me-back-button .close--icon {
+    top: 19px;
+    right: 20px;
+  }
+  .close--icon {
+    &:after,
+    &:before {
+      background: #6e3d7c;
+    }
+  }
+  .info-section {
+    line-height: 18px;
+    padding: 0 0 27px 47px;
+  }
+  .tick-mark {
+    width: 25px;
+    height: 25px;
+    top: -1px;
+    left: 0;
+    background-position: -149px -456px;
+  }
+  .conformation-msg {
+    .popup-heading {
+      font-size: 27px;
+    }
+    .popup-description {
+      margin-bottom: 35px;
+      display: block;
+    }
+    .gutter {
+      padding: 34px 37px 32px;
+    }
+    .conf-close-btn {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 20px;
+      padding: 8px 0;
+    }
+    display: none;
+  }
+  .call-me-back-button .close--icon,
+  .call-me-data,
+  .error-msg,
+  .global-error-msg {
+    display: none;
+  }
+  .call-me-data-open .close--icon {
+    display: block;
+  }
+  .call-hover-txt .call-icon {
+    display: none;
+    right: 24px;
+    left: inherit;
+  }
+  .info-txt {
+    font-size: 18px;
+  }
+  .icon-deposit,
+  .icon-pay,
+  .icon-protected {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .icon-pay {
+    background-position: -48px -540px;
+  }
+  .icon-deposit {
+    background-position: -79px -539px;
+  }
+  .icon-protected {
+    background-position: -111px -539px;
+  }
+  .low-deposite-group,
+  .popup-low-deposit span {
+    vertical-align: top;
+  }
+  .from-wrapper {
+    top: 0;
+    right: 0;
+    padding: 0;
+    background: transparent;
+  }
+  .popup-low-deposit {
+    padding: 12px 30px 8px;
+    width: 96%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+  .low-deposite-group .inblock {
+    line-height: 14px;
+  }
+  .gutter-line {
+    background: #d8d8d8;
+    width: 1px;
+    height: 20px;
+    margin: 0 10px;
+    top: 4px;
+  }
+  .from-wrapper .tth-price {
+    font-size: 13px;
+  }
+  .star-icon-box {
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    margin-right: 1px;
+  }
+  .tp-img {
+    width: 115px;
+    height: 15px;
+    background-position: -217px -364px;
+    margin-top: -1px;
+  }
+  .trust-pilot {
+    .txt-bold {
+      padding-left: 5px;
+      margin-top: -1px;
+    }
+    padding-right: 20px;
+    vertical-align: middle;
+  }
+  .trust-pilot-container {
+    padding-top: 13px;
+  }
+  .great-txt {
+    line-height: 15px;
+    font-size: 13px;
+    margin-top: 3px;
+    vertical-align: middle;
+  }
+  .small-star {
+    background-position: -84px -4px;
+    width: 11px;
+    height: 12px;
+    vertical-align: top;
+  }
+  .from-wrapper .tth-asterisk {
+    right: 11px;
+    font-size: 11px;
+  }
+}
+.when-height-minimum  {
+  .call-request {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+.when-height-minimum {
+  .call-request {
+    .gutter {
+      padding:25px 37px 28px;
+    }
+  }
+}
+.call-request-btn {
+  display:none;
+}
+@media(max-width:767px) {
+  .call-request {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    .call-me-data,
+    .conformation-msg {
+      width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 0;
+      height: inherit;
+      overflow-y: scroll;
+      z-index: 1;
+    }
+    .gutter {
+      padding: 25px 30px 40px;
+    }
+    .conformation-msg .gutter {
+      padding: 25px 30px 26px;
+    }
+    button {
+      float: none;
+      width: 100%;
+    }
+    .button-row {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin-top: 0;
+    }
+    .popup-description {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .call-me-back-button {
+      display:none
+    }
+    .on-scroll {
+      left: initial;
+    }
+    .call-hover-txt {
+      display:none
+    }
+    .call-small-txt {
+      font-size: 15px;
+      color: #fff;
+    }
+    .conformation-msg .popup-heading {
+      font-size: 20px;
+    }
+    .info-txt {
+      font-size: 15px;
+      br {
+        display: none;
+      }
+    }
+    .call-small-txt br,
+    .conformation-msg .popup-description br,
+    .gutter-line {
+      display: none;
+    }
+    .conformation-msg .popup-description {
+      margin-bottom: 29px;
+    }
+    .info-section {
+      padding: 0 0 12px 40px;
+    }
+    .tick-mark {
+      top: 2px;
+    }
+    .popup-low-deposit {
+      font-size: 11px;
+      padding: 12px 5px 8px;
+      text-align: center;
+    }
+    .icon-deposit,
+    .icon-pay,
+    .icon-protected {
+      width: 22px;
+      height: 22px;
+      margin-right: 7px;
+    }
+    .great-txt {
+      font-size: 12px;
+    }
+    .trust-pilot {
+      padding-right: 15px;
+    }
+    .low-deposite-group {
+      text-align: left;
+    }
+    form {
+      padding-bottom: 50px;
+    }
+    .time-tag {
+      padding: 4px 7px;
+      font-size: 15px;
+    }
+    .global-error-msg {
+      margin-top: 0;
+    }
+    .input-group {
+      padding: 31px 0 5px;
+    }
+    .close--icon {
+      top: 25px;
+      right: 25px;
+    }
+    .icon-pay {
+      background-position: -149px -543px;
+    }
+    .icon-deposit {
+      background-position: -173px -541px;
+    }
+    .icon-protected {
+      background-position: -199px -540px;
+      top: 3px;
+      margin: 0 4px;
+    }
+    .icon-deposit,
+    .icon-pay {
+      top: 3px;
+      margin: 0 4px;
+    }
+    .from-wrapper .tth-asterisk {
+      right: 5px;
+    }
+  }
+  .call-request-btn {
+    display:flex;
+    background-color:#34b4c7;
+    justify-content:space-between;
+    align-items:center;
+    padding:5px 0 7px 0;
+    color:#fff;
+    margin-top:15px;
+    span {
+      font-size:16px;
+    }
+    p {
+      font-size:13px;
+      line-height:12px;
+    }
+    .call-icon, .right-arrow {
+      margin:0 15px;
+      img {
+        width:100%;
+      }
+    }
+    .call-icon {
+      width:22px;
+      min-width:13px;
+    }
+    .right-arrow {
+      width:28px;
+      min-width:17px;
+    }
+  }
+
+}

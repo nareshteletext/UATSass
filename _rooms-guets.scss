@@ -1,0 +1,223 @@
+.rooms-guests-wrapper {
+  z-index:116;
+  margin:auto;
+  top:40px;
+  right:0;
+  left:0;
+  height:0px;
+  animation: roomsGuests 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+  opacity:0;
+  .room-wrapper {
+    //animation: addRoom 0.6s ease-in-out;
+    //animation-fill-mode: forwards;
+    //opacity:0;
+    //position:relative;
+  }
+  .btn-outline {
+    @include btn-outline();
+    margin-right:10px;
+  }
+  .btn-fill {
+    @include btn-fill();
+  }
+  #room2, #room3 {
+    margin-top: 25px;
+    border-top: solid $search-border 2px;
+    padding-top: 25px;
+  }
+  .remove-room {
+    @include remove-room();
+    display:none;
+    &.open {
+      display:inline-block;
+    }
+  }
+  .rooms-guests {
+    padding:20px 25px;
+    [class*="line-arrow-"] {
+      bottom:15px;
+      width:8px;
+      height:8px;
+      border-width:1px;
+    }
+  }
+  .widget-heading {
+    font-size:18px;
+  }
+  .blue-heading-small {
+    color:$txt-more;
+    padding-right:10px;
+    font-family:$font-semibold;
+  }
+  .dd-wrapper:first-child {
+    margin-right:30px;
+  }
+  .dd-list {
+    border: solid #bac0c5 1px;
+    width: 100px;
+    padding: 9px 10px;
+    border-radius: 2px;
+    margin-left: 15px;
+    &:hover {
+      @include box-shadow(-2px 5px 10px rgba(0,0,0,0.1));
+      @include animation-transition(0.2s ease-in-out);
+    }
+  }
+  .dd-label {
+    font-family:$font-semibold;
+  }
+  .dd-row {
+    margin:25px 0;
+  }
+  .age-row-heading {
+    padding-bottom:20px;
+  }
+  .age-select {
+    display:none;
+    &.open {
+      display:block;
+    }
+  }
+  .age-dd-list {
+    border-bottom:solid $grid-border 1px;
+    margin:0 30px 0 0;
+    min-width:70px;
+    padding-bottom:7px;
+    i {
+      top:0;
+      right:0;
+    }
+  }
+  .button-row {
+    border-top:solid $grid-border 1px;
+    padding-top:25px;
+    margin-top:20px;
+  }
+  .age-type-ins {
+    opacity:0.5;
+    padding-left:10px;
+  }
+
+  @keyframes roomsGuests {
+    0% {
+      top:50px;
+      opacity:0;
+    }
+    100% {
+      top:40px;
+      opacity:1;
+    }
+  }
+
+  @include breakpoint(landscape-tablet) {
+    .rooms-guests {
+      max-width:90%;
+      [class*="line-arrow-"] {
+        bottom:15px;
+        right:12px;
+      }
+    }
+  }
+  @include breakpoint(mobile) {
+    top:10px;
+    bottom:10px;
+    left:10px;
+    right:10px;
+    height:auto;
+    .rooms-guests {
+      height:100%;
+      width:100%;
+      max-width:100%;
+      overflow-y:auto;
+      padding-bottom:70px;
+    }
+    .button-row {
+      position:fixed;
+      bottom:10px;
+      left:10px;
+      right:10px;
+      background-color:$bgnd-white;
+      padding:15px 15px;
+      display:flex;
+      z-index:3;
+      border:none;
+      button {
+        flex:auto;
+        margin:0 5px;
+      }
+    }
+    .dd-row {
+      margin:15px 0 0 0;
+    }
+    #room2, #room3 {
+      margin-top:0;
+      padding-top:15px;
+    }
+    .dd-wrapper {
+      width:100%;
+      margin:0 0 20px 0;
+      &:first-child {
+        margin-right:0;
+      }
+    }
+    .dd-label {
+      display:block;
+    }
+    .dd-list {
+      width:100%;
+      margin:8px 0 0 0;
+      padding:10px 10px;
+    }
+    .age-row {
+      justify-content:space-between;
+      flex-flow:row wrap;
+      display:flex;
+    }
+    .age-dd-list {
+      flex:0 0 46%;
+      min-width:inherit;
+      margin:0 2% 20px 2%;
+      z-index:1;
+      i {
+        z-index:-1;
+      }
+    }
+    @keyframes roomsGuests {
+      0% {
+        top:20px;
+        opacity:0;
+      }
+      100% {
+        top:10px;
+        opacity:1;
+      }
+    }
+  }
+
+}
+
+@keyframes addRoom {
+  0% {
+    top:-15px;
+    opacity:0;
+  }
+  100% {
+    top:0;
+    opacity:1;
+  }
+}
+.when-height-minimum {
+  .rooms-guests-wrapper {
+    height:inherit;
+    top:20px;
+    bottom:20px;
+    .rooms-guests {
+      //overflow-y:auto;
+      max-height:100%;
+    }
+  }
+  .grid-search .mobile-guests-wrapper {
+    height:inherit;
+  }
+}

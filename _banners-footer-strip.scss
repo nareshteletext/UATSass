@@ -1,0 +1,101 @@
+.banners-footer-strip {
+  padding:15px 0;
+  font-size:13px;
+  .overlay-strip {
+    bottom:100%;
+    right:0;
+    left:0;
+    padding:8px 0;
+    z-index:1;
+    background-color:rgba(0,0,0,0.6);
+    .strip-text1 {
+      font-size:28px;
+    }
+    .strip-text2 {
+      font-size:22px;
+      padding-top:4px;
+    }
+    .deposit-price-fig {
+      color:$txt-yellow;
+    }
+    .price-decimal {
+      font-size:28px;
+    }
+    .price-asterisk {
+      top:14px;
+      right:-5px;
+    }
+    .price-pp {
+      font-size:13px;
+      top:-3px;
+    }
+  }
+  .b-right {
+    background-color:#d8d8d8;
+    height:30px;
+    width:1px;
+    align-self:center;
+    margin:0 20px;
+  }
+  .white-strip {
+    img {
+      margin-right:12px;
+    }
+    .call-now-inner {
+      margin-left:10px;
+    }
+    .call-now-txt {
+      font-family:$font-semibold;
+    }
+    .call-now-number {
+      font-size:22px;
+    }
+    .share {
+      a {
+          border:solid $line 1px;
+          @include border-radius(100px);
+          width:32px;
+          height:32px;
+          margin:0 2px;
+          font-size:16px;
+          display:flex;
+          justify-content:center;
+          align-self:center;
+          align-items:center;
+      }
+    }
+  }
+  @include breakpoint (small-desktop) {
+    .share {
+      display:none;
+    }
+  }
+  @include breakpoint (landscape-tablet) {
+    .call-now-section {
+      display:none;
+    }
+    .white-strip .content-middle {
+      max-width:90%;
+      padding:0;
+    }
+    .b-right {
+      margin:0 15px;
+    }
+  }
+  @include breakpoint (portrait-tablet) {
+    #happyCustomers, .hide-in-tablet {
+      display:none;
+    }
+  }
+  @include breakpoint (mobile) {
+    display:none;
+  }
+}
+.pathdesc {
+  background:$bgnd-silver;
+  padding-top:30px;
+  font-family:$font-semibold;
+  a {
+    margin:0 7px;
+  }
+}

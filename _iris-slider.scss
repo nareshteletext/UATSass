@@ -1,0 +1,109 @@
+.price-range {
+  padding-top:25px;
+  .right-bar, .left-bar {
+    background-color:$bgnd-cornflower-blue;
+    width:2px;
+    height:12px;
+    bottom:12px;
+    opacity:0.1;
+  }
+  .right-bar {
+    right:5px;
+  }
+  .left-bar {
+    left:5px;
+  }
+  .irs {
+    display:block ;
+    visibility:visible;
+    position:relative;
+    &.irs-animate {
+      span {
+        @include animation-transition(all .4s ease-in-out)
+      }
+    }
+    .irisMainSpan {
+      overflow:hidden;
+      padding-top:11px;
+      margin-bottom:26px;
+      position:relative;
+      top:6px;
+    }
+    .irs-from, .irs-to, .irisMainSpan, .irs-slider, .irs-bar {
+      display:block;
+    }
+    .irs-to, .irs-from {
+      position:static;
+      font-size:11px;
+      opacity:0.6;
+    }
+    .irs-to {
+      float:right;
+    }
+    .irs-from {
+      float:left;
+    }
+    .irs-slider {
+      width:18px;
+      height:18px;
+      top:0;
+      background:$bgnd-white;
+      position:absolute;
+      cursor:pointer;
+      z-index:1;
+      @include border-radius(100px);
+      border:solid $b-blue 3px;
+      &:hover {
+        @include transform(1.3);
+      }
+      &:before {
+        content:'';
+        position:absolute;
+        top:0;
+        bottom:0;
+        width:45px;
+        height:45px;
+        margin:auto;
+      }
+      &.to {
+        &:before {
+          right:0;
+        }
+      }
+      &.from {
+        &:before {
+          left:0;
+        }
+      }
+    }
+    .irs-grid {
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      height:20px;
+    }
+    .irs-bar {
+      height:4px;
+      top:7px;
+      background-color:$bgnd-cornflower-blue;
+      position:absolute;
+      left:0;
+      width:0;
+      border-radius:100px;
+    }
+    .irs-hidden-input, .irs-single, .irs-grid, .irs-max, .irs-min{
+      display:none;
+    }
+    .irs-line {
+      height:4px;
+      background-color:$bgnd-cornflower-blue;
+      opacity:0.4;
+      width:100%;
+      @include border-radius(100px);
+      &:focus {
+        outline:0;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.selectric-wrapper {
+  position:relative;
+  z-index:2;
+  cursor:pointer;
+  &.selectric-open {
+    z-index: 5;
+    .selectric-items {
+      display:block;
+      @include height-animation();
+    }
+  }
+  &.selectric-above {
+    .selectric-items {
+      top:auto;
+      bottom:100%;
+    }
+  }
+  .selectric-hide-select {
+    select {
+      display:none;
+    }
+  }
+  .selectric-items {
+    display:none;
+    position:absolute;
+    top: 100%;
+    left: 0;
+    background:$bgnd-white;
+    width:100%;
+    @include dd-box-shadow();
+    outline:0;
+    border:none;
+  }
+  .selectric-input {
+    display:none;
+  }
+  ul li {
+    padding:5px 10px;
+    transition:all 0.4s ease-in-out;
+    &:hover {
+      background:$bgnd-black-squeeze;
+    }
+  }
+  .selectric-scroll {
+    overflow:auto;
+    height:100%;
+  }
+  .selectric {
+    .button {
+      display:none;
+    }
+  }
+}

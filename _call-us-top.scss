@@ -1,0 +1,28 @@
+.call-us-top {
+  background:$bgnd-white;
+  padding:5px 10px;
+  margin-top:-10px;
+  border-radius:0 0 13px 13px;
+  max-height:26px;
+  .call-text {
+    font-size:13px;
+    font-weight:normal;
+    letter-spacing:-0.2px;
+    line-height:18px;
+  }
+  i {
+    margin:0px 5px 2px 7px;
+    font-size:18px;
+    color:#6e3d7b;
+    @include rotate(10deg);
+  }
+  span {
+    font-weight:bold;
+    color:$txt-purple;
+    font-size:18px;
+    line-height:18px;
+  }
+  .header-cta {
+    font-family:$font-bold;
+  }
+}

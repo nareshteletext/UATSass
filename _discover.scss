@@ -1,0 +1,160 @@
+@include breakpoint (when-desktop) {
+  .discover {
+    margin:70px 0 0 0;
+    a {
+      cursor: pointer;
+      display:block;
+      height:100%;
+      &:hover {
+        color:inherit;
+      }
+      img {
+        @include transition();
+      }
+      &:after {
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        background:$bgnd-black;
+        opacity:0;
+        @include transition();
+      }
+      &:hover {
+        img  {
+          @include transform(1.05);
+        }
+        &:hover:after {
+          opacity:0.3;
+        }
+      }
+    }
+
+    .content-header-center {
+      @include desktop-header-center();
+    }
+    .box-height {
+      height:208px;
+    }
+    .left-box, .right-box, .middle-box {
+      span {
+        background-color:$bgnd-yellow;
+        bottom:-6px;
+        right:-6px;
+        @include border-radius(6px);
+        padding:6px 20px 11px 14px;
+        font-size: 20px;
+        z-index:1;
+      }
+    }
+    .left-box, .right-box {
+      width:23%;
+      height:400px;
+      overflow:hidden;
+      @include border-radius(6px);
+      span {
+        bottom:22px;
+        padding:6px 20px 6px 14px;
+      }
+    }
+    .middle-box {
+      width:50%;
+      .row-float {
+        @extend .box-height;
+        a {
+          @extend .box-height;
+          @include border-radius(6px);
+          width:48%;
+          overflow:hidden;
+        }
+      }
+      .pstn-reltv.clear {
+        height:166px;
+        margin-top:25px;
+        overflow:hidden;
+        @include border-radius(6px);
+      }
+    }
+  }
+}
+
+@include breakpoint(when-landscape-tablet) {
+  .discover {
+    a {
+      &:after {
+        display:none;
+      }
+      &:hover {
+        img  {
+          @include transform(1);
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint(when-portrait-tablet) {
+  .discover {
+    margin: 40px 0 0 0;
+    .left-box, .right-box {
+      height:260px;
+    }
+    .middle-box {
+      .row-float {
+        height:135px;
+        a {
+          height:135px;
+        }
+      }
+      .pstn-reltv.clear {
+        height:110px;
+        margin-top:15px;
+      }
+    }
+    .left-box, .right-box, .middle-box {
+      span {
+        font-size: 15px;
+      }
+    }
+    .content-header-center {
+      padding-bottom: 40px;
+    }
+  }
+
+}
+
+
+@include breakpoint (mobile) {
+  .discover {
+    .content-middle {
+      padding:0;
+    }
+    .owl-wrapper-outer {
+      padding-left:20px;
+    }
+    padding:40px 0;
+    .dstn-offer {
+      width:262px;
+      height:208px;
+      @include border-radius(6px);
+      overflow:hidden;
+    }
+    .content-header-center {
+        @include mobile-header();
+    }
+    .dstn-label {
+      right:0;
+      bottom:30px;
+      left:0;
+      span {
+        background-color:$bgnd-yellow;
+        padding:4px 16px;
+        @include border-radius(6px);
+        font-size:20px;
+      }
+    }
+  }
+}

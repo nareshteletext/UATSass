@@ -1,0 +1,86 @@
+.search-form {
+  @include box-shadow(0 12px 30px 0 $box-shadow-long );
+  min-height: 80px;
+  padding: 26px 0 10px 34px;
+  &:hover {
+    @include box-shadow(0 20px 30px 0 rgba(111, 133, 159, 0.34) );
+    span {
+      opacity:1;
+    }
+    .line-icon-search {
+        opacity:0.7;
+    }
+  }
+  .line-icon-search {
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+    opacity:0.5;
+  }
+  .label-light {
+    font-size: 24px;
+    opacity: 0.5;
+  }
+  .search-ttip {
+    padding: 5px 12px;
+    border-radius: 4px;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.11), 0 0 12px 0 rgba(0, 0, 0, 0.22);
+    left: 5px;
+    opacity: 0;
+    animation:slide-down 0.5s cubic-bezier(0.32, -0.01, 0.76, 0.35);
+    animation-delay:1.2s;
+    animation-fill-mode: forwards;
+    font-size:14px;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      background: #fff;
+      bottom: -5px;
+      left: 75px;
+      transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+  }
+  .expand-wrapper {
+    display: none;
+  }
+  @include breakpoint(small-desktop) {
+    min-height:70px;
+    padding:22px 0 16px 34px;
+  }
+  @include breakpoint(mobile) {
+    min-height: 80px;
+    font-size: 15px;
+    line-height: 1.33;
+    padding: 22px 0 16px 22px;
+    position: relative;
+    bottom: -35px;
+    .line-icon-search {
+      float: right;
+      width: 15px;
+      height: 15px;
+      margin: 12px 15px 0 0;
+    }
+    .label-light {
+      font-size: 15px;
+      line-height: 40px;
+      display: inline-block;
+    }
+    .icon-and-title span span {
+      width: 100%;
+    }
+  }
+  @include breakpoint(medium-mobile) {
+    .label-light {
+      line-height:1.33;
+      max-width:150px;
+    }
+  }
+}
+@-webkit-keyframes slide-down {
+    from {top:-63px;opacity:0}
+    to {top:-43px;opacity:1}
+}

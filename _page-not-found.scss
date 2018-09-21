@@ -1,0 +1,68 @@
+.page-not-found{margin:66px 0 60px 0;}
+.page-not-found div, .page-not-found span{vertical-align:top;}
+.page-not-found .page-not-banner{border-bottom:solid 2px rgba(151,151,151,0.1);height:370px;background:url('https://resources.teletextholidays.co.uk/drupal/images/not-found/group.png') no-repeat center -65px;padding-top:79px;}
+.page-not-found .page-not-banner span{letter-spacing:-0.7px;line-height:36px;font-size:32px;}
+.page-not-found .page-not-banner .show-on-mobile{display:none;}
+.page-not-found .page-not-banner a{font-size:20px;padding:14px 64px;border-radius:2px;margin-top:48px;}
+.page-not-found .page-not-banner a:hover, .page-not-found .page-not-banner a:focus{color:#fff;box-shadow: 0 15px 20px 0 rgba(154, 200, 84, 0.34);}
+.page-not-found .useful-links-header{font-size:20px;padding:37px 0 30px 0}
+.page-not-found .link-section{width:258px;height:80px;display:table;table-layout:fixed;}
+.page-not-found .link-group-txt{display:table-cell;width:100%;vertical-align:middle;}
+.page-not-found .link-name{font-size:18px;}
+.page-not-found .link-description{font-size:13px;width:230px;line-height:14px;}
+.page-not-found .link-name, .page-not-found .travel-advisor-contact, .page-not-found .travel-advisor-title{font-family:'proximanova-bold';}
+.page-not-found .box-border{border:solid #dddddd 1px;padding:0 20px;margin:0 11px;}
+.page-not-found .box-border:hover{box-shadow:0 15px 20px 0 rgba(218, 218, 218, 0.34);border-color:#37bdd1;}
+.page-not-found .travel-advisor{width:944px;margin-top:44px;padding:47px 50px 20px 50px;}
+.page-not-found .travel-advisor-title{font-size:38px;line-height:40px;}
+.page-not-found .travel-advisor-small-txt{font-size:18px;line-height:18px;}
+.page-not-found .travel-advisor-contact{font-size:50px;}
+.page-not-found .travel-advisor-sub-txt{font-size:38px;line-height:39px;font-family:'proximanova-light';}
+.page-not-found .travel-advisor-call{padding-top:42px;line-height:28px;}
+.page-not-found .travel-advisor .float-right{font-size:18px;top:6px;}
+.page-not-found .info-section{line-height:18px;padding:0 0 30px 44px;}
+.page-not-found .tick-mark{width:25px;height:25px;top:5px;left:0;background-position:-149px -456px}
+.page-not-found .phone-mask{bottom:-20px;}
+.page-not-found .section-icon-arrow{width:25px;height:25px;top:29px;right:0;background-position:-177px -457px}
+.page-not-found .page-not-banner .error-type-txt{font-size:15em;color:#eee9f1;top:100px;right:0;left:0;}
+
+@media(max-width:992px) {
+  .page-not-found{margin:66px 0 50px 0;}
+  .page-not-found .link-section{width:200px;}
+  .page-not-found .box-border{padding:0 10px;}
+  .page-not-found .link-description{width:180px;}
+  .page-not-found .page-not-banner{background-size:90%;height:280px;}
+  .page-not-found .travel-advisor{padding:25px 30px 10px 30px;width:710px;}
+  .page-not-found .travel-advisor-title, .page-not-found .travel-advisor-sub-txt{font-size:28px;}
+  .page-not-found .travel-advisor-sub-txt{line-height:28px;}
+  .page-not-found .travel-advisor-contact{font-size:38px;}
+  .page-not-found .travel-advisor .float-right{top:6px;}
+  .page-not-found .page-not-banner a{margin-top:35px;z-index:1;position:relative;}
+}
+
+@media(max-width:767px) {
+  .page-not-found .page-not-banner .show-on-mobile{display:block;font-family:'proximanova-semibold';}
+  .page-not-found .page-not-banner .error-type-txt{display:none;}
+  .page-not-found .page-not-banner span{line-height:22px;font-size:20px;}
+  .page-not-found{margin:50px 0 0 0;}
+  .page-not-found .page-not-banner{padding-top:9px;height:170px;background:url('https://resources.teletextholidays.co.uk/drupal/images/not-found/group2x.png') no-repeat center bottom;background-color:#f9f7f9;background-size:308px;border:none;}
+  .page-not-found .link-section{width:100%;height:58px;}
+  .page-not-found .useful-links-header{font-size:16px;padding:10px 0 10px 0;max-width:260px;margin:0 auto;line-height:17px;}
+  .page-not-found .travel-advisor .float-left, .page-not-found .travel-advisor-call{text-align:center}
+  .page-not-found .travel-advisor .float-left, .page-not-found .travel-advisor .float-right{float:none;}
+  .page-not-found .travel-advisor-title, .page-not-found .travel-advisor-sub-txt{font-size:24px;}
+  .page-not-found .travel-advisor .float-right{font-size:15px;display:inline-block;text-align:left;}
+  .page-not-found .info-section{padding: 0 0 16px 0;}
+  .page-not-found .phone-mask{display:none;}
+  .page-not-found .travel-advisor-call{line-height:26px;padding-top:25px;margin-bottom:28px;}
+  .page-not-found .travel-advisor-sub-txt{line-height:26px;}
+  .page-not-found .info-txt, .page-not-found .tick-mark{display:inline-block;}
+  .page-not-found .tick-mark{position:relative;top:5px;left:0;margin-right:10px;}
+  .page-not-found .link-name{font-size:16px;}
+  .page-not-found .page-not-banner a{font-size:17px;padding:10px 41px;margin-top:18px;}
+  .page-not-found .travel-advisor{margin-top:17px;padding:25px 15px 10px 15px;width:100%;text-align:center}
+  .page-not-found .page-not-banner .show-on-desktop{display:none;}
+  .page-not-found .page-not-banner span{color:#886093;}
+  .page-not-found .link-description{width:100%;}
+  .page-not-found .section-icon-arrow{top:18px;}
+}

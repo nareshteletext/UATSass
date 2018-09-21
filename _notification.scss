@@ -1,0 +1,42 @@
+.notification-wrapper {
+  top:0;
+  right:22px;
+  width:365px;
+  z-index:5;
+  display:table;
+  margin:auto;
+  bottom:0;
+  display:none;
+  .close--icon  {
+    top:12px;
+    right:15px;
+  }
+  .other-users-widget {
+    @include slide-up-long();
+    padding:0 20px;
+    min-height:80px;
+    opacity:0;
+    margin-bottom:10px;
+    @include box-shadow(0 5px 30px 0 $box-shadow-color);
+    .other-users {
+      span {
+        width:44px;
+        height:44px;
+        background-color:$bgnd-light-purple;
+        @include border-radius(100px);
+      }
+    }
+    .other-users-info {
+      font-size:15px;
+      padding:0 20px;
+    }
+  }
+  @include breakpoint(mobile) {
+    top:auto;
+    right:0;
+    width:100%;
+    .other-users-widget  {
+      margin-bottom:0;
+    }
+  }
+}

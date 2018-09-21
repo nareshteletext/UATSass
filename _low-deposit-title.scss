@@ -1,0 +1,68 @@
+.low-deposit-title {
+  h2 {
+    padding-bottom:15px;
+    font-size:20px;
+  }
+  .txt-1 {
+    font-size:16px;
+  }
+  hr {
+    border-bottom:dashed 2px rgba($b-lynch, 0.2);
+  }
+  @include breakpoint(mobile) {
+    margin-bottom:12px;
+    h2 {
+      font-size:18px;
+      padding-bottom:0;
+    }
+    .tth-price {
+      font-size:24px;
+    }
+    .tth-pp, .tth-asterisk {
+      font-size:16px;
+    }
+    .tth-pp {
+      left:0;
+      top:8px;
+    }
+    .tth-asterisk {
+      top:8px;
+      right:-5px;
+    }
+    .txt-small {
+      opacity:1;
+    }
+    .align-items-base {
+      margin-top:-2px;
+    }
+    .phone-txt {
+      font-size:24px;
+      white-space:nowrap;
+    }
+    .txt-medium {
+      font-size:15px;
+    }
+    .call-green {
+      .content-middle {
+        padding:0 8px;
+        max-width:400px;
+      }
+      .grid-stay {
+        justify-content:space-around;
+        display:flex;
+      }
+    }
+    hr {
+      margin:10px 0;
+      border-bottom:solid 2px rgba($b-lynch, 0.1);
+    }
+    .call-icon {
+      margin:0 8px;
+    }
+  }
+  @media(max-width:330px) {
+    .call-icon {
+      margin:0 8px 0 0;
+    }
+  }
+}

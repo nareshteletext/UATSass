@@ -1,0 +1,30 @@
+@include breakpoint (when-mobile) {
+  .accordion {
+    .accordion-header {
+      @include box-shadow(0 8px 24px 0 rgba(111, 133, 159, 0.1));
+        padding:18px 20px;
+        span {
+          @include transition();
+        }
+        h2 {
+          font-size:20px;
+          padding-right:25px;
+          flex:1;
+        }
+        .line-arrow-up {
+          border-color:$b-blue;
+        }
+        &.readMore-open {
+          .line-arrow-down {
+              transform:rotate(-45deg);
+              border-color:$b-blue;
+          }
+        }
+      }
+    p {
+      font-size:15px;
+      line-height:24px;
+      padding-bottom:25px;
+    }
+  }
+}

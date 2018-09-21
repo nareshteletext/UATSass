@@ -1,0 +1,219 @@
+.booking-summary {
+    width: 358px;
+    float: right;
+    .atol{
+        border-bottom: solid 2px $b-sticky;
+        margin: 0 0 20px 0;
+        padding: 0 0 20px 0;
+    }
+   .atol-icon {
+        width: 46px;
+        height: 46px;
+        background-position: -95px -1px;
+        margin-right: 19px;
+    }
+    .atol-hdng-inner {
+        font-size: 15px;
+    }
+    .total-price {
+        padding: 10px 18px 20px 23px;
+        min-height: 74px;
+    }
+    .price-amount-txt {
+        padding-bottom: 10px;
+    }
+    .price-amount-txt,
+    .savings-price,
+    .hurry-price {
+        @include opacity()
+    }
+    .price-amount {
+        font-size: 14px;
+    }
+    .left-book-circle {
+        width: 36px;
+        height: 36px;
+        margin-right: 18px;
+    }
+    .time-to-book {
+        padding: 13px 21px 15px 24px;
+    }
+    .savings-price {
+        font-size: 17px;
+        line-height:16px;
+    }
+    .savings-price span {
+        padding-top: 20px;
+    }
+    .price-cost {
+        font-size: 28px;
+        line-height: 16px;
+    }
+    .left-time {
+        font-size: 22px;
+        line-height: 16px;
+    }
+    .left-time-txt {
+        font-size: 14px;
+        color: $txt-yellow;
+        padding-top: 10px;
+    }
+    .hurry-price {
+        width: 105px;
+        padding-top: 3px;
+    }
+    .get{
+        border-top: solid 2px $b-sticky;
+        margin: 20px 0 20px 0;
+        padding: 20px 0 0 0;
+    }
+    .get-choice {
+        font-size: 20px;
+        color: $txt-light-purple;
+    }
+    .get-options {
+        font-size: 15px;
+        color: $txt-light-purple;
+    }
+    .your-book {
+        width: 360px;
+        border-radius: 2px;
+        box-shadow: 0 0 8px 0 $box-shadow-color-light;
+        min-height: 300px;
+        margin: 23px 0 0 0;
+        padding: 20px 0 0 0;
+    }
+    .book-place{
+      border-bottom: solid 2px $b-light;
+      margin: 0 0 20px 0;
+      padding: 0 0 20px 0;
+    }
+    .your-book-txt {
+        font-size: 17px;
+        padding-bottom: 14px;
+    }
+    .your-book-inner {
+        margin: 0 auto  24px auto;
+        width: 320px;
+    }
+    .your-book-image {
+        width: 320px;
+        height: 235px;
+    }
+    .hotel-name {
+        font-size: 17px;
+        padding: 13px 0 0 0;
+    }
+    .hotel-place {
+        font-size: 14px;
+        padding: 4px 9px 0 0;
+    }
+    .hotel-ratings {
+        padding: 3px 0 0 0;
+    }
+    .txt-selective-yellow {
+        padding: 0 0 0 1px;
+        font-size: 12px;
+    }
+    .running-price {
+        font-size: 17px;
+        padding-top: 22px;
+    }
+    .change-link {
+        font-size: 13px;
+        padding: 5px 0 8px 0;
+        text-decoration: underline;
+        border-bottom: solid 2px $b-light;
+        margin-bottom: 12px;
+    }
+    .all-inclusive,
+    .double {
+        font-size: 15px;
+        padding-top: 2px;
+    }
+    .chk-in,
+    .stay-label {
+        font-size: 13px;
+        min-width: 92px;
+    }
+    .chk-in-date,
+    .stay-detail {
+        font-size: 15px;
+        min-width: 118px;
+    }
+    .chk-in-time {
+        font-size: 12px;
+    }
+    .purple-total-innner {
+        padding: 10px 25px 12px 20px;
+        -webkit-border-bottom-right-radius: 2px;
+        -webkit-border-bottom-left-radius: 2px;
+        -moz-border-radius-bottomright: 2px;
+        -moz-border-radius-bottomleft: 2px;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+    .purple-total {
+        font-size: 17px;
+        padding-top: 5px;
+    }
+    .purple-price {
+        font-size: 22px;
+    }
+
+    .stay-label  {
+        font-size: 13px;
+    }
+    .stay-detail , .saving-txt {
+        font-size: 15px;
+    }
+    .saving-price {
+        font-size: 17px;
+        line-height: 16px;
+    }
+    .saving-detail {
+        padding: 11px 0 16px 0;
+        margin-top: 18px;
+        border-top: solid 2px $b-light;
+    }
+    .promo {
+        padding: 23px 21px 24px 21px;
+        margin: 21px 0 0 0;
+        box-shadow: 0 0 8px 0 $box-shadow-color-light;
+    }
+    .promo-hdng {
+        font-size: 17px;
+        padding: 24px 0 13px 0;
+        border-top: solid 2px $b-light;
+    }
+    .your-book p {
+        padding: 0 0 20px 0;
+        font-size: 12px;
+        color: $b-default;
+    }
+    .promo-input {
+        border: 1px solid $b-sticky;
+        border-right: 0;
+        padding: 10px 5px 10px 5px;
+        width: 100%;
+    }
+    .promo-apply-btn button {
+        font-size: 17px;
+        padding: 10px 14px 10px 14px;
+        min-width: 80px;
+        background: $bgnd-cornflower-blue;
+    }
+    .free-cancel {
+        background: $bgnd-lynch;
+        padding: 15px 56px 13px 21px;
+        margin: 21px 0 20px 0;
+        @include border-radius(2px);
+    }
+    .free-cancel-hdng {
+        font-size: 17px;
+        padding-bottom: 2px;
+    }
+    .free-cancel p {
+        font-size: 14px;
+    }
+}

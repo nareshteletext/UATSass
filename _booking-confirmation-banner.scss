@@ -1,0 +1,99 @@
+@include breakpoint(when-desktop) {
+.congrats {
+  .congrats-bg {
+    padding: 31px 0 48px 0;
+    min-height: 197px;
+    margin: 66px 0 0 0;
+  }
+  .banner-map {
+    background-size: 100%;
+    z-index: 1;
+    img{
+      width: 100%;height: 100%;
+    }
+  }
+  .bg {
+    opacity: 0.9;
+    background: #4d3c64;
+    z-index: 2;
+  }
+  .content-middle {
+    z-index: 3;
+  }
+  .congrats-hdng {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+    margin: 0 0 35px 0;
+  }
+  .congrats-subhdng, .book-txt {
+    font-size: 20px;
+    letter-spacing: -0.3px;
+  }
+  .congrats-content {
+    font-size: 15px;
+    letter-spacing: -0.2px;
+    margin: 5px 0 0 0;
+  }
+  .book-reference {
+    padding-top: 40px;
+  }
+  .book-nmbr {
+    font-size: 24px;
+  }
+  .date-book {
+    font-size: 13px;
+    letter-spacing: -0.2px;
+    margin: 10px 0 0 0;
+  }
+  #spCheckintime, #spCheckouttime{display:none;}
+}
+}
+@include breakpoint(mobile) {
+.congrats {
+  .congrats-bg{
+    margin-top: 50px;
+    padding: 31px 20px 27px 20px;
+    margin: 50px 0 0 0;
+  }
+  .banner-map {
+    background-size: cover;
+    z-index: 1;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .bg {
+    opacity: 0.9;
+    background: #4d3c64;
+    z-index: 2;
+  }
+  .content-middle {
+    z-index: 3;
+  }
+  .congrats-hdng{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .congrats-subhdng, .book-nmbr{
+    font-size: 20px;
+  }
+  .congrats-content{
+    margin-top: 10px;
+  }
+  .book-reference{
+    width: 100%;
+    border-top: 2px solid $b-white;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .book-txt{
+    font-size: 15px;
+  }
+  .date-book{
+    margin-top: 4px;
+  }
+  #spCheckintime, #spCheckouttime, .get-print-section{display:none;}
+}
+}

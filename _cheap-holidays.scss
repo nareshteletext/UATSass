@@ -1,0 +1,93 @@
+.cheap-holidays {
+  &.deals-thin {
+    top:0;
+    margin-top:50px;
+  }
+  #cheapHolidaysWrapper {
+    padding:0 10px;
+  }
+  .deal-img {
+    height:235px;
+  }
+  .dstn-name {
+    font-size:16px;
+    padding-bottom:3px;
+  }
+  .deal-type {
+    font-size:14px;
+    @include opacity();
+  }
+  .deal-ratings {
+    letter-spacing:-1.5px;
+    i {
+      font-size:14px;
+      letter-spacing:3px;
+    }
+    .deal-type {
+      letter-spacing:normal;
+      padding-left:6px;
+    }
+    .ai-title {
+      top:-2px;
+    }
+  }
+  .tth-price {
+    font-size:24px;
+  }
+  .tth-pp {
+    font-size:14px;
+  }
+  button {
+    margin-top:2px;
+    padding:6px 10px 5px 10px;
+  }
+  .from-price {
+    line-height:16px;
+  }
+  hr {
+    border-bottom:solid $b-lynch 1px;
+    opacity:0.1;
+  }
+
+  @include breakpoint(landscape-tablet) {
+    .deal-img {
+      height:188px;
+    }
+  }
+
+  @include breakpoint(portrait-tablet) {
+    &.deals-thin {
+      margin-top:40px;
+      overflow:hidden;
+    }
+    .carousel-title-2 {
+      margin:0;
+    }
+    .tth-price {
+      font-size:20px;
+    }
+    .deal-thin-item {
+      width:100%;
+    }
+    .owl-item {
+      margin-right:22px;
+    }
+    .owl-wrapper-outer {
+      overflow:inherit;
+    }
+  }
+  @include breakpoint(mobile) {
+    &.deals-thin {
+      margin-top:40px;
+    }
+    .deal-img {
+      height:90px;
+    }
+    &:before {
+      display:none;
+    }
+    #cheapHolidaysWrapper {
+      padding:0;
+    }
+  }
+}

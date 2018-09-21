@@ -1,0 +1,68 @@
+.legends {
+    padding:12px 0 0 5px;
+    border-top:solid $b-input 1px;
+    margin:0 6px 0 6px;
+    z-index:130;
+    &.mobile-calendar-legends {
+      display:none;
+    }
+    hr {
+      margin:0 0 11px 0;
+    }
+    span {
+      vertical-align:middle;
+    }
+   > div {
+     margin-right:15px;
+   }
+  .legend-box {
+    width:14px;
+    height:14px;
+    border:solid 2px;
+    margin-right:5px;
+    top:-1px;
+  }
+  .legend-label {
+    font-size:12px;
+    font-family:$font-semibold;
+  }
+  .legend-1 {
+    .legend-box {
+      border-color:#9ac854;
+    }
+  }
+  .legend-2 {
+    .legend-box {
+      background:#37bdd1;
+      border-color:#37bdd1;
+    }
+  }
+  .legend-3 {
+    .legend-box {
+      background:#9ac854;
+      border-color:#9ac854;
+    }
+  }
+  .legend-4 {
+    display:none;
+    .legend-box {
+      background:#f2f2f2;
+      border-color:#f2f2f2;
+    }
+  }
+}
+@include breakpoint (mobile) {
+  .legends {
+    position:fixed;
+    left:18px;
+    right:18px;
+    height:52px;
+    bottom:0;
+    margin:0 4px 0 5px;
+  }
+  .legends-active {
+      .mobile-calendar-legends {
+        display:block;
+      }
+  }
+}

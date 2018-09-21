@@ -1,0 +1,222 @@
+.customers-says {
+  .customers-banner {
+    height:384px;
+    background-color:$bgnd-img;
+    background-repeat:no-repeat;
+  }
+  .autor-name-letter {
+    font-size:20px;
+    text-transform: uppercase;
+    margin:auto;
+    height:20px;
+  }
+  &.owl-new-buttons {
+    .owl-theme .owl-controls {
+      .owl-pagination {
+        position:static;
+      }
+      .owl-next, .owl-prev {
+        top:144px;
+      }
+      .owl-next {
+        right:15px;
+        &:before {
+          left:6px;
+          width:20px;
+        }
+      }
+      .owl-prev {
+        left:15px;
+        &:before {
+          width:20px;
+        }
+      }
+    }
+  }
+  .customers-comments {
+    min-height:380px;
+    padding:45px 0 22px 0;
+    max-width:1170px;
+    margin:-75px auto auto auto;
+  }
+  p {
+    font-size:24px;
+    line-height:36px;
+    padding:35px 0 45px 0;
+  }
+  h4 {
+    text-transform:uppercase;
+    letter-spacing:3px;
+    &:after {
+      content:'';
+      display:block;
+      position:relative;
+      width:80px;
+      height:2px;
+      background-color:rgba($bgnd-butterfly, 0.5);
+      margin:23px auto auto auto;
+    }
+  }
+  .comments-slide {
+    max-width:800px;
+    padding-bottom:15px;
+    margin:0 auto;
+  }
+  .author-pic {
+    width:50px;
+    height:50px;
+    background-color:#88D7E2;
+    margin-right:18px;
+    @include border-radius(100px);
+  }
+  .author-name {
+    font-size:18px;
+  }
+  .author-info  {
+    line-height:22px;
+  }
+  .author-location {
+    @include opacity();
+    font-size:16px;
+  }
+  @media(max-width:1200px) {
+    .customers-comments {
+      margin:-50px auto auto auto;
+      max-width:90%;
+    }
+    p {
+      font-size:20px;
+      line-height:30px;
+    }
+    .comments-slide {
+      max-width:700px;
+    }
+  }
+
+  @include breakpoint(portrait-tablet) {
+    .comments-slide {
+      max-width:520px;
+    }
+    p {
+      font-size:18px;
+      line-height:28px;
+      padding:30px 0 45px 0;
+    }
+    .author-pic {
+      width:40px;
+      height:40px;
+      margin-right:13px;
+    }
+    .author-name {
+      font-size:16px;
+    }
+    .author-location {
+      font-size:13px;
+    }
+    .author-info {
+      line-height:18px;
+    }
+    .customers-comments {
+      min-height:inherit;
+      padding:45px 0 25px 0;
+      max-width:95%;
+    }
+    .autor-name-letter {
+      font-size:18px;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    .customers-comments {
+      padding:30px 10px 20px 10px;
+      margin:-200px 10px auto 10px;
+    }
+    .autor-name-letter {
+      font-size:20px;
+    }
+    h4 {
+      font-size:13px;
+    }
+    p {
+      font-size:20px;
+      padding:15px 15px 25px 15px;
+    }
+    .author-pic {
+      width:50px;
+      height:50px;
+    }
+    .author-name {
+      font-size:18px;
+    }
+    .author-location {
+      font-size:16px;
+    }
+    .author-info {
+      line-height:22px;
+    }
+    &.owl-new-buttons {
+      .owl-theme .owl-controls {
+        .owl-next, .owl-prev {
+          display:none;
+        }
+      }
+    }
+    .comments-slide {
+      padding-bottom:0;
+    }
+    .owl-theme .owl-controls {
+      margin-top:0;
+    }
+  }
+}
+
+
+
+
+@media(min-width:1440px) {
+  .customers-says {
+    .customers-banner {
+      background-image:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/reviews/Review-1920x384.jpg');
+    }
+  }
+}
+@media(max-width:1440px) {
+  .customers-says {
+    .customers-banner {
+      background-image:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/reviews/Review-1440x384.jpg');
+    }
+  }
+}
+@media(max-width:1280px) {
+  .customers-says {
+    .customers-banner {
+      background-image:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/reviews/Review-1280x340.jpg');
+      height:340px;
+    }
+  }
+}
+@media(max-width:1024px) {
+  .customers-says {
+    .customers-banner {
+      background-image:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/reviews/Review-1024x272.jpg');
+      height:272px;
+    }
+  }
+}
+@media(max-width:768px) {
+  .customers-says {
+    .customers-banner {
+      background-image:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/reviews/Review-768x204.jpg');
+      height:204px;
+    }
+  }
+}
+@media(max-width:720px) {
+  .customers-says {
+    .customers-banner {
+      background-image:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/reviews/Review-720x630.jpg');
+      background-size:contain;
+      height:384px;
+    }
+  }
+}

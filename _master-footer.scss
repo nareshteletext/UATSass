@@ -1,0 +1,131 @@
+.foote-social-icons {
+  a {
+    margin-left:6px;
+    width:34px;
+    img {
+      width:100%;
+    }
+  }
+}
+.footer-grid-links {
+  a {
+    display:inline-block;
+    margin-bottom:5px;
+    &:hover {
+      color:$txt-cornflower-blue;
+    }
+  }
+}
+.link-box {
+  background:$bgnd-black-squeeze;
+  padding:5px 10px;
+  @include border-radius(4px);
+  margin:0 4px 4px 0;
+  font-size:16px;
+  white-space:nowrap;
+  display:inline-block;
+  border: solid transparent 1px;
+  &:hover {
+    background:$bgnd-emerald;
+    color:$txt-white;
+  }
+}
+.outline-link {
+  border-color:$b-squeeze;
+  background:$bgnd-white;
+  &:hover {
+    color:$txt-lynch;
+    background:$bgnd-emerald;
+    color:$txt-white;
+    border-color:$b-green;
+  }
+}
+.content-small {
+  font-size:13px;
+  line-height:18px;
+  text-align:justify;
+}
+.copyright {
+    background:$bgnd-black-squeeze;
+}
+.copyright-symbol {
+  font-size:20px;
+  padding-right:5px;
+  top:2px;
+}
+.year-txt {
+  padding-top:15px;
+}
+.links-wrapper {
+  .links-row {
+     padding-top:20px;
+     &:first-child {
+      padding-top:0;
+     }
+  }
+  .links-title {
+    margin-right:20px;
+    min-width:190px;
+  }
+}
+
+@include breakpoint(portrait-tablet) {
+  .links-wrapper {
+    .links-row {
+      padding:5px 0 15px 0;
+    }
+    .links-title {
+      padding-bottom:5px;
+      margin-right:0;
+    }
+  }
+  .link-box {
+    font-size:14px;
+  }
+  .foote-social-icons {
+    a {
+      width:20px;
+      margin-left:3px;
+    }
+  }
+  .footer-grid-links {
+    a {
+      font-size:12px;
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  .footer-grid-links {
+    a {
+      font-size:13px;
+      margin-bottom:8px;
+    }
+  }
+  .foote-social-icons {
+    a {
+      margin-left:5px;
+    }
+  }
+  .mobile-flex-grid {
+    @include item-dflex();
+  }
+  .foote-social-icons {
+    margin-top:15px;
+  }
+  .margin-top-25 {
+    margin-top:25px;
+  }
+}
+
+@include breakpoint(when-above-tablet) {
+  .grid-when-desktop {
+    @include item-dflex();
+  }
+}
+
+@include breakpoint(when-desktop) {
+  .flex-grid-above-mobile {
+    @include grid-flex();
+  }
+}

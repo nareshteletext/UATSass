@@ -1,0 +1,101 @@
+@include breakpoint (when-desktop) {
+  .call-us {
+    img {
+      width:100%;
+    }
+    .full-image img {
+      object-fit:inherit;
+    }
+    .f18 {
+      font-size:$h5;
+    }
+    padding: 55px 0 50px 0;
+    .line-box {
+      width: 46px;
+      height: 46px;
+      margin-right: 15px;
+      background-position:-2px -2px;
+    }
+    .line-icon-download {
+      background-position:-48px -2px;
+    }
+    .line-icon-atol {
+      background-position:-96px -2px;
+    }
+    .call-us-header {
+      padding-bottom: 35px;
+      span {
+        font-size: 28px;
+        padding-right: 10px;
+      }
+      a {
+        font-size: 42px;
+        &:hover {
+          color: inherit;
+        }
+      }
+    }
+    .gutter-space {
+      margin: 0 22px;
+      background: #d8d8d8;
+      height: 30px;
+      width: 1px;
+    }
+    .call-us-header:before {
+      content: '';
+      position: absolute;
+      right: 15%;
+      bottom: 18px;
+      left: 15%;
+      border-bottom: dashed 1px #d8d8d8;
+    }
+    .group-column {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    .deals-price {
+      padding-left: 5px;
+    }
+    .content-section {
+      padding-top: 3px;
+    }
+  }
+}
+
+@include breakpoint (small-desktop) {
+  .call-us {
+    padding:35px 0 50px 0;
+  }
+}
+
+@include breakpoint (portrait-tablet) {
+  .call-us {
+    .line-box {
+      width: 33px;
+      height: 33px;
+    }
+    .line-icon-download {
+      background-position:-184px -3px;
+    }
+    .line-icon-pay {
+      background-position:-147px -3px;
+    }
+    .line-icon-atol {
+      background-position:-222px -2px;
+    }
+    .group-column {
+      font-size: 14px;
+    }
+    .gutter-space {
+      margin: 0 13px;
+    }
+  }
+}
+
+ @include breakpoint (mobile) {
+   .call-us {
+     &.footer-call-us {
+      display:none;
+     }
+   }
+ }

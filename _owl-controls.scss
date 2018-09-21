@@ -1,0 +1,100 @@
+.owl-new-buttons {
+  .owl-theme .owl-controls {
+    .owl-prev, .owl-next {
+      position:absolute;
+      top:124px;
+      width:40px;
+      height:40px;
+      background-color:#fff;
+      @include border-radius(5px);
+      opacity:1;
+      &:before, &:after {
+        content:'';
+        position:absolute;
+        top:20px;
+      }
+      &.disabled {
+        opacity:0.1;
+        pointer-events:none;
+      }
+    }
+    .owl-prev {
+      left:-16px;
+      &:before {
+        width:16px;
+        height:2px;
+        background-color:$bgnd-lynch;
+        left:12px;
+      }
+      &:after {
+        width:10px;
+        height:10px;
+        top:16px;
+        left:12px;
+        border-bottom:solid 2px $b-lynch;
+        border-left:solid 2px $b-lynch;
+        @include rotate(45deg);
+      }
+    }
+    .owl-next {
+      right:-16px;
+      &:before {
+        width:16px;
+        height:2px;
+        background-color:$bgnd-lynch;
+        left:11px;
+      }
+      &:after {
+        width:10px;
+        height:10px;
+        border-bottom:solid 2px $b-lynch;
+        border-left:solid 2px $b-lynch;
+        @include rotate(-140deg);
+        top:16px;
+        left:17px;
+      }
+    }
+    .owl-pagination {
+      position:absolute;
+      bottom:97px;
+      left:0;
+      right:0;
+      z-index:2;
+      .owl-page {
+        span {
+          height:4px;
+          width:12px;
+          opacity:1;
+          background-color:rgba($bgnd-black, 0.2);
+          @include animation-transition(all 0.5s ease-in-out);
+          margin:5px 5px;
+          transform-origin:left;
+        }
+        &.active {
+          span {
+            width:24px;
+            background-color:$bgnd-sunset;
+          }
+        }
+      }
+    }
+    @include breakpoint(small-desktop) {
+      .owl-prev, .owl-next {
+        top:96px;
+      }
+    }
+    @include breakpoint(portrait-tablet) {
+      .owl-prev, .owl-next {
+        top:135px;
+      }
+    }
+    @include breakpoint(mobile) {
+      .owl-prev, .owl-next {
+        display:none;
+      }
+      .owl-pagination {
+        bottom:119px;
+      }
+    }
+  }
+}

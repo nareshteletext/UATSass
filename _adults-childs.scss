@@ -1,0 +1,85 @@
+.adults-childs {
+  @include fade-slide-up();
+  &.guests-dropdown {
+    overflow-x:auto;
+    height:100%;
+  }
+  .number-of-nights ul li {
+    width:32px;
+    height:32px;
+    margin:0 8px 8px 0;
+    padding-top:8px;
+    &:hover {
+      background-color:$bgnd-emerald;
+      color:$txt-white;
+    }
+  }
+  .adults-text, .child {
+    padding-bottom:15px;
+    font-size:15px;
+  }
+  .age-type-ins {
+    opacity:0.5;
+    padding-left:15px;
+  }
+  .list-header {
+    padding-bottom:30px;
+    font-size:18px;
+  }
+  .quick-selection {
+    > .float-left {
+      padding-bottom:30px;
+    }
+  }
+  .add-room {
+    display: block;
+    padding: 11px 20px;
+    font-size: 16px;
+    margin:0 0 50px 0;
+  }
+  .age-row {
+    width: 80px;
+    border-bottom: solid $b-light1 1px;
+    margin:0 30px 15px 0;
+    padding-bottom:8px;
+    i {
+      right:0;
+      top:0;
+    }
+  }
+  .age-selection {
+    padding-bottom:30px;
+    > span {
+      display:block;
+      font-size:15px;
+      padding-bottom:25px;
+    }
+    display:none;
+  }
+  .remove-btn {
+    font-size:12px;
+    padding:3px 28px 3px 5px;
+    margin-left:20px;
+    vertical-align:top;
+    .close--icon {
+      width:12px;
+      height:12px;
+      top:4px;
+      right:6px;
+      &:before, &:after {
+        height:1px;
+        top:5px;
+        background-color:$bgnd-white;
+      }
+    }
+  }
+  @include breakpoint (iPhonePlus) {
+      .list-header {
+        display:block;
+        padding-bottom:10px;
+      }
+      .remove-btn {
+        margin:0 0 20px 0;
+      }
+  }
+}

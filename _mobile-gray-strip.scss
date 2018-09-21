@@ -1,0 +1,32 @@
+.mobile-gray-strip {
+  width:100%;
+  background:$bgnd-lynch;
+  padding:20px 0;
+  .ratings-images {
+    padding:8px 0 11px 0;
+    img {
+      margin-right:2px;
+    }
+    span {
+      padding-left:8px;
+    }
+  }
+  .rated-info {
+    line-height:20px;
+  }
+  .gray-right {
+    align-self:center;
+    > div {
+      padding-top:10px;
+    }
+    div:first-child {
+      padding-top:0;
+    }
+    img {
+      margin-right:8px;
+    }
+  }
+  .gray--middle {
+    width:2px;
+  }
+}

@@ -1,0 +1,96 @@
+.banner-slide .content-middle{padding-top:185px;}
+.banner-slide .title-large{font-size:60px;line-height:1;}
+.banner-slide.fluid-wrapper{padding:0;}
+.banner-slide .title-small{font-size:32px;}
+.banner-slide .title-wrapper{padding-bottom:55px;}
+.banner-slide {background: url(https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/1970_version1.jpg) no-repeat;background-position: right bottom;}
+
+.british-travel-award{right:30px;top:140px;background:url(https://resources.teletextholidays.co.uk/drupal/images/optimizely/january-campaign/hp/jan-sale-l.png) no-repeat right top;width:137px;height:137px;display:inline-block;}
+
+.footer-description .british-travel-award{right:30px;top:140px;background:url(https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/v1/british-travel-award.png) no-repeat right top;width: 120px;height: 111px;display: inline-block;}
+
+@media(max-width:1400px) {
+  .banner-slide {background: url(https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/1970_version1.jpg) no-repeat;background-position: right bottom;}
+}
+
+@media(max-width:1200px) {
+  .banner-slide {background: url(https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/1200_version1.jpg) no-repeat;background-position: right bottom;}
+
+}
+
+@media(max-width:1140px){
+  .banner-slide{height:auto;padding:20px 0 0 0;}
+  .banner-slide .title-small{font-size:27px;letter-spacing:-0.4px;}
+  .banner-slide .title-large{font-size:50px;line-height:1;letter-spacing:-1px;}
+  .banner-slide .content-middle{height:430px;}
+}
+
+@media(max-width:1024px){
+.fluid-wrapper .british-travel-award{right:10px;top:115px;background:url(https://resources.teletextholidays.co.uk/drupal/images/optimizely/january-campaign/hp/jan-sale-t.png);width:116px;height:118px;}
+.banner-slide {background:url(https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/992_version1.jpg) no-repeat;background-size:cover;background-position:right bottom}
+}
+
+@media(max-width:992px) {
+  /*.banner-slide {background: url(https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/992_version1.jpg) no-repeat;background-position: right bottom;}*/
+  .banner-slide .title-large{letter-spacing:-3px;}
+  .banner-slide .title-wrapper{padding-bottom:20px;}
+  .banner-slide .content-middle{padding:160px 15px 0 15px}
+
+}
+
+@media(max-width:768px) {
+  .banner-slide {background: url(https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/v1/768_version1.jpg) no-repeat;}
+  .banner-slide .title-large {letter-spacing: -1px;max-width: 450px;line-height:50px;}
+
+
+}
+
+@media(max-width:767px) {
+  .banner-slide {background-size:cover;background:url(https://resources.teletextholidays.co.uk/drupal/images/mobile-banner.jpg) no-repeat;background-position:center center}
+  .banner-slide{height:auto;margin-bottom:30px;}
+  .banner-slide .content-middle{padding:66px 20px 0 20px;height:auto;}
+  .banner-slide .title-small{font-size:15px;letter-spacing:normal}
+  .banner-slide .title-large{font-size:36px;line-height:1;padding-top:6px;letter-spacing:-1px;}
+  .banner-slide .title-wrapper{padding-bottom:12px;max-width:270px;}
+  .fluid-wrapper .british-travel-award{right:0px;top:60px;background:url(https://resources.teletextholidays.co.uk/drupal/images/optimizely/january-campaign/hp/jan-sale-m.png);width:93px;height:95px;}
+  .banner-slide .title-large{font-size:32px;letter-spacing:-2px;max-width:220px;line-height:30px;}
+}
+
+@media(max-width:320px){
+  .banner-slide .title-small{font-size:15px;letter-spacing:0.2px;}
+}
+
+@media(min-width:1970px) {
+	.banner-slide {background-position: right center;background-size:cover;}
+}
+
+
+/* ON Scroll */
+.on-scroll-popup .mrgn-right{margin-right:10px;}
+.on-scroll-popup .dropdown-toggle{background-color:#f3f3f3;border-radius:2px;}
+.on-scroll-popup .dropdown-toggle:hover{border:none;}
+.on-scroll-popup ul.dropdown-menu{top:0;}
+.on-scroll-popup .dropdown-menu{width:250px;top:-200px;min-height:200px!important;max-height:200px!important;box-shadow:1px 3px 20px 0 rgba(0,0,0,0.3)}
+.on-scroll-popup .dropdown-menu ul li{cursor:pointer}
+.on-scroll-popup .dropdown-menu ul li a:hover{transition:all .2s ease-in-out;}
+.btn-default:hover{background-color:#f3f3f3!important;}
+.on-scroll-popup .dropdown-toggle .filter-option:first-child {opacity:0.8!important;}
+
+
+@media(min-width:1440px) {
+  .on-scroll-popup input, .on-scroll-popup .dropdown-toggle{width:250px;padding:17px;}
+  .on-scroll-popup > button{padding:17px 33px 16px 34px}
+}
+
+@media(max-width: 1024px) {
+	.on-scroll-popup .dropdown-toggle{width:180px;padding:11px 16px;}
+	.on-scroll-popup > button{padding:11px 28px 10px 28px}
+}
+
+
+  /* Fire Fox Only */
+  @-moz-document url-prefix() {
+    .banner-slide .content-middle {
+      padding-top:180px;
+    }
+  }

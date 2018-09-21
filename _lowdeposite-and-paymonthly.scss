@@ -1,0 +1,28 @@
+.lowdeposite-and-paymonthly {
+  justify-content:space-between;
+  margin-top:15px;
+  padding-bottom:7px;
+  letter-spacing:0.4px;
+  max-width:300px;
+  margin:15px auto auto auto;
+  display:none;
+  span {
+    display:block;
+  }
+  .icon-holder {
+    padding-right:8px;
+  }
+  .txt-2 {
+    opacity:0.6;
+    font-size:13px;
+  }
+  .dotted-line {
+    border-right:dashed 1px rgba($b-lynch, 0.2);
+  }
+  .icon-label {
+    line-height:15px;
+  }
+  @include breakpoint(mobile) {
+    display:flex;
+  }
+}

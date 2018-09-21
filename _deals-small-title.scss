@@ -1,0 +1,22 @@
+.deals-small-title {
+  margin-bottom:-38px;
+  padding-top:30px;
+  h2 {
+    font-size:20px;
+    padding:0 15px;
+    top:12px;
+  }
+  hr {
+    border-bottom:dashed 2px rgba($b-lynch, 0.2);
+  }
+  @include breakpoint (small-desktop) {
+    margin-bottom:-61px;
+  }
+  @include breakpoint(portrait-tablet) {
+    padding-top:10px;
+  }
+  @include breakpoint(mobile) {
+    padding:10px 0 26px 0;
+    margin-bottom:0;
+  }
+}

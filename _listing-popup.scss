@@ -1,0 +1,39 @@
+.listing-popup {
+  z-index:113;
+  &:before {
+    content:'';
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+  }
+  &.open {
+    display:block;
+  }
+  .popup-ineer {
+    max-width:630px;
+    width:90%;
+    margin:0 auto;
+    z-index:113;
+    vertical-align:middle;
+    @include box-shadow(-3px 5px 40px 0 $box-shadow-long);
+  }
+  .popup-title {
+    font-size: 16px;
+    padding:18px 0 15px 25px;
+    @include box-shadow(3px 1px 10px 0 $box-shadow-long);
+  }
+  .popup-content {
+    text-align:left;
+    padding:10px 0 0 0;
+    max-height:350px;
+    overflow-y:auto;
+    margin-bottom:31px;
+  }
+  .list-row {
+    padding:8px 25px;
+    overflow:hidden;
+    &:hover {
+      background-color:$bgnd-light;
+    }
+  }
+}

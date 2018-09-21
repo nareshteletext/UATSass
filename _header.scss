@@ -1,0 +1,174 @@
+.fixed-nav-dropdown-menu{position:relative;}
+.guides-active-nav-item{position:relative;}
+.fixed-nav-lists a{transition:all .1s ease-in-out;-moz-transition:all .1s ease-in-out;-webkit-transition:all .1s ease-in-out;-moz-transition:all .1s ease-in-out;-ms-transition:all .1s ease-in-out;}
+.fixed-nav-lists ul{margin:0;padding:0;}
+.tth-logo-desktop{width:184px;height:23px;display:inline-block;background-position:-3px -4px;}
+.tth-logo-desktop img {object-fit:inherit;}
+.fixed-nav-container{right:0;left:0;top:0;background:rgba(110,61,124,0.7);z-index:111;padding-top:10px;line-height:normal;}
+.fixed-nav-container-release{background:rgba(110,61,124,1);}
+.mega-menu-overlay{position:fixed}
+.show--home{position:fixed}
+.popup-overlay{position:fixed}
+.black-overlay{position:fixed;}
+.fixed-nav-container{text-align:center;}
+.desktop-menu-icon{width:30px;height:30px;top:27px;right:48px;position:absolute;}
+.menu-bars-without-login{width:23px;top:15px;right:20px;z-index:1001}
+.desktop-menu-icon:hover{opacity:0.5;}
+.left-nav-trigger:hover{opacity:0.5;}
+.hover-guides{cursor:pointer;}
+.set-location-btn{cursor:pointer;}
+.desktop-menu-icon{cursor:pointer;}
+.fixed-nav-lists ul li{display:inline-block;}
+.mobile-nav-menu-bars{display:inline-block;}
+.mobile-nav-close-menu-bars{display:inline-block;}
+.megamenu-ratings-set{display:inline-block;}
+.ofrdisplayName{display:inline-block;}
+.megamenu-ratings{display:inline-block;}
+.megamenu-board-options{display:inline-block;}
+.teletext-lgo-retina{display:inline-block;}
+.mega-menu-wrapper .holidays-see-all-destinations{display:inline-block;}
+.menu-bars-fix{display:inline-block;}
+.menu-bars-fix{width:18px;margin-top:8px; }
+.desktop-menu-icon span{width:100%;height:2px;background:#fff;margin-top:3px;z-index:1;}
+.mobile-nav-menu-bars span{width:100%;height:2px;background:#fff;margin-top:3px;z-index:1;}
+.mobile-nav-close-menu-bars span{width:100%;height:2px;background:#fff;margin-top:3px;z-index:1;}
+.left-nav-trigger span{width:100%;height:2px;background:#fff;margin-top:3px;z-index:1;}
+.menu-bars-without-login span{width:100%;height:2px;background:#fff;margin-top:3px;z-index:1;}
+.fixed-nav-left{left:48px;top:33px;}
+.fixed-nav-lists{margin-right:84px;}
+.fixed-nav-lists .main-navigation ul li{margin:0 10px;padding:10px 0 12px 0;}
+.fixed-nav-lists .main-navigation ul li a{padding:5px 0 0 0;}
+.fixed-nav-lists ul li a{color:#fff;}
+.fixed-nav-lists ul li span{color:#fff;}
+.fixed-nav-lists ul li a:hover{opacity:0.7}
+.fixed-nav-lists .main-navigation ul .fixed-nav-blog{margin-right:13px;}
+.small-navigation{right:3px}
+.small-navigation .top-nav-customer-support{position:relative;z-index:5;}
+.small-navigation .top-nav-customer-support .fa-caret-down{padding-left:8px}
+.small-navigation .top-nav-customer-support:hover{color:#58595b ;font-weight:bold;}
+.mega-submenu:hover .top-nav-customer-support{color:#58595b ;font-weight:bold;}
+.small-navigation .link-active{color:#58595b;font-weight:bold;}
+.small-navigation .top-nav-customer-support:hover i{transform:rotate(180deg);left:6px;position:relative;}
+.small-navigation .link-active i{transform:rotate(180deg);left:6px;position:relative;}
+.fixed-nav-lists .main-navigation ul li span{font-size:15px;}
+.fixed-nav-lists .main-navigation ul li a{font-size:15px;}
+.fixed-nav-lists .separator{color:rgba(255,255,255,0.5);padding:0 10px;}
+.left-nav-trigger{top:15px;right:64px}
+.holidays-active-nav-item{border-bottom:solid #fbdb3e 3px;padding-bottom:0}
+.top-nav-active{border-bottom:solid #fbdb3e 3px;padding-bottom:0}
+.small-navigation .top-nav-active{border:none;}
+.small-navigation .non-clickable{display:block;color:#58595b;z-index:2;padding-bottom:7px;cursor:default;}
+.small-navigation .top-nav-active:before{content:'';position:absolute;bottom:0;left:0;right:14px;height:1px;background:#fff;}
+.guides-active-nav-item{margin-right:20px;}
+.holidays-active-nav-item{margin-right:20px;}
+.fixed-nav-dropdown-menu{margin-right:20px;}
+.fixed-nav-dropdonw-holder{margin-right:20px;}
+.fixed-nav-container .holidays-nav-down-arrow{border-radius:3px;width:11px;height:11px;top:0;right:-20px;border-left:solid #9ac854 3px;border-bottom:solid #9ac854 3px;transform:rotate(-45deg);-moz-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);z-index:2}
+.guides-nav-down-arrow{border-radius:3px;width:11px;height:11px;top:0;right:-20px;border-left:solid #9ac854 3px;border-bottom:solid #9ac854 3px;transform:rotate(-45deg);-moz-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);z-index:2;display:block;position:absolute;}
+.guides-active-link-bgnd{cursor:pointer;width:147px;left:-11px;background:#fff;height:36px;top:4px;opacity:1;z-index:0;display:none;}
+.holidays-active-link-bgnd{width:120px;left:-16px;}
+.holidays-active-link-bgnd{background:#fff;height:36px;top:4px;opacity:1;z-index:0;}
+.fixed-nav-label-bgnd{background:#fff;height:36px;top:4px;opacity:1;z-index:0;top:-18px;right:0;bottom:0;left:-15px;width:198px;}
+.mobile-nav-menu-bars{display:none;}
+.mega-menu-overlay{display:none;}
+.mobile-nav-close-menu-bars{display:none;}
+.desktop-nav-close-trigger2-box{display:none;}
+.tth-logo-mobile{display:none;}
+.page-header-inner{display:none;}
+.fixed-nav-lists .non-clickable a{color:#58595b;}
+
+.mega-menu-guides-container{display:none;}
+.holidays-active-link-bgnd{display:none;}
+.menu-bars-without-login{display:none;}
+.region-footer h2{display:none;}
+.page-builder-element-title{display:none;}
+.popup-overlay{display:none;}
+.show-mbl{display:none;}
+.black-overlay{display:none;}
+.fixed-nav-label-bgnd{display:none;}
+.fixed-nav-dropdown-menu:hover .fixed-nav-container{display:block;}
+.scroll-top-arrow{display:block;}
+.megamenu-hover-block{display:block;}
+.theme-slide-in{display:block;}
+.visual-menu-column ul li a{display:block;}
+.account-label{display:block;}
+.icon--phone{display:block;}
+.megamenu-hover-block{opacity:0;}
+.fixed-nav-up-arrow{transform:rotate(-225deg) ;-webkit-transform:rotate(-225deg) ;-moz-transform:rotate(-225deg) ;-ms-transform:rotate(-225deg) ;top:5px;}
+.fixed-nav-up-arrow:hover{transform:rotate(-225deg) ;-webkit-transform:rotate(-225deg) ;-moz-transform:rotate(-225deg) ;-ms-transform:rotate(-225deg) ;top:5px;}
+.holidays-active-nav-item-color{color:#875f92;border:none;}
+.guides-active-nav-item-color{color:#875f92;border:none;}
+.holidays-active-nav-item-color:hover{color:#875f92;}
+.guides-active-nav-item-color:hover{color:#875f92;}
+.tth-users-container{width:20px;height:20px;top:8px;right:53px;border-radius:100px;}
+.tth-users-container:hover{opacity:0.7;}
+.tth-logo-link .tth-logo-mobile{width:180px;}
+.megamenu-hover-block{top:-11px;left:-6px;background:red;height:38px;width:106px;z-index:10;}
+.fixed-nav-dropdonw-holder{position:relative;}
+.small-navigation .mega-submenu{width:150px;top:-20px;right:102px;z-index:4;position:absolute;display:none;}
+.small-navigation .mega-submenu ul{padding:32px 0 8px 15px;margin-top:10px;}
+.small-navigation .mega-submenu ul li{display:block;margin:0 0 13px 0;}
+.small-navigation .mega-submenu ul li a{color:#8d8d8f;}
+.small-navigation .mega-submenu ul .link-make-payment-active a{color:#b8b8b8;opacity:1;cursor:default;}
+.small-navigation .mega-submenu ul .link-mybooking-active a{color:#b8b8b8;opacity:1;cursor:default;}
+.small-navigation .mega-submenu ul .link-faq-support-active a{color:#b8b8b8;opacity:1;cursor:default;}
+.small-navigation .fixed-nav-customer-support:hover .mega-submenu{display:block;}
+.txt-purple{z-index:2;}
+.fixed-nav-lists .fixed-nav-label-active{z-index:2;}
+.tth-users-container img{width:100%;height:100%;}
+.desktop-menu-icon span{display:block;}
+.fixed-nav-container .holidays-nav-down-arrow{display:block;}
+.mobile-nav-menu-bars span{display:block;}
+.mobile-nav-close-menu-bars span{display:block;}
+.menu-bars-without-login span{display:block;}
+.fixed-nav-container .fixed-nav-left{position:absolute;}
+.fixed-nav-container .holidays-nav-down-arrow{position:absolute;}
+.tth-users-container{position:absolute;overflow:hidden;}
+.fixed-nav-container .icon-bar1-normal{top:0;}
+.fixed-nav-container .icon-bar2-normal{top:5px;}
+.fixed-nav-container .icon-bar3-normal{top:10px;}
+.fixed-nav-container .icon-bar1-rotate{transform:rotate(45deg);-moz-transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform-origin:20% 0%;-webkit-transform-origin:20% 0%;-moz-transform-origin:20% 0%;-ms-transform-origin:20% 0%;}
+.fixed-nav-container .icon-bar2-rotate{opacity:0;top:5px;}
+.fixed-nav-container .icon-bar3-rotate{transform:rotate(-45deg);-moz-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-moz-transform-origin:20% 100%;-webkit-transform-origin:20% 100%;-ms-transform-origin:20% 100%;transform-origin:20% 100%;top:9px;}
+
+@media (max-width:1370px){
+.theme-blogs-nav .fixed-nav-lists{float:none;right:0;}
+}
+@media (max-width:1250px){
+.fixed-nav-up-arrow{top:8px;}
+}
+@media (max-width:1024px){
+.tth-logo-mobile{display:inline-block;}
+.fixed-nav-left{left:25px;}
+.tth-users-container{right:25px;}
+.desktop-menu-icon{right:20px;}
+.fixed-nav-lists{margin-right:53px;}
+.theme-user-notification{right:17px;}
+.small-navigation .mega-submenu{width:170px;}
+}
+@media (max-width:991px){
+.desktop-menu-icon{right:22px;}
+.tth-users-container{right:28px;}
+.fixed-nav-lists ul li.fixed-nav-last-minute{display:none;}
+.fixed-nav-lists ul li.fixed-nav-blog{display:none;}
+.hide-summer-holidays{display:none;}
+.fixed-nav-lists ul li.fixed-nav-hotelonly{display:none;}
+.fixed-nav-lists ul li a{color:#fff}
+.fixed-nav-lists{margin-right:60px;}
+.theme-blogs-nav .fixed-nav-lists{right:0;}
+.fixed-nav-lists ul li a{font-size:14px;}
+.fixed-nav-lists ul li span{font-size:14px;}
+.fixed-nav-container .fixed-nav-left{left:22px;}
+.left-nav-trigger{right:49px;}
+}
+@media (max-width:767px){
+.tth-users-container{width:57px;height:50px;top:0px;right:0px;}
+.tth-users-container img{top:11px;width:27px;height:27px;border-radius:100px;}
+.fixed-nav-lists{display:none;}
+.fixed-nav-container .fixed-nav-left{right:0;left:0;top:15px;}
+.fixed-nav-container{height:50px;}
+.mobile-nav-menu-bars{left:10px;top:15px;}
+.mobile-nav-close-menu-bars{left:10px;top:15px;}
+.menu-bars-fix{width:23px;}
+@keyframes smallPoupop{from{top:60px;}to{top:51px;} 0%{opacity:0;}100%{opacity:1} }
+}

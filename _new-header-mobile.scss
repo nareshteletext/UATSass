@@ -1,0 +1,47 @@
+.mobile-widget-header  {
+  &.pstn-fxd {
+    height:50px;
+    z-index:111;
+    padding-top:15px;
+    background-color:$bgnd-header;
+    width:100%;
+    top:0;
+    right:0;
+    left:0;
+    .tth-logo {
+      width:184px;
+      height:23px;
+      background-position:-3px -4px;
+    }
+    .sidemenu--trigger {
+      width:57px;
+      height:50px;
+      top:0;
+      left:0;
+    }
+    .menu-bars-fix {
+      width:23px;
+      top:16px;
+      left:16px;
+      span {
+        height:2px;
+        margin-top:3px;
+      }
+    }
+    &.bgnd-release {
+      background-color:$bgnd-butterfly;
+    }
+    .tth-users-container {
+      width:57px;
+      right:0;
+      top:0;
+      height:50px;
+      img {
+        top:11px;
+        width:27px;
+        height:27px;
+        @include border-radius(100px);
+      }
+    }
+  }
+}

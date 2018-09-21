@@ -1,0 +1,82 @@
+.main-banner {
+  height:432px;
+  background:$bgnd-img;
+  padding-top:140px;
+  .banner-slogan {
+    color:$txt-white;
+    padding-bottom:72px;
+    text-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+    h1 {
+      font-size:60px;
+    }
+    span {
+      font-size:32px;
+    }
+  }
+  @include breakpoint(portrait-tablet) {
+    height:432px;
+    .banner-slogan {
+      h1 {
+        font-size:48px;
+      }
+      span {
+        font-size:28px;
+      }
+    }
+  }
+  @include breakpoint(mobile) {
+    padding:124px 0 10px 0;
+    height:464px;
+    .banner-slogan {
+      padding-bottom:22px;
+      h1 {
+        font-size:29px;
+      }
+      span {
+        font-size:20px;
+        font-family:$font-light;
+      }
+    }
+  }
+}
+
+
+
+
+
+@media (min-width:1400px){
+.main-banner{
+  background:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/1920x432-header.jpg');
+  //background:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/1920x422-header.jpg');
+ }
+}
+@media (max-width:1440px) and (min-width:1200px){
+.main-banner{
+  background:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/1440x432-header.jpg');
+ }
+}
+@media (max-width:1280px) and (min-width:992px){
+.main-banner{
+  background:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/1280x432-header.jpg');
+ }
+}
+@media (max-width:1024px) and (min-width:768px){
+.main-banner{
+  background:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/1024x432-header.jpg');
+  }
+}
+ @media (max-width:768px){
+ .main-banner{
+   background:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/768-432-header.jpg');
+ }
+}
+ @media (max-width:767px){
+ .main-banner{
+   //background:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/640-855-header.jpg');
+   background:url('https://resources.teletextholidays.co.uk/drupal/images/ai-ab-testing/mobile-banner.jpg');
+   background-size:cover;
+ }
+ .mobile-widget-header.pstn-fxd {
+   background-color: rgba(110, 61, 124, 1);
+ }
+}

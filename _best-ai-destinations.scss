@@ -1,0 +1,78 @@
+.best-ai-destinations {
+  padding:65px 0 15px 0;
+  background-color:rgba($bgnd-light-2, 0.5);
+  .col-left {
+    flex:1;
+  }
+  .col-right {
+    flex:1;
+  }
+  .read-more {
+    padding:35px 0 55px 0;
+    span {
+      top:-3px;
+    }
+  }
+  .readMore-open {
+    span {
+      @include rotate(-45deg);
+      top:3px;
+    }
+  }
+  .dstn-image {
+    margin-bottom:50px;
+    height:280px;
+    @include border-radius(2px);
+    overflow:hidden;
+  }
+  .dstn-des {
+    padding-right:25px;
+    h3, .content-title {
+      font-size:28px;
+      line-height:35px;
+      padding-bottom:35px;
+      font-weight:normal;
+      max-width:330px;
+    }
+    p {
+      font-size:16px;
+      line-height:24px;
+    }
+    h2, .content-title-small {
+      position:relative;
+      font-weight:normal;
+      font-size:20px;
+      padding-top:30px;
+      top:15px;
+    }
+  }
+  @include breakpoint(landscape-tablet) {
+    .dstn-image {
+      height:226px;
+      margin-bottom:40px;
+    }
+    h3, .content-title {
+      padding-bottom:25px;
+    }
+  }
+  @include breakpoint(portrait-tablet) {
+    padding:55px 0 10px 0;
+    .read-more {
+      padding:20px 0 40px 0;
+    }
+    .dstn-image {
+      height:174px;
+      margin-bottom:50px;
+    }
+    .dstn-des {
+      padding-right:0;
+    }
+  }
+  @include breakpoint(mobile) {
+    padding:30px 0 25px 0;
+    .dstn-image {
+      height:250px;
+      margin-bottom:20px;
+    }
+  }
+}

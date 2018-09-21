@@ -1,0 +1,454 @@
+@import '../../variables';
+@import '../../spinner-bars';
+.interstitial {
+  .font-bold {
+    font-family:$font-bold;
+  }
+  .interstitial-inner {
+    width:100%;
+  }
+  z-index:150;
+  background: #483979; /* Old browsers */
+  background: -moz-linear-gradient(top, #483979 1%, #6e3d7c 38%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #483979 1%,#6e3d7c 38%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #483979 1%,#6e3d7c 38%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#483979', endColorstr='#6e3d7c',GradientType=0 ); /* IE6-9 */
+  display:flex;
+  align-items:center;
+  span {
+    display:inline-block;
+    vertical-align:baseline;
+  }
+  h3 {
+    font-size:$h3;
+    padding-bottom:18px;
+  }
+  .loader {
+    padding:17px 0 5px 0;
+  }
+  .title-wrapper {
+    .txt-small {
+      opacity:0.6;
+    }
+    .large-logo {
+      width:300px;
+      margin-bottom:36px;
+    }
+    img {
+      width:100%;
+      object-fit:cover;
+    }
+  }
+  .steps-wrapper {
+    height:175px;
+    margin:20px auto 33px auto;
+  }
+  .flex-grid {
+    display:flex;
+    justify-content:center;
+  }
+  .step-box {
+    background-color:rgba(0,0,0,0.1);
+    border: solid 1px rgba(255,255,255,0.1);
+    width:200px;
+    @include border-radius(5px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    &.status-done {
+        background-color: #7a4e87;
+        border-color:transparent;
+        @include box-shadow(0 7px 46px 0 rgba(0, 0, 0, 0.2));
+        @include transform(1.05);
+        .step-label {
+          opacity:1;
+        }
+        .step-number {
+          display:none;
+        }
+        .step-mode {
+          background-color:$bgnd-emerald;
+          @include box-shadow(0 20px 28px 0 $box-shadow-color-light);
+        }
+        .step-done {
+          width:33px;
+          height:16px;
+          border-bottom:solid white 4px;
+          border-left:solid white 4px;
+          @include rotate(-45deg);
+          top:-4px;
+        }
+        &.status-done-prev {
+          background-color: #7a4e87;
+          border: transparent;
+          transform:inherit;
+          @include box-shadow(none);
+        }
+      }
+      &:nth-child(2) {
+        border-left:none;
+        border-right:none;
+      }
+  }
+  .step-number {
+    font-size:40px;
+    color:rgba(0,0,0,0.2);
+  }
+  .step-mode {
+    @include border-radius(100px);
+    background-color:rgba(136,96,147,0.5);
+    width:66px;
+    height:66px;
+    display:flex;
+    align-items:center;
+    margin:auto auto 18px auto;
+    justify-content:center;
+  }
+  .step-label {
+    font-size:18px;
+    opacity:0.5;
+  }
+  .price-section {
+    .title-medium {
+      font-size:30px;
+    }
+    .title-medium-light {
+      font-size:24px;
+      padding:0 8px;
+    }
+    .tth-price {
+      font-size:36px;
+    }
+    .tth-pp, .tth-asterisk {
+      font-size:15px;
+    }
+    .tth-pp {
+      top:5px;
+    }
+    .tth-asterisk {
+      top:20px;
+      right:3px;
+    }
+    span {
+      vertical-align:-webkit-baseline-middle;
+    }
+  }
+  .booking-options {
+    margin-top:60px;
+  }
+  .grid-box {
+    padding: 0 35px;
+    border-left:dashed 1px rgba(255,255,255,0.3);
+    &:first-child {
+      border-left:none;
+      border-right:none;
+    }
+    &.box4 {
+      .booking-option-icon {
+        width:64px;
+      }
+    }
+  }
+  .booking-option-label {
+    padding-top:15px;
+    line-height:19px;
+    opacity:0.7;
+    letter-spacing:1px;
+  }
+  .txt-medium-bold {
+    font-size:16px;
+  }
+  .booking-option-icon {
+    width:50px;
+    height:50px;
+    margin:0 auto;
+    align-items:end;
+  }
+  .display-grid {
+    display:grid;
+    justify-content:center;
+  }
+  .feefo {
+    align-self:end;
+  }
+  .feefo-logo, .trust-pilot-logo {
+    padding-top:5px;
+  }
+  .trust-pilot-ratings {
+     display:flex;
+     align-items:center;
+     img {
+       margin-right:2px;
+     }
+  }
+  .feefo-ratings, .trust-pilot-ratings {
+    span {
+      padding-left:4px;
+      letter-spacing:1px;
+    }
+    i {
+      font-size:16px;
+      letter-spacing:1px;
+    }
+  }
+  .price-section-icon {
+    top:10px;
+    padding-right:14px;
+  }
+  @include breakpoint(landscape-tablet) {
+    .title-wrapper {
+      .large-logo {
+        margin-bottom:14px;
+      }
+    }
+    .steps-wrapper {
+      margin-bottom:25px;
+    }
+    .txt-medium-bold {
+      font-size:14px;
+    }
+    .booking-option-label {
+      letter-spacing:normal;
+      line-height:normal;
+    }
+    .booking-options {
+      margin-top:40px;
+    }
+    .step-box {
+      width:182px;
+    }
+    .steps-wrapper {
+      height:160px;
+    }
+    .step-mode {
+      width:58px;
+      height:58px;
+    }
+    .step-box {
+      &.status-done {
+        .step-done {
+          width:30px;
+          height:14px;
+        }
+      }
+    }
+  }
+  @include breakpoint(portrait-tablet) {
+    .grid-box {
+      padding:0 38px;
+    }
+    .feefo {
+      padding:5px 0 5px 0;
+    }
+    .booking-options {
+      margin-top:58px;
+      &.flex-grid {
+        flex-wrap:wrap;
+      }
+    }
+    .box5 {
+      border:none;
+      display:flex;
+      padding:60px 0 0 0;
+      left:16px;
+    }
+    .box1 {
+      padding-left:0;
+    }
+    .box4 {
+      padding-right:0;
+    }
+    .trust-pilot {
+      border-right:dashed 1px rgba(255,255,255,0.3);
+      padding:5px 30px 5px 0;
+      margin-right:30px;
+    }
+    .title-wrapper  {
+        .large-logo {
+          margin-bottom:6px;
+        }
+    }
+    .price-section {
+      .tth-price {
+        font-size:32px;
+      }
+      .title-medium {
+        font-size:28px;
+      }
+      .title-medium-light {
+        font-size:22px;
+      }
+    }
+  }
+  @include breakpoint(mobile) {
+    .step-mode {
+      width:30px;
+      height:30px;
+      margin-bottom:8px;
+    }
+    .booking-option-icon {
+      height:inherit;
+    }
+    .price-section-icon {
+      top:6px;
+      padding-right:8px;
+      img {
+        width:25px;
+      }
+    }
+    .step-box {
+      width:97px;
+      &.status-done {
+        .step-done {
+          width:15px;
+          height:8px;
+          border-width:2px;
+          top:-2px;
+        }
+      }
+    }
+    .steps-wrapper {
+      height:86px;
+      margin:0 auto 33px auto;
+    }
+    .step-label {
+      font-size:13px;
+    }
+    .step-number {
+      font-size:20px;
+    }
+    h3 {
+      letter-spacing:-0.5px;
+      font-size:14px;
+      padding-bottom:5px;
+    }
+    .price-section {
+        margin-left:-15px;
+        margin-right:-15px;
+       .title-medium {
+         font-size:14px;
+       }
+       .tth-pp {
+         font-size:13px;
+       }
+       .title-medium-light {
+         font-size:16px;
+         padding:0 3px;
+       }
+       .tth-price {
+         font-size:24px;
+       }
+       .title-medium-light {
+         padding:0 7px 0 3px;
+       }
+       .tth-asterisk {
+         top:10px;
+       }
+    }
+    .title-wrapper {
+      .large-logo {
+        margin-bottom:0;
+        width:220px;
+      }
+    }
+    .step-inner {
+      padding:0 15px;
+    }
+    .box1, .box2 {
+      img {
+        width:28px;
+      }
+    }
+    .box3 {
+      img {
+        width:30px;
+      }
+    }
+    .txt-medium-bold {
+      font-size:11px;
+    }
+    .booking-option-label {
+      padding-top:4px;
+      line-height:13px;
+    }
+    .booking-options-wrapper {
+      padding:0 5px;
+    }
+    .booking-options {
+      margin-top:25px;
+    }
+    .grid-box {
+      padding:0 0 15px 0;
+      flex:1;
+      min-width:33.3333%;
+      border-bottom:dashed 1px rgba(255, 255, 255, 0.3);
+    }
+    .box5 {
+        flex:2;
+        align-items:center;
+        border-left:dashed 1px rgba(255, 255, 255, 0.3);
+        padding-bottom:0;
+        border-bottom:none;
+        left:0;
+    }
+    .box4 {
+      border-left:none;
+      border-bottom:none;
+      padding-top:14px;
+      img {
+        width:51px;
+      }
+    }
+    .feefo {
+      align-self:center;
+      flex:1;
+      text-align:center;
+    }
+    .trust-pilot-ratings {
+      display:flex;
+      justify-content:center;
+      img {
+          width:10px;
+      }
+    }
+    .trust-pilot-logo {
+      justify-content:center;
+      display:flex;
+      img {
+        width:90px;
+      }
+    }
+    .feefo-logo, .trust-pilot-logo {
+      padding-top:0;
+    }
+    .feefo-ratings i, .trust-pilot-ratings i {
+      font-size:9px;
+      letter-spacing:normal;
+    }
+    .feefo-logo {
+      img {
+        width:50px;
+        left:-17px;
+      }
+    }
+    .feefo-ratings, .trust-pilot-ratings {
+      span {
+        font-size:9px;
+        padding-left:2px;
+      }
+    }
+    .trust-pilot {
+      padding-right:0;
+      margin-right:0;
+      flex:1;
+      height:100%;
+      padding-top:34px;
+    }
+    .txt-medium-light {
+      font-size:11px;
+    }
+    .tth-spinner-v2 {
+      top:0;
+    }
+  }
+}

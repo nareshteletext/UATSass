@@ -1,0 +1,30 @@
+.content-header {
+  padding-bottom:25px;
+  .title {
+    font-size: 28px;
+  }
+  > div {
+    font-size: 15px;
+    padding:10px 0;
+  }
+  .if-float {
+    &:after {
+      content:'';
+      display:block;
+      clear:both;
+    }
+    &:before {
+      content:'';
+      display:block;
+      clear:both;
+    }
+  }
+  .desc {
+    letter-spacing: -0.2px;
+  }
+  @include breakpoint(mobile) {
+    .title {
+      font-size: 24px;
+    }
+  }
+}

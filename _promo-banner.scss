@@ -1,0 +1,29 @@
+.promo-banner {
+  margin-top:18px;
+  h2 {
+    font-size:20px;
+  }
+  .banner-strip {
+    background-color:$bgnd-purple;
+    padding:15px 0;
+  }
+  @include breakpoint(mobile) {
+    margin-top:0;
+    .content-middle {
+      padding:0;
+    }
+    .banner-strip {
+      padding:24px 0;
+    }
+    h3 {
+      font-weight:lighter;
+      font-size:20px;
+      line-height:22px;
+      padding:4px 0 15px 0;
+    }
+    p {
+      font-size:15px;
+      opacity:0.5;
+    }
+  }
+}

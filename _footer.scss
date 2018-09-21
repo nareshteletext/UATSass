@@ -1,0 +1,160 @@
+/* Footer Guides Links */
+.footer-guides{margin-bottom:60px;}
+.footer-guides .links-row{margin-left:8%;min-width:131px;}
+.footer-guides .links-label{font-size:15px;letter-spacing:-0.2px;}
+.footer-guides .links-column a{letter-spacing:-0.2px;margin:10px 0;}
+.footer-guides .content-middle{padding:30px 36px;max-width:1200px;}
+.footer-guides .links-column{display:none;padding-top:18px;}
+.footer-guides .arrow-hotspot{right:40px;top:24px;width:30px;height:30px;padding-top:6px;cursor:pointer;}
+.footer-guides .no-margin{margin-left:0}
+.footer-guides .hotspot{z-index:2;height:75px;}
+
+/* Footer */
+.footer{/*background:url('https://resources.teletextholidays.co.uk/drupal/images/footer.jpg') no-repeat center bottom;*/padding-bottom:/*350px*/70px;}
+.footer .get-app-header span:first-child{font-size:28px;font-weight:600;line-height:31px;letter-spacing:-0.4px;}
+.footer .get-app-header .opacity{font-size:15px;padding-top:25px;opacity:0.7}
+.footer .country-code{margin-right:12px;width:40px;}
+.footer .get-app-form{padding-top:30px;}
+.footer .get-app-form input{border:none;border-bottom:solid 1px $b-default;background-color:transparent;font-size:15px;padding-bottom:8px;border-radius:0;width:100%;}
+.footer .get-app-form .country-code ::-webkit-input-placeholder{opacity:1}
+.footer .phone-number{width:160px;}
+.footer .get-app-form button{padding:11px 30px;margin-left:5px;}
+.footer .device-types{margin-left:40px;}
+.footer .iOS, .footer .android{width:131px;height:42px;margin-right:8px;}
+.footer .iOS{background-position:-2px -86px}
+.footer .android{background-position:-137px -86px}
+.footer .get-app{padding-top:55px;}
+.footer .site-links{padding-right:50px;}
+.footer .site-links ul:first-child{padding-right:150px;}
+.footer .links-title{font-size:17px;padding-bottom:35px;opacity:1;}
+.footer ul li{padding:5px 0;@include opacity();}
+.footer ul li:hover{opacity:1;}
+.footer .copyright-section{margin-top:50px;}
+.footer .copyright-section .content-middle{border-top:solid rgba(111, 133, 159, 0.2) 1px;padding-top:30px}
+.footer .error-msg{bottom:-25px;left:0;padding:0;}
+.error-msg.success-msg{bottom:-38px;}
+
+/* Footer Description */
+.footer-description{padding:0 0 60px 0;border-bottom:solid $b-silver 1px;margin-bottom:65px;}
+.footer-description .carousel-title{padding-bottom:25px;letter-spacing:-0.4px;line-height:28px;}
+.footer-description p{font-size:15px;color:$txt-lynch;}
+
+.footer-description .british-travel-award {
+    right: 30px;
+    top: 140px;
+    width: 120px;
+    height: 111px;
+    display: inline-block;
+}
+
+
+
+/*  Footer Terms of Conditions  */
+.terms-of-conditions{border-bottom:solid rgba(111,133,159,0.2) 1px;padding-bottom:25px;margin-bottom:35px;}
+.terms-of-conditions p{font-size:11px;line-height:14px;color:$txt-lynch;}
+.footer-description > div {display: table-cell;vertical-align: middle;}
+
+
+
+@media(max-width: 1440px) {
+  /* Footer Guides Links */
+  .footer-guides .links-row{margin-left:6%;}
+  .footer-guides .no-margin{margin-left:0}
+
+
+
+}
+
+@media(max-width: 1140px) {
+  /* Footer */
+  .footer{background-position:-365px bottom}
+  .footer .get-app{width:50%;}
+  .footer .device-types{display:block;margin:48px 0 0 0;}
+  .footer .get-app{padding-top:15px;}
+  .footer .error-msg{bottom:64px;}
+  .error-msg.success-msg{bottom:52px}
+
+}
+
+@media(max-width: 991px) {
+  /* Footer Guides Links */
+  .footer-guides .links-row{margin:0 5px 20px 0;width:30%;}
+  .footer-guides .content-middle{padding:30px 36px 10px 36px}
+  .footer-guides .links-column{padding-top:5px;position:relative;z-index:3}
+  .footer-guides .hotspot{height:114px;}
+
+  /* Footer */
+  .footer .get-app {padding-top:10px;}
+  .footer .get-app, .footer .site-links{width:100%;}
+  .footer .device-types{display:inline-block;margin:0 0 0 32px;}
+  .footer .site-links{margin-top:68px;}
+  .footer .site-links ul{padding:0;width:300px;}
+  .footer .site-links ul:first-child{padding-right:0;}
+  .footer ul li{width:150px;float:left;}
+  .footer .links-title{display:block;float:none;padding-bottom:25px;}
+  .footer .error-msg{bottom:-30px;}
+
+
+
+}
+
+@media(max-width: 767px) {
+  .footer-description > div.foot-disc-right {
+    text-align:center;
+    padding:20px 0 0;
+  }
+  .footer-description > div {
+    display:block;
+  }
+
+
+  /* Footer Guides Links */
+  .footer-guides{display:none;}
+
+  /* Footer */
+  .footer{background-position:-465px bottom;padding-bottom:30px;}
+  .footer .get-app {padding-top:25px;}
+  .footer .copyright-section{margin-top:23px;}
+  .footer .device-types{display:block;margin:48px 0 0 0;}
+  .footer .get-app-header span:first-child {font-size:24px;}
+  .footer .site-links{padding-right:0;}
+  .footer .site-links ul.site-links-left{width:60%;}
+  .footer .site-links ul.site-links-right{width:120px;float:left;}
+  .footer ul li {width:initial;float:none;opacity:0.7}
+  .footer .phone-number{width:52%;margin:0 4%;}
+  .footer .submit{width:30%;}
+  .footer .country-code{width:10%;margin:0;}
+  .footer .get-app-form button{width:100%;padding:11px 0;margin:0;font-size:15px;}
+  .footer .copyright, .footer .mobile-analytics{display:block;float:none;}
+  .footer .mobile-analytics{padding-top:20px;}
+  .footer .site-links{margin-top:48px;}
+  .footer .links-title{padding-bottom:20px;}
+  .footer .copyright-section .content-middle{border:none;position:relative;}
+  .footer .copyright-section .content-middle .txt-more {padding-top:18px;}
+  .footer .copyright-section .content-middle:before{content:'';position:absolute;top:0;left:20px;right:20px;height:2px;background:$bgnd-lynch;opacity:0.2}
+  .footer .get-app-header .opacity{padding-top:10px;}
+  .footer .error-msg{bottom:64px;}
+  .error-msg.success-msg{font-size:10px;bottom:54px;}
+
+  /* Footer Description */
+  .footer-description{padding:30px 0 30px 0;margin-bottom:5px;}
+  .footer-description p{line-height:18px;}
+  .footer-description .carousel-title{font-size:24px;padding-bottom:15px;font-family:$font-bold;}
+  .footer-description p span{display:inline;}
+
+  /*  Footer Terms of Conditions  */
+  .terms-of-conditions{border-width:2px;}
+
+
+}
+
+@media(max-width:375px) {
+  /* Footer */
+  .footer .site-links ul.site-links-left{width:50%;}
+
+}
+
+@media(max-width:320px){
+  /* Footer */
+  .footer{background-position:-362px bottom;background-size:1400px;}
+}

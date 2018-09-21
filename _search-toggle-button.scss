@@ -1,0 +1,19 @@
+.search-toggle-button {
+  height:50px;
+  width:100%;
+  padding:14px 50px 17px 55px;
+  font-size:20px;
+  @include box-shadow(0 1px 2px 0 rgba(0, 0, 0, 0.34));
+  p {
+    @include truncate();
+  }
+  .icon-search {
+    width: 21px;
+    height: 21px;
+    background-position: -33px -25px;
+    margin-right: 10px;
+    position: absolute;
+    left: 16px;
+    top: 15px;
+  }
+}

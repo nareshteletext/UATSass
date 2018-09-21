@@ -1,0 +1,137 @@
+.carousel-with-content {
+  padding-top:45px;
+  .carousel-des {
+    flex:1;
+  }
+  .carousel-item {
+    width:568px;
+    &:before {
+      @include box-shadow(0px 33px 220px #aacbf57a);
+      content:'';
+      position:absolute;
+      display:block;
+      width:568px;
+      height:320px;
+      top:0;
+      left:0;
+    }
+  }
+  .read-more {
+    padding-top:15px;
+  }
+  .carousel-des {
+    padding-right:100px;
+  }
+  h2 {
+    font-size:36px;
+    letter-spacing:-0.1px;
+    padding-bottom:30px;
+    color:$txt-purple;
+  }
+   p {
+    font-size:18px;
+    line-height:28px;
+  }
+  .carousel-img {
+    height:320px;
+    margin-bottom:62px;
+    background-color:$bgnd-light;
+  }
+  .carousel-caption {
+    padding:0 45px;
+    h3 {
+      font-size:20px;
+    }
+    p {
+      line-height:20px;
+      font-size:16px;
+      padding-top:8px;
+    }
+  }
+  @include breakpoint(small-desktop) {
+    .carousel-img {
+      height:248px;
+    }
+    .carousel-item {
+      width:449px;
+      &:before {
+        width:449px;
+        height:248px;
+      }
+    }
+    h2 {
+      padding-bottom:20px;
+    }
+  }
+  @include breakpoint(portrait-tablet) {
+      .content-middle > .lg-flex-box {
+        flex-wrap:wrap;
+      }
+      .carousel-des {
+        padding:0 0 50px 0;
+      }
+      .carousel-des {
+        min-width:100%;
+      }
+      .carousel-img {
+        height:320px;
+      }
+      .carousel-item {
+        width:568px;
+        margin:0 auto;
+        &:before {
+          width:568px;
+          height:320px;
+        }
+      }
+  }
+  @include breakpoint(mobile) {
+    padding-top:30px;
+    h2 {
+      font-size:28px;
+      line-height:32px;
+      padding-bottom:15px;
+    }
+    p {
+      font-size:16px;
+      line-height:24px;
+    }
+    .carousel-des {
+      padding:0 0 20px 0;
+    }
+    .carousel-img {
+      height:280px;
+      @include border-radius(2px);
+      overflow:hidden;
+      margin-bottom:40px;
+    }
+    .carousel-caption {
+      padding:0;
+      opacity:0;
+      @include animation-transition(0.6s cubic-bezier(0.71, 0.01, 0.26, 1.02));
+    }
+    .carousel-item {
+      width:262px;
+      margin:0;
+      &:before {
+        display:none;
+      }
+    }
+    .owl-carousel {
+      .owl-wrapper-outer {
+        overflow:inherit;
+      }
+      .owl-item {
+        margin-right:10px;
+        &.active {
+          .carousel-caption {
+            opacity:1;
+          }
+        }
+      }
+    }
+    .content-middle {
+      overflow:hidden;
+    }
+  }
+}

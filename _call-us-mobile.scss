@@ -1,0 +1,66 @@
+.mobile-widget-call-us {
+  width:100%;
+  margin-bottom:30px;
+  img {
+    object-fit:inherit;
+  }
+  .call-us-mobile-header  {
+    span, a {
+      color:$txt-butterfly;
+    }
+    line-height:28px;
+    border-bottom:dashed 2px $b-squeeze;
+    padding-bottom:20px;
+    margin-bottom:20px;
+    .medium-label {
+      font-size:20px;
+    }
+    .sale-time {
+      font-size:13px;
+      margin-top:-4px;
+    }
+    a {
+      font-size:32px;
+    }
+  }
+  .icon-box {
+    width:23px;
+    height:23px;
+    margin-bottom:4px;
+  }
+  .line-icon-download {
+    background-position:-286px -3px;
+  }
+  .line-icon-pay {
+    background-position:-261px -3px;
+  }
+  .line-icon-atol {
+    background-position:-311px -3px;
+  }
+  .call-us-set-wrapper, .tth-price {
+    font-size:11px;
+  }
+  .tth-pp {
+     font-size:10px;
+     left:-1px;
+   }
+  .call-us-set-2 {
+    margin:0 12%;
+  }
+  .tth-asterisk {
+    top:13px;
+    right:0;
+    font-size:13px;
+  }
+
+  @include breakpoint(medium-mobile) {
+    letter-spacing:-0.5px;
+  }
+}
+.thin-lowdeposit {
+  .mobile-widget-call-us {
+    padding:14px 0 0 0;
+    border-top: solid #f4f4f4 2px;
+    margin:14px 0 0px 0;
+  }
+}

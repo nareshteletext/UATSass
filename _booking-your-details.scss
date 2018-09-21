@@ -1,0 +1,668 @@
+@include breakpoint(when-desktop) {
+.congrats {
+  .itinerary {
+    padding: 30px 0;
+  }
+  .row-divider{
+    border-bottom: 2px solid $b-sticky;
+  }
+  .itinerary-main-left {
+    width: 848px;
+  }
+  .itinerary-main-right {
+    width: 262px;
+  }
+  .itinerary-left {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .itinerary-right {
+    width: 50%;
+    margin-bottom: 30px;
+    font-size: 13px;
+  }
+  .itinerary-hdng, .accommodation-hdng {
+    font-size: 24px;
+    letter-spacing: -0.4px;
+  }
+  .itinerary-hdng {
+    margin: 0 0 18px 0;
+  }
+  .itinerary-row, .taveller-row span {
+    padding: 3px 0;
+  }
+  .taveller-row{
+    .txt-dis{
+      padding-left: 15px;
+    }
+    .name{
+      padding-left: 0;
+    }
+  }
+  .travel-detail {
+    padding: 0 0 5px 0;
+  }
+  .stay-label {
+    letter-spacing: -0.2px;
+    min-width: 65px;
+    @include opacity();
+  }
+  .stay-label,  .stay-detail{
+    font-size: 15px;
+  }
+  .common-small {
+    font-size: 13px;
+    line-height: 1.47;
+    letter-spacing: -0.3px;
+  }
+  .accommodation {
+    border: solid 1px $b-sticky;
+    padding: 28px 30px 33px 30px;
+  }
+  .accommodation-detail {
+    padding: 35px 0 15px 0;
+  }
+  .manage-book {
+    padding: 35px 15px 12px 0;
+    display: none;
+  }
+  .accommodation-detail {
+    font-size: 20px;
+    letter-spacing: -0.3px;
+  }
+  .phone-nmbr {
+    padding: 0 18px 0 5px;
+  }
+  .manage-book {
+    font-size: 17px;
+    letter-spacing: -0.3px;
+    color: $txt-butterfly;
+    &:after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid $txt-cornflower-blue;
+      border-top: 2px solid $txt-cornflower-blue;
+      line-height: 30px;
+      text-indent: 400px;
+      display: inline-block;
+      @include rotate(45deg);
+      margin: 0 0 0 20px;
+    }
+  }
+  .txt-selective-yellow {
+    padding: 0 0 0 1px;
+    font-size: 12px;
+  }
+  .hotel-ratings {
+    padding-left: 10px;
+  }
+  .brdr-btm1{
+    border-bottom: 1px solid $b-sticky;
+  }
+  .brdr-top1{
+    border-top: 1px solid $b-sticky;
+  }
+  .check-in.brdr-top1{
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  .check-in, .phone-txt, .txt-dis {
+    @include opacity();
+  }
+  .accommodation-check{
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid $b-sticky;
+  }
+  .accommodation-left {
+    width: 518px;
+  }
+  .accommodation-img {
+    width: 255px;
+    height: 180px;
+  }
+  .accommodation .hr-line {
+    margin: 18px 0;
+  }
+  .view-map-btn {
+    width: 200px;
+    padding: 9px 0px;
+    min-height: 34px;
+    font-size: 13px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 24px;
+  }
+  .view-map-main {
+    width: 255px;
+    height: 180px;
+    margin: 15px 0 0 0;
+  }
+  .add-calendar-btn {
+    padding: 11px 20px;
+    margin: 20px 0 5px 0;
+    font-size: 14px;
+  }
+  .check-in-inner > span,
+  .check-out-inner > span {
+    padding: 3px 0;
+  }
+  .lable-medium {
+    font-size: 15px;
+  }
+  .check-in-date {
+    padding: 7px 0 3px 0;
+  }
+  .check-in-date, .room1{
+    font-size: 17px;
+  }
+  .room1{
+    padding-right: 18px;
+  }
+  .all-inclsv{
+    @include opacity();
+  }
+  .check-out-inner {
+    min-width: 242px;
+  }
+  .accommodation-right {
+    margin: 0 0 0 6px;
+  }
+  .saving-detail-inner {
+    padding: 34px 18px 20px 35px;
+    border-bottom: 2px solid $b-sticky;
+  }
+  .saving-txt {
+    letter-spacing: -0.2px;
+  }
+  .saving-detail-inner, .tax {
+    font-size: 17px;
+  }
+  .saving-price {
+    line-height: 0.94;
+    letter-spacing: -0.4px;
+  }
+  .tax {
+    padding: 15px 18px 15px 35px;
+  }
+  .total-price-main {
+    padding: 24px 18px 20px 33px;
+    margin: 0 0 35px 0;
+    background: $bgnd-trendy-pink;
+  }
+  .total-txt {
+    font-size: 20px;
+  }
+  .total-price {
+    font-size: 22px;
+  }
+  .mail-confirm-msgs {
+    padding: 33px 0 38px 33px;
+    margin: 0 0 25px 0;
+    background: $bgnd-silver;
+    @include opacity2();
+  }
+  .receive {
+    font-size: 24px;
+    letter-spacing: -0.4px;
+    margin: 0 145px 28px 0;
+  }
+  .mail-info {
+    font-size: 17px;
+    letter-spacing: -0.3px;
+    p {
+      padding: 8px 0;
+    }
+  }
+  .faq-btn {
+    padding: 2px 5px 2px 5px;
+  }
+  .mybooking-btn {
+    padding: 6px 16px;
+    margin-left: 7px;
+  }
+  .common-box {
+    padding: 30px 0 20px 26px;
+    border: solid 1px $b-sticky;
+    min-height: 120px;
+  }
+  .icon-print {
+    width: 50px;
+    height: 50px;
+  }
+  .print-links {
+    margin-top: 8px;
+    color: $txt-cornflower-blue;
+    span{
+      font-size: 16px;
+    }
+    a {
+      padding: 0 10px 2px 10px;
+      &:first-child {
+        padding: 0 10px 2px 0;
+      }
+    }
+  }
+  .icon-paperless {
+    width: 60px;
+    height: 60px;
+  }
+  .print-links {
+    padding: 0 0 0 15px;
+  }
+  .get-print-txt {
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    letter-spacing: -0.3px;
+    width: 120px;
+  }
+  .print-sugstn {
+    font-size: 13px;
+    line-height: 17px;
+    padding: 15px 22px 30px 0;
+    border-bottom: 1px solid $b-sticky;
+    margin-bottom: 13px;
+  }
+  .itinerary-main-right .hr-line {
+    margin: 0 0 13px 0;
+  }
+  .tab-landscape-show, .mail-confirm-msgs{
+    display: none;
+  }
+  .itinerary-left-inner, .itinerary-left-detail{
+    width: 100%;
+  }
+  .acomdtn-phone{
+    font-size: 15px;
+  }
+}
+}
+@include breakpoint (when-landscape-tablet) {
+  .congrats{
+    .book-reference{
+      padding-right: 2%;
+    }
+    .itinerary-main-right{
+      display: none;
+    }
+    .itinerary-right{
+      float: left;
+    }
+    .itinerary-main-left, .itinerary-travel, .itinerary-left-detail{
+      width: 100%;
+    }
+    .accommodation-left{
+      width: 67%;
+    }
+    .itinerary-left-detail {
+    padding-bottom: 10px;
+    }
+   .itinerary-left-inner{
+      width:66%;
+    }
+   .tab-landscape-show  {
+      max-width: 262px;
+      margin-right: 2%;
+      display: inline-block;
+      .print-sugstn{
+        font-size: 11px;
+        line-height: 16px;
+        border: 0;
+        margin-bottom: 0;
+      }
+    }
+    .thanks-user{
+      width: 60%;
+    }
+    .receive{
+      margin: 0 245px 28px 0;
+    }
+    .saving-detail-inner {
+      padding: 34px 30px 20px 30px;
+    }
+    .tax {
+      padding: 15px 30px 15px 30px;
+    }
+    .total-price-main{
+      padding: 24px 30px 20px 30px;
+    }
+  }
+}
+@include breakpoint (when-portrait-tablet) {
+  .congrats{
+    .thanks-user{
+      width: 60%;
+    }
+    .book-reference{
+      padding-right: 10%;
+    }
+    .itinerary-left, .itinerary-right{
+      width: 100%;
+    }
+    .itinerary-right{
+      margin-bottom: 10px;
+    }
+    .itinerary-left-inner {
+      width: 51%;
+   }
+    .accommodation-detail{
+      display: block;
+      width: 100%;
+      border-top: 2px solid $b-sticky;
+    }
+    .row-divider{
+      border: 0;
+    }
+    .check-in-date {
+      font-size: 15px;
+   }
+   .accommodation{
+     padding: 28px 25px 25px 25px;
+   }
+   .accommodation-img, .view-map-main{
+     width: auto;
+   }
+   .view-map-main{
+     height: 100%;
+   }
+   .accommodation-img, .accommodation-map{
+     height: 147px;
+   }
+   .accommodation-right{
+     width: 208px;
+     margin: 27px 0 0 6px;
+   }
+    .accommodation-left{
+      width: 62%;
+    }
+    .saving-detail-inner, .tax{
+      padding: 15px 30px 12px 27px;
+    }
+    .total-price-main{
+      padding: 17px 30px 15px 33px;
+    }
+    .mail-confirm-msgs{
+      margin-bottom: 15px;
+    }
+    .check-in-inner, .check-out-inner{
+      min-width: 190px;
+    }
+    .acomdtn-phone{
+      display: none;
+    }
+    .acomdtn-phone{
+      &.show-on-tablet-portrait{
+        display: block;
+        padding-bottom: 15px;
+      }
+    }
+    .view-map-btn{
+      width: 164px;
+      min-height: 30px;
+      padding: 6px 0;
+      bottom: 15px;
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+.congrats{
+  .content-middle{
+    padding: 0;
+  }
+  .stay-label {
+    letter-spacing: -0.2px;
+    min-width: 65px;
+  }
+  .check-in, .phone-txt, .txt-dis, .stay-label{
+    @include opacity();
+  }
+  .congrats-bg, .itinerary-left-inner, .accommodation-left, .saving-detail-inner, .get-print-section, .mail-confirm-msgs{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .itinerary-left-inner{
+    padding-top: 30px;
+  }
+  .itinerary-hdng, .accommodation-hdng {
+    font-size: 24px;
+    letter-spacing: -0.4px;
+  }
+  .itinerary-hdng{
+    padding-bottom: 20px;
+  }
+  .itinerary-row, .taveller-row span, .check-in-inner > span, .check-out-inner > span {
+    padding: 3px 0;
+  }
+  .taveller-row {
+    span{
+      &.lead{
+        padding-left: 12px;
+        font-size: 13px;
+      }
+    }
+    .show-on-tablet-portrait{
+      display: none;
+    }
+  }
+  .itinerary-main-left, .itinerary-left, .itinerary-right, .accommodation-detail, .accommodation-left, .acomdtn-phone{
+    width: 100%;
+  }
+  .itinerary-left, .accommodation-detail {
+    border-bottom: 2px solid $b-sticky;
+  }
+  .itinerary-left{
+    padding-bottom: 20px;
+    margin-bottom: 33px;
+  }
+  .itinerary-right{
+    margin-bottom: 0;
+  }
+  .tab-landscape-show, .manage-book, .itinerary-main-right, .slash, .taveller-row .show-on-tablet-portrait, .mail-confirm-msgs{
+    display: none;
+  }
+  .row-divider, .accommodation, .accommodation-check.brdr-none{
+    border: 0;
+  }
+  .accommodation{
+    padding: 16px 0 23px 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid $b-sticky;
+  }
+  .accommodation-detail{
+    padding-bottom: 10px;
+    margin: 30px 20px 0 20px;
+    width: auto;
+  }
+  .accommodation-hdng, .accommodation-detail{
+    font-size: 20px;
+  }
+  .hotel-ratings {
+    padding-left: 10px;
+  }
+  .acomdtn-phone{
+    padding-top: 5px;
+    &.show-on-tablet-portrait{
+      display: none;
+    }
+  }
+  .print-sugstn{
+    font-size: 11px;
+  }
+  .acomdtn-place .hotel-ratings i{
+    font-size: 12px;
+  }
+  .lable-medium{
+    font-size: 13px;
+  }
+  .phone-nmbr, .check-in-date, .saving-txt{
+    font-size: 15px;
+  }
+  .saving-price, .total-txt, .mail-info{
+    font-size: 17px;
+  }
+  .add-calendar-btn{
+    font-size: 18px;
+  }
+  .receive{
+    font-size: 20px;
+  }
+  .total-price{
+    font-size: 22px;
+  }
+  .check-in-inner, .check-out-inner{
+    width: 50%;
+  }
+  .check-out-inner{
+    .mbl-block{
+      display: block;
+    }
+  }
+  .accommodation-check{
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+  .accommodation-check, .check-in.brdr-top1, .tax{
+    border-top: 2px solid $b-sticky;
+  }
+  .accommodation-check.brdr-none{
+    margin-top: 5px;
+  }
+  .add-calendar-btn{
+    min-width: 180px;
+    padding: 13px 28px;
+    margin-top: 15px;
+  }
+  .check-in.brdr-top1{
+    margin-top: 12px;
+    padding-top: 20px;
+  }
+  .accommodation-img, .accommodation-map, .view-map-main{
+    float: left;
+    height: 120px;
+  }
+  .accommodation-img{
+    width:49%;
+    margin-right: 2px;
+  }
+  .accommodation-map{
+    width: 50%;
+  }
+  .room1 {
+    clear: both;
+    float: left;
+    padding-top: 8px;
+  }
+  .room-type{
+    .check-in-date{
+      padding: 10px 0 5px 0;
+    }
+  }
+  .accommodation-right{
+    padding-top: 20px;
+  }
+  .saving-txt{
+    width: 60%;
+  }
+  .tax{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 11px;
+    padding-bottom: 18px;
+  }
+  .total-price-main{
+    padding: 14px 20px;
+  }
+  .total-price{
+    line-height: 20px;
+  }
+  .mail-confirm-msgs {
+    padding-top: 20px;
+    margin: 0 0 35px 0;
+    background: $bgnd-silver;
+    @include opacity2();
+  }
+  .view-map-btn {
+    width: 108px;
+    padding: 6px 13px;
+    font-size: 13px;
+    height: 44px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+  .saving-detail-inner{
+    padding-bottom: 15px;
+    span{
+      display: table-cell;
+      float: none;
+      vertical-align: middle;
+      &.saving-price{
+        text-align: right;
+      }
+    }
+  }
+  .get-print-section{
+    padding-top: 37px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid $b-sticky;
+    .bgnd-black-squeeze{
+      background: none;
+    }
+  }
+  .icon-print{
+    width: 24px;
+    height: 24px;
+    background: red;
+  }
+  .get-print-right{
+    width: 80%;
+    margin-left: 18px;
+  }
+  .print-links {
+    a{
+      padding: 10px 22px;
+      margin: 12px 10px 13px 0;
+    }
+  }
+  .receive{
+    margin-bottom: 20px;
+  }
+  .mail-info {
+    p{
+      padding: 10px 0;
+    }
+  }
+  .faq-btn{
+      padding: 3px 5px;
+  }
+  .mybooking-btn{
+     width: 150px;
+     padding: 12px 25px;
+     display: block;
+     margin-top: 20px;
+  }
+}
+}
+
+.widened{
+  display: none;
+  .widened-inner{
+    font-size: 24px;
+    color: $txt-cornflower-blue;
+    @include border-radius(5px);
+    border:1px solid $bgnd-cornflower-blue;
+  }
+  .we-have-content{
+  }
+  .widened-inner{
+    img{
+
+    }
+  }
+
+}

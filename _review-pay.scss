@@ -1,0 +1,2237 @@
+.different-address {
+  @include border-radius(2px);
+  padding:18px 33px 18px 23px;
+  &:before {
+    content:'';
+    position:absolute;
+    top:-4px;
+    left:36px;
+    width:10px;
+    height:10px;
+    display:block;
+    background-color:$bgnd-black-squeeze;
+    @include rotate(45deg);
+  }
+  .txt-medium {
+    padding-top:6px;
+  }
+}
+.booking-summary{
+.total-price {
+  display:flex;
+  .secret-saving-price {
+    display:flex;
+    justify-content:space-between;
+  }
+  .price-left {
+    flex:1;
+  }
+  .secret-saving {
+    align-self:flex-end;
+    padding-left:35px;
+  }
+}
+}
+@include breakpoint(when-desktop) {
+.review-pay {
+margin-bottom: 0;
+padding: 105px 0 0;
+min-height: 330px;
+.form-control::placeholder {
+  color:$d-txt-color;
+}
+
+.booking-summary {
+    width: 358px;
+    float: right;
+    }
+    .atol{
+        border-bottom: solid 2px $b-sticky;
+        margin: 0 0 20px 0;
+        padding: 0 0 20px 0;
+    }
+   .atol-icon {
+        width: 46px;
+        height: 46px;
+        margin-right: 19px;
+    }
+    .atol-hdng-inner {
+        font-size: 15px;
+    }
+    .total-price {
+        padding: 10px 18px 20px 23px;
+        min-height: 77px;
+    }
+    .price-amount-txt {
+        padding-bottom: 10px;
+    }
+    .price-amount-txt, .savings-price, .hurry-price, .your-book p, .optional, h4 span.font-light {
+        @include opacity()
+    }
+    .price-amount {
+        font-size: 14px;
+    }
+    .left-book-circle{
+      margin-right: 18px;
+      color: transparent;
+      z-index:2;
+      svg{
+        fill:transparent;
+      }
+      circle {
+        stroke:$bgnd-pickled-bluewood;
+        stroke-width: 4;
+        stroke-dasharray: 250;
+        stroke-dashoffset: 380;
+        animation: rotate 5s linear infinite;
+      }
+    }
+.circle-box, .lower-circle{
+  width: 38px;
+  height: 38px;
+  vertical-align: middle;
+}
+.lower-circle {
+  @include border-radius(100px);
+  border: 3px solid $bgnd-sunset-orange;
+}
+    .time-to-book {
+        padding: 13px 21px 5px 24px;
+    }
+    .savings-price {
+        font-size: 17px;
+        line-height:16px;
+    }
+    .savings-price span {
+        padding-top: 20px;
+    }
+    .price-cost {
+        font-size: 28px;
+        line-height: 16px;
+    }
+    .left-time {
+        font-size: 22px;
+        line-height: 16px;
+    }
+    .left-time-txt {
+        font-size: 14px;
+        color: $txt-yellow;
+        padding-top: 5px;
+    }
+    .hurry-price {
+        width: 105px;
+        padding-top: 3px;
+    }
+    .get{
+        border-top: solid 2px $b-sticky;
+        margin: 20px 0 20px 0;
+        padding: 20px 0 0 0;
+    }
+    .get-choice {
+        font-size: 20px;
+        color: $txt-light-purple;
+    }
+    .get-options {
+        font-size: 15px;
+        color: $txt-light-purple;
+    }
+    .your-book {
+        width: 360px;
+        border-radius: 2px;
+        box-shadow: 0 0 8px 0 $box-shadow-color-light;
+        min-height: 300px;
+        margin: 23px 0 0 0;
+        padding: 20px 0 0 0;
+        line-height: 18px;
+    }
+    .book-place{
+      border-bottom: solid 2px $b-light;
+      margin: 0 0 20px 0;
+      padding: 0 0 20px 0;
+    }
+    .your-book-txt {
+        font-size: 17px;
+        padding-bottom: 14px;
+    }
+    .your-book-inner {
+        margin: 0 auto  24px auto;
+        width: 320px;
+    }
+    .your-book-image {
+        width: 320px;
+        height: 235px;
+        padding-bottom: 32px;
+    }
+    .hotel-name {
+        font-size: 17px;
+    }
+    .hotel-place {
+        font-size: 14px;
+        padding: 4px 9px 0 0;
+    }
+    .hotel-ratings {
+        padding: 3px 0 0 0;
+    }
+    .txt-selective-yellow {
+        padding: 0 0 0 1px;
+        font-size: 12px;
+    }
+    .running-price {
+        font-size: 17px;
+    }
+    .change-link {
+        font-size: 13px;
+        padding: 5px 0 8px 0;
+        text-decoration: underline;
+        border-bottom: solid 2px $b-light;
+        margin-bottom: 12px;
+    }
+    .all-inclusive, .double {
+        font-size: 15px;
+        padding-top: 2px;
+    }
+    .chk-in, .stay-label {
+        font-size: 13px;
+        min-width: 103px;
+    }
+    .chk-in-date, .stay-detail {
+        font-size: 15px;
+        min-width: 108px;
+    }
+    .chk-in-time {
+        font-size: 12px;
+    }
+    .purple-total-innner {
+        padding: 10px 25px 12px 20px;
+        -webkit-border-bottom-right-radius: 2px;
+        -webkit-border-bottom-left-radius: 2px;
+        -moz-border-radius-bottomright: 2px;
+        -moz-border-radius-bottomleft: 2px;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+    .purple-total {
+        font-size: 17px;
+        padding-top: 5px;
+    }
+    .purple-price {
+        font-size: 22px;
+    }
+    .stay-label {
+        font-size: 13px;
+    }
+    .stay-detail , .saving-txt {
+        font-size: 15px;
+    }
+    .saving-price {
+        font-size: 17px;
+        line-height: 16px;
+    }
+    .saving-detail {
+        padding: 11px 0 16px 0;
+        margin-top: 18px;
+        border-top: solid 2px $b-light;
+    }
+    .promo {
+        padding: 23px 21px 24px 21px;
+        margin: 21px 0 0 0;
+        box-shadow: 0 0 8px 0 $box-shadow-color-light;
+    }
+    .promo-hdng {
+        font-size: 17px;
+        padding: 24px 0 13px 0;
+        border-top: solid 2px $b-light;
+    }
+    .your-book p {
+        padding: 0 0 20px 0;
+        font-size: 12px;
+         letter-spacing: -0.2px;
+    }
+    .promo-input {
+        border: 1px solid $b-sticky;
+        border-right: 0;
+        width: 100%;
+        input{
+          padding: 10px 5px 10px 5px;
+          width: 100%;
+        }
+    }
+    .promo-apply-btn{
+      button{
+        font-size: 17px;
+        padding: 10px 14px 10px 14px;
+        min-width: 80px;
+        background: $bgnd-cornflower-blue;
+        text-align: center;
+        }
+    }
+    .free-cancel {
+        background: $bgnd-lynch;
+        padding: 15px 56px 13px 21px;
+        margin: 21px 0 20px 0;
+        @include border-radius(2px);
+    }
+    .free-cancel-hdng {
+        font-size: 17px;
+        padding-bottom: 2px;
+    }
+    .free-cancel  {
+      p{
+        font-size: 14px;
+        }
+    }
+.content-left {
+  width: 65%;
+}
+.book-tab{
+  > div {
+    display: block;
+    width: 100%;
+    clear: both;
+    margin: 0 0 20px;
+    border-bottom: solid 2px $b-light;
+    padding-bottom: 45px;
+    &:last-child {
+      padding: 0;
+      border: none;
+    }
+    &.total-book.mobile{
+      display: none;
+    }
+  }
+}
+.content-right {
+  width: 33%;
+}
+h2 {
+  font-size: 24px;
+  padding: 5px 0 26px;
+  margin: 5px 0 22px;
+  letter-spacing: -0.4px;
+  border-bottom: solid 2px $b-sticky;
+  span.font-light {
+    margin: 0 0 0 5px;
+    font-size: 15px;
+    letter-spacing: -0.2px;
+    color: $txt-dis;
+  }
+}
+.signin {
+  padding: 10px  0 10px 20px;
+  border: solid 1px $bgnd-cornflower-blue;
+  width: 258px;
+  margin-bottom: 39px;
+}
+.icon-user{
+  width: 12px;
+  height: 14px;
+  margin-right: 15px;
+}
+.signin-txt{
+  color: $txt-cornflower-blue;
+  font-size: 17px;
+  letter-spacing: -0.3px;
+}
+.dropdown-arrow{
+  width: 0px;
+  height: 0px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid $b-blue;
+  right:18px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+h4 {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  span {
+    &.font-light {
+      margin: 0 0 0 5px;
+      font-size: 15px;
+      letter-spacing: -0.2px;
+      color:$txt-dis;
+    }
+    &.mandatory {
+      color: $txt-lynch;
+      font-size: 12px;
+      padding-top: 5px;
+    }
+  }
+}
+h5 {
+  font-size: 17px;
+  color: $txt-dis;
+}
+.input-group {
+  display: table;
+  width: 100%;
+}
+.input-field {
+  position: relative;
+  width: 46%;
+  padding: 22px 0 10px;
+  display: table-cell;
+  vertical-align: bottom;
+  &:first-child {
+    padding-right: 4%;
+  }
+  input {
+    width: 100%;
+    padding: 5px 0;
+    line-height: 30px;
+    min-height: 30px;
+    border-bottom: solid 2px $b-sticky;
+    color: transparent;
+    font-size: 14px;
+    color: $txt-dis;
+    position: relative;
+    background: none;
+    z-index: 4;
+  }
+  input, textarea {
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+      &:focus {
+        border-bottom: solid 2px $b-blue;
+      }
+  }
+  label {
+    cursor: auto;
+    position: absolute;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    bottom: 20px;
+    font-size: 15px;
+    left:0;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  &.active label, &.active .optional{
+    display: block;
+    bottom: 50px;
+    cursor: context-menu;
+    font-size: 13px;
+  }
+  &.active {
+    .optional{
+      display: inline-block;
+    }
+  }
+  label  {
+    span.font-light{
+    font-size: 11px;
+    font-style: italic;
+    color: $d-txt-color;
+    }
+  }
+  &.active{
+     label {
+       span.font-light{
+    color: $b-blue;
+    }
+   }
+  }
+}
+
+a {
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+  &.find-address {
+    color: $txt-white;
+    padding: 8px 20px;
+    border-radius: 2px;
+    font-size: 17px;
+    margin: 0 30px 0 0;
+  }
+}
+.pincode{display:none;}
+.pincode {
+  .input-field{
+   width: 50%;
+   display: block;
+   }
+}
+.pincode-block > div {
+  width: 100%;
+}
+.checkbox {
+  background: $bgnd-white;
+  border: 2px solid $b-default;
+  @include opacity5();
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  border-radius: 2px;
+  position: relative;
+  &.checked{
+    opacity: 1;
+    background: $bgnd-cornflower-blue;
+    border: 2px solid $b-blue;
+    @include check-box();
+    height: 16px;
+    width: 16px;
+    &:after{
+      width: 9px;
+      height: 5px;
+      top: 3px;
+      left: 2px;
+    }
+  }
+}
+.holiday-offers label {
+  padding-left: 10px;
+  vertical-align: top;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0;
+  &.i-would{
+    @include opacity();
+  }
+}
+.payment-details{
+  .checkbox{
+    margin: 10px 10px 0 0;
+  }
+}
+.receive-holiday {
+  height: auto;
+  margin: 40px 0px;
+  width: 100%;
+  position: relative;
+  display: table;
+}
+.radio {
+  @include radio-button();
+  border-color: $b-light3;
+  &.checked{
+    border-color:  $b-blue;
+  }
+}
+.holiday-booking > span {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 0 0;
+  font-size: 15px;
+}
+.holiday-offers > span label {
+  color: $txt-dis;
+  letter-spacing: -0.2px;
+}
+.hotel-request {
+  label {
+    position: initial;
+    color: $txt-dis;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  .input-field {
+    padding: 7px 0;
+  }
+}
+.other-requests{
+  label{
+    position: absolute;
+    padding-left: 0;
+  }
+  .input-field {
+    padding: initial;
+    &.active label{
+      bottom: 75px;
+    }
+  }
+}
+.rooms-list-section {
+  h5{
+   margin: 0 0 18px;
+  }
+}
+textarea {
+  border: none;
+  border-bottom: solid 2px $b-sticky;
+  padding: 5px;
+  width: 100%;
+  margin: 20px 0 0 0;
+  outline: none;
+  font-size: 15px;
+  padding: 0;
+  position: relative;
+  background: transparent;
+}
+span {
+  &.card-img {
+    width: 40px;
+    height: 25px;
+    right: 8%;
+    bottom: 20px;
+    img{
+      max-width: 100%;
+      height:auto;
+    }
+  }
+  &.security-code {
+    cursor: pointer;
+    right: 0;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px 0;
+    bottom: 23px;
+    right: 5px;
+    z-index: 5;
+  }
+}
+.payment-details {
+  .holiday-offers {
+    label {
+      max-width: 95%;
+      color: $txt-dis;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.price-amount-txt {
+  line-height: 22px;
+}
+.total-price-sec {
+  .txt-white {
+    padding: 28px 30px;
+    cursor: pointer;
+  }
+  .price-amount, .price-Deposit {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .input-field {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .price-amount:after, .price-Deposit:after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-right: 3px solid $b-white;
+    border-top: 3px solid $b-white;
+    line-height: 30px;
+    text-indent: 400px;
+    display: inline-block;
+    @include rotate(45deg);
+    margin: 0 0 0 20px;
+  }
+}
+.txt-error {
+  font-size: 15px;
+  display: block;
+  margin: 15px 0 0;
+}
+.optional {
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  padding-left: 15px;
+  color: $txt-dis;
+}
+.country-list {
+  width: 100%;
+  background: $bgnd-white;
+  z-index: 1;
+  left: 0;
+  top: 67px;
+  right: 0;
+  border-radius: 0;
+  box-shadow: 0 14px 47px 0 $box-shadow-color-light;
+  -moz-box-shadow: 0 14px 47px 0 $box-shadow-color-light;
+  -webkit-box-shadow: 0 14px 47px 0 $box-shadow-color-light;
+  ul {
+    width: 100%;
+    padding: 10px 0;
+    li {
+      padding: 5px 20px;
+      &:hover, &.active {
+        cursor: pointer;
+        background: $body-bgnd;
+        color: $txt-cornflower-blue;
+      }
+    }
+  }
+}
+.country-arrow {
+  right: 0;
+  top: 37px;
+  bottom: 0;
+  z-index: 5;
+}
+.pincode {
+  .country-arrow{
+  top: 17px;
+  }
+}
+.expiry {
+  display: inline-block;
+  position: relative;
+  .country-list {
+    top: 42px;
+  }
+  input {
+    font-size: 15px;
+  }
+}
+.year {
+  margin-left: 30px;
+}
+.expiry-block {
+  &.input-field label {
+    bottom: 13px;
+  }
+  &.card-name label {
+    bottom: 20px;
+  }
+}
+.expiry-txt {
+  bottom: -24px;
+  font-size: 13px;
+}
+.expiry-block {
+  .country-arrow{
+  top: 15px;
+  }
+}
+.ipad-show, .enter-details, .desktop-hide-only, .or{
+  display: none;
+}
+.chk-in-out-row, .stay-details-row{
+  padding: 1px 0;
+  line-height: 22px;
+}
+.rooms-list{
+  width: 70%;
+}
+.error-msgs{
+  color: $txt-sunset;
+  font-size: 13px;
+  padding: 2px 0 0 0;
+  left: 0;
+  top: 64px;
+}
+.expiry .error-msgs, .holiday-offers .error-msgs{
+  top: 41px;
+}
+select{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+      appearance: none;
+      z-index: 6;
+      width: 100%;
+      background: transparent;
+      bottom: 2px;
+      left: 0;
+      right: 0;
+      top: 0;
+      position: absolute;
+      color: $txt-lynch;
+      font-size: 15px;
+      padding: 5px;
+ }
+ .pymnt-card-type{
+   right:130px;
+   float:right;
+ }
+ .pymnt-card-type select{
+   width:85px;
+   height:40px;
+ }
+ .pymnt-card-type .country-arrow{
+   right:-80px;
+   top:12px;
+ }
+ .txt-error, #dvPayDepositAmountToday, .savings-price, .saving-detail, #chktime, #chkouttime{
+   display:none;
+ }
+ #dvPayTotalAmount {
+   .total-price{
+   max-width:340px;
+   }
+ }
+ .find-disabled{
+   @include opacity5();
+   pointer-events:none;
+ }
+ #dvPassengerList {
+   .input-group:nth-child(3){
+     margin-bottom:25px;
+   }
+ }
+ .mnthDisabled{
+   cursor:not-allowed;
+   @include opacity();
+ }
+ .stay-details-right-ipad {
+   .stay-detail{
+     max-width:215px;
+   }
+ }
+ .pymnt-pop-cctype {
+    bottom: 45px;
+    right: -81px;
+    z-index: 10;
+    width: 190px;
+    padding: 15px;
+    background: $bgnd-lynch;
+    color: $txt-white;
+    text-align: center;
+}
+.pymnt-pop-cctype {
+  .fa-sort-desc{
+    bottom: -9px;
+    color: $txt-lynch;
+    font-size: 24px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    }
+}
+.pymnt-pop-cctype, .pymnt-amrcn-crd img, .pymnt-visa-crd img {
+  @include border-radius(5px);
+}
+.pymnt-amrcn-crd img, .pymnt-visa-crd img{
+  width:100%;
+  height:auto;
+  margin-top:5px;
+}
+.pymnt-amrcn-crd, .pymnt-visa-crd {
+    vertical-align: top;
+    text-align: left;
+}
+.pymnt-pop-cctype .close--icon{
+  top:10px;
+}
+.fa-sort-up:before, .fa-sort-desc:before {
+  content:"\f0dd";
+}
+.book-flex{
+  display:flex;
+  width:100%;
+  padding-top:15px;
+}
+.book-flex1{
+  flex:1;
+}
+.book-flex3{
+  flex:3;
+}
+.listing-popup {
+	.popup-content {
+		padding: 15px 25px 0 25px;
+	}
+}
+.cancellation-link{
+  text-decoration:underline;
+}
+.all-inclusive{
+  padding:5px 0;
+}
+.try-again-box{
+  border:1px solid #cb3544;
+  @include border-radius(2px);
+  margin-bottom:27px;
+}
+.try-again-left{
+  background:$bgnd-red-light;
+  width:45px;
+}
+.try-again-right{
+  background:$bgnd-light;
+}
+.unfortunately,
+.plz-try,
+&.try-again
+.payment-details .input-field.active label,
+&.try-again .expiry-txt{
+  color:$txt-favourate;
+}
+.plz-try{
+  padding-bottom:5px;
+}
+.unfortunately{
+  padding-bottom:15px;
+}
+.plz-try{
+  font-size:17px;
+}
+.unfortunately{
+  font-size:15px;
+}
+.card-instruction{
+  font-size:13px;
+}
+.card-instruction{
+  color:$txt-lynch;
+  line-height:18px;
+}
+.try-again-left, .try-again-right{
+  padding:10px 20px 15px 20px;
+}
+&.try-again .payment-details .input-field.active input,
+&.try-again .payment-details .input-field.active input:focus,
+&.try-again .expiry input{
+    border-bottom: solid 2px $b-sunset;
+}
+.price-label{
+  bottom:10px;
+  right:15px;
+  left:15px;
+  background:$bgnd-sunset;
+  color:$txt-white;
+  padding:16px 10px 16px 20px;
+  font-size:14px;
+  z-index:9;
+  text-align:left;
+  font-size:15px;
+  line-height:19px;
+}
+.price-label>div{
+  display:inline-block;
+  line-height:16px;
+  margin:10px 0 0;
+  font-size:14px;
+  max-width:90%;
+}
+.price-widget{
+  right:0;
+  left:0;
+}
+.price-widget-arrow{
+  background:$bgnd-sunset;
+  height:13px;top:-16px;
+  @include rotate(45deg);
+  width:13px;
+  z-index:18;
+  right:65px;
+}
+.we-are-sry{
+  float:left;
+  width:90%;
+}
+
+.priceChangeBannerDesk.success .price-label,
+.priceChangeBannerDesk.success .price-widget-arrow,
+.priceChangeBannerIpad.success .price-label,
+.priceChangeBannerIpad.success .price-widget-arrow
+.priceChangeBannerMob.success .price-label,
+.priceChangeBannerMob.success .price-widget-arrow{
+  background:$bgnd-emerald;
+}
+.priceChangeBannerDesk.success.weare-sorry,
+.priceChangeBannerIpad.success.weare-sorry,
+.priceChangeBannerMob.success.weare-sorry{
+  color:$bgnd-emerald;
+}
+&.try-again .try-again-box{
+  display:block;
+}
+.weare-sorry{
+  color:$txt-sunset;
+  font-size:15px;
+  padding:0 10px 10px 10px;
+}
+.weare-sorry i{
+  font-size:16px;
+  padding-right:14px;
+}
+
+.priceChangeBannerDesk,
+.priceChangeBannerIpad,
+.priceChangeBannerMob{
+  display:none;
+}
+input:focus + label{
+  color:$txt-cornflower-blue;
+}
+.sorry-message{
+  margin-top:75px;
+  }
+ }
+}
+
+@include breakpoint (when-landscape-tablet) {
+.review-pay{
+ .content-left,
+ .content-right,
+ .booking-summary,
+ .total-book,
+ .your-book,
+ .your-book-inner,
+ .rooms-list{
+    width: 100%;
+  }
+  .content-right,
+  .circle-box{
+    float: left;
+  }
+  .content-left{
+    float: right;
+  }
+  .total-book, .desktop-hide-only{
+    display: table;
+  }
+  .total-book{
+    .price-amount-txt{
+      vertical-align: initial;
+    }
+  }
+  .total-price, .time-to-book{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+  }
+  .total-price{
+    width: 67%;
+  }
+  .time-to-book{
+    width: 33%;
+    padding-left: 20px;
+  }
+  .hurry-price{
+    font-size: 13px;
+  }
+  .price-amount-txt, .savings-price, .or{
+    font-size: 15px;
+  }
+  .or{
+    color: $txt-default;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .left-time{
+    font-size: 20px;
+  }
+  .price-cost{
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .total-price{
+    padding: 20px 5px 5px 10px;
+    .price-amount-txt{
+      vertical-align: top;
+    }
+     .float-left{
+      vertical-align: middle;
+    }
+    .price-amount-txt, .float-left, .float-right{
+      float: none;
+      display: inline-block;
+    }
+  }
+  .get-choice, .get-options, .bed-breakfast{
+    display: inline-block;
+  }
+  .bed-breakfast{
+    padding-right: 5px;
+  }
+  .get-options, .room{
+    padding-left: 5px;
+  }
+ .total-price .float-left, .total-price .float-right{
+   padding-left: 20px;
+ }
+ .saving-detail {
+     padding-right: 24px;
+     margin-top: 8px;
+   }
+ .booking-summary{
+   .get {
+     border: 0;
+     border-bottom: solid 2px $b-sticky;
+     margin: 0;
+     padding: 20px 0 15px 0;
+   }
+ }
+ .book-place{
+   margin: 0 0 12px 0;
+  padding: 12px 20px 12px 0;
+ }
+ .chk-in-date, .stay-detail, .left-time-txt{
+    font-size: 13px;
+  }
+.chk-in-date{
+  min-width: 137px;
+}
+.get {
+  .content-middle{
+    padding: 0;
+  }
+  }
+  .your-book{
+    box-shadow: none;
+    margin: 0;
+    p{
+      width: 90%;
+    }
+  }
+  .your-book-image, .promo-ipad{
+      float: left;
+  }
+  .your-book-image{
+    width: 289px;
+    height: 235px;
+  }
+  .book-summary{
+    float: right;
+    width: 66%;
+    padding: 0;
+  }
+  .promo-ipad{
+    width: 260px;
+  }
+  .change-link{
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    border: 0;
+  }
+  .brdr-btm-ipad{
+    border-bottom: solid 2px $b-light;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+  }
+  .brdr-top-ipad{
+    border-top: solid 2px $b-light;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .stay-details-left-ipad, .stay-details-right-ipad{
+    float: left;
+  }
+  .stay-details-left-ipad{
+    min-width: 240px;
+  }
+  .stay-details-right-ipad{
+    width: 50%;
+    .stay-details-row{
+      width: 100%;
+    }
+     .stay-label{
+       display: block;
+     }
+  }
+  h2.ipad-show{
+    display: inline-block;
+    float: left;
+    border: 0;
+    padding: 18px 0 0 0;
+    margin: 0;
+    font-size: 22px;
+  }
+  .atol{
+    text-align: right;
+  }
+  .atol-hdng-inner{
+    text-align: left;
+  }
+  .total-book.mobile, .free-cancel, .purple-total-ipad-none, .reveiw-ipad-show{
+    display: none;
+  }
+  .enter-details-row{
+    padding: 20px 0;
+  }
+  .enter-details{
+    float: left;
+    font-size: 20px;
+    display: inline-block;
+    padding-top:10px;
+  }
+  .signin{
+    margin-bottom: 0;
+    float: right;
+  }
+  .purple-total{
+    padding-top: 0;
+  }
+  .your-detail-section, .traveller-section, .traveller-other, .hotel-request, .payment-details{
+    .content-middle{
+      padding: 0;
+    }
+  }
+  .rooms-list-section{
+    width: 47%;
+  }
+  .total-price-sec{
+      width: auto;
+     .input-field{
+        margin-right: 30px;
+        display: inline-block;
+        padding: 0;
+        width: auto;
+     }
+     .price-amount:after, .price-Deposit:after{
+       width: 13px;
+      height: 13px;
+     }
+    .total-price{
+      padding: 22px 26px 22px 30px;
+      vertical-align: middle;
+      width: auto;
+    }
+    .price-amount-txt, .price-amount{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .price-amount-txt{
+      width: 110px;
+      line-height: 17px;
+      font-size: 14px;
+      padding-bottom: 0;
+      min-height: 35px;
+      letter-spacing: -0.2px;
+      &.pay-amount{
+        padding-top: 10px;
+      }
+    }
+    .price-amount{
+      font-size: 22px;
+      min-width: 140px;
+      text-align: right;
+    }
+  }
+  .expiry{
+    width: 46%;
+  }
+  .hotel-request{
+    span.font-light{
+      clear: both;
+      display: block;
+      margin: 8px 0 0 0;
+    }
+  }
+  .circle-box{
+    margin-right: 15px;
+  }
+  .circle-box, .lower-circle{
+    width: 35px;
+    height: 35px;
+  }
+
+  .stay-details-right-ipad {
+    .stay-detail {
+      max-width: none;
+    }
+  }
+
+.pymnt-pop-cctype{
+  right:-15px;
+}
+.pymnt-pop-cctype {
+  .fa-sort-desc{
+  right: 20px;
+  left:auto;
+ }
+}
+.price-label{
+  top:-47px;
+  padding:10px 10px 10px 20px;
+  right:0;
+  left:0;
+}
+.info-circle{
+  padding-top:0;
+  }
+ }
+}
+@include breakpoint (when-portrait-tablet) {
+  .review-pay{
+    .your-book-image {
+      width: 269px;
+      height: 220px;
+    }
+    .promo-hdng{
+      padding-top: 31px;
+    }
+    .total-price{
+      width: 42%;
+    }
+    .book-summary{
+      width: 56%;
+    }
+    .change-link{
+      position: relative;
+      text-align: left;
+      right: 0;
+      margin-bottom: 0;
+    }
+    .book-summary{
+      .brdr-btm-ipad{
+        padding-bottom: 0;
+      }
+    }
+    .expiry{
+      width: 45%;
+    }
+    .or, .bed-breakfast{
+      display: block;
+    }
+    .bed-breakfast{
+      .show-on-tablet-landscape{
+        display: none;
+      }
+    }
+    .total-price-sec{
+      .total-price{
+        padding: 20px 20px 20px 30px;
+      }
+      .price-amount{
+        min-width: 125px;
+        padding-left: 0;
+        &:after{
+          margin: 0 0 0 12px;
+        }
+      }
+    }
+    .stay-details-row{
+      .stay-detail{
+        width: auto;
+        span{
+          padding-left: 5px;
+        }
+      }
+    }
+    .stay-details-right-ipad{
+      width: auto;
+    }
+    .hotel-request{
+      .font-light{
+        clear: both;
+        display: block;
+        margin: 8px 0 0 0;
+      }
+     textarea{
+        width: 100% !important;
+     }
+    }
+    .rooms-list-section{
+      width: 62%;
+    }
+    .stay-details-right-ipad {
+      .stay-detail{
+      max-width:138px;
+     }
+    }
+    .price-label{
+      top:-82px;
+      padding:18px 10px 18px 20px;
+    }
+    .info-circle{
+      padding-top:10px;
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  .different-address {
+    margin-bottom:35px;
+    .outline-button {
+      margin-top:20px;
+    }
+  }
+.review-pay{
+  max-width: 1140px;
+  margin: auto;
+  padding: 75px 0 0;
+> .content-middle {
+  padding: 0;
+}
+.content-left, .content-right{
+  float: none;
+}
+.your-detail-section, .book-tab > div{
+  border-bottom: solid 2px $b-sticky;
+}
+.book-tab > div:last-child{
+    border: 0;
+}
+.your-detail-section{
+  padding-bottom: 14px;
+  margin-bottom: 30px;
+}
+.country-field{
+  margin-bottom: 25px;
+}
+.traveller-section{
+  padding-bottom: 30px;
+  .checkbox{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+}
+input, textarea{
+  font-size: 15px;
+}
+.content-left, .booking-summary,.your-book-inner, .your-book, .total-book, .total-book > div{
+  width: 100%;
+}
+h2{
+  font-size: 24px;
+  &.ipad-show{
+    margin-bottom: 15px;
+  }
+}
+.atol{
+  display: block;
+  border-bottom: solid 2px $b-sticky;
+  margin: 0 0 20px 0;
+  padding: 21px 0 20px 0;
+  &.show-on-desktop{
+     margin: 0 20px 20px 20px;
+  }
+}
+.atol-icon {
+  width: 34px;
+  height: 34px;
+  margin-right: 7px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.details-summry{
+  padding-left: 20px;
+  padding-right: 20px;
+  display: table;
+  a{
+   display: table-cell;
+   padding: 10px 0 10px 13px;
+   font-size: 15px;
+   border-bottom: 2px solid $b-sticky;
+   &.active{
+      border-bottom: 4px solid $b-blue;
+      font-family: $font-bold;
+   }
+  }
+}
+.radio {
+  vertical-align: middle;
+  @include radio-button();
+  border-color: $b-light3;
+  &.checked{
+    border-color:  $b-blue;
+  }
+}
+.enter{
+  font-size: 24px;
+  border-bottom: solid 2px $b-sticky;
+  margin: 0 0 20px 0;
+  padding: 21px 0 17px 0;
+}
+.atol-mbl{
+  width: 100%;
+}
+.signin {
+  padding: 10px 0 10px 20px;
+  border: solid 1px  $bgnd-cornflower-blue;
+  width: 100%;
+  max-width: 280px;
+}
+.icon-user {
+  width: 12px;
+  height: 14px;
+  margin-right: 15px;
+}
+.signin-txt {
+  color: $txt-cornflower-blue;
+  font-size: 17px;
+}
+.dropdown-arrow {
+  width: 0px;
+  height: 0px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid $bgnd-cornflower-blue;
+  right: 18px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+h4 {
+  font-size: 20px;
+  margin: 0 0 28px 0;
+    span.font-light {
+      font-size: 15px;
+      letter-spacing: -0.2px;
+      color: $txt-dis;
+      display: block;
+      padding-top: 2px;
+    }
+    span.mandatory {
+      font-size: 12px;
+      padding-top: 5px;
+      width: 100%;
+      @include opacity();
+    }
+    span.lead-passenger{
+      display: inline-block;
+      padding-left: 10px;
+    }
+}
+h5{
+    font-size: 17px;
+}
+.input-field {
+  position: relative;
+  width: 100%;
+  padding: 22px 0 10px;
+  vertical-align: bottom;
+  input {
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    width: 100%;
+    padding: 5px 0;
+    line-height: 30px;
+    min-height: 30px;
+    border-bottom: solid 2px $b-sticky;
+    color: transparent;
+    color: $txt-dis;
+    position: relative;
+    background: none;
+    z-index: 4;
+      &:focus {
+        border-bottom: solid 2px $b-blue;
+    }
+ }
+  label {
+    cursor: auto;
+    position: absolute;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    bottom: 20px;
+    font-size: 15px;
+    left: 0;
+  }
+  &.active label, &.active .optional {
+    display: block;
+    bottom: 50px;
+    cursor: context-menu;
+    font-size: 13px;
+  }
+  &.active .optional {
+    display: inline-block;
+  }
+  label .confirm-email {
+    font-size: 11px;
+    font-style: italic;
+    position: absolute;
+    width: 220px;
+    bottom: -26px;
+    color: $dis-link;
+    transition: inherit;
+  }
+  &.active {
+  	.confirm-email {
+  		bottom: -56px;
+  	}
+  }
+}
+.pincode .input-field, .pincode-block > div{
+  width: 100%;
+}
+.pincode {
+  .input-field{
+    display: block;
+   }
+}
+
+.find-address{
+  font-size: 18px;
+  padding: 16px 26px;
+  color: $txt-white;
+}
+.input-group{
+  a:nth-child(2){
+  width: 100%;
+  padding: 25px 0 15px 0;
+  font-size: 15px;
+  }
+}
+.receive-holiday {
+ height: auto;
+ margin: 0 0px 20px 0px;
+ width: 100%;
+   label{
+     color: $dis-link;
+   }
+}
+.holiday-booking{
+  font-size: 15px;
+    .font-bold{
+    margin-bottom: 5px;
+    display: block;
+    }
+}
+.row-radio{
+  display: block;
+  padding: 8px 0 10px 0;
+    label{
+      padding-left: 10px;
+    }
+}
+.traveller-other{
+  margin-top: 35px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  h4{
+    .font-light{
+      display: block;
+      margin: 0;
+    }
+  }
+  h5{
+    &.adult2{
+      padding-top: 20px;
+    }
+  }
+}
+.country-arrow {
+  right: 0;
+  top: 37px;
+  bottom: 0;
+  z-index: 5;
+}
+.pymnt-card-type {
+  position:absolute;
+  right:0;
+  top:0;
+ .country-arrow {
+   display: none;
+ }
+ select {
+   position:static;
+   margin-bottom:25px;
+   padding:0;
+ }
+}
+.pincode {
+  .country-arrow{
+  top: 17px;
+ }
+}
+.expiry{
+  .country-arrow {
+    top: 13px;
+  }
+}
+.expiry-txt{
+  top: 20px;
+  font-size: 13px;
+}
+.payment-details{
+  margin-bottom: 38px;
+  .receive-holiday{
+    margin: 20px 0 0 0;
+  }
+  .checkbox{
+    float: left;
+    margin-right: 18px;
+  }
+  label{
+    float: left;
+    width: 87%;
+    left: 0;
+  }
+}
+.optional, .hurry-price{
+  @include opacity();
+}
+.optional{
+  color: $txt-dis;
+  padding-left:5px;
+}
+.pincode, #bookSummaryContent, .total-price-sec, .rooms-left, .free-cancel{
+  display: none;
+}
+.country-list {
+  display: none;
+  width: 100%;
+  background: $bgnd-white;
+  z-index: 1;
+  left: 0;
+  top: 41px;
+  right: 0;
+  box-shadow: 0 14px 47px 0 $box-shadow-color-light;
+  -moz-box-shadow: 0 14px 47px 0 $box-shadow-color-light;
+  -webkit-box-shadow: 0 14px 47px 0 $box-shadow-color-light;
+  ul {
+    width: 100%;
+    padding: 10px 0;
+    li {
+      padding: 3px 20px;
+    }
+  }
+}
+.hotel-request {
+padding-bottom: 35px;
+margin-bottom: 40px;
+  h5{
+    padding-bottom: 32px;
+  }
+  label {
+    position: initial;
+    color: $txt-dis;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  .input-field {
+    padding: 7px 0;
+  }
+  textarea{
+    border: 0;
+    border-bottom:2px solid $b-sticky;
+    margin-top: 48px;
+    min-height: 70px;
+    width: 100%;
+    position: relative;
+    background: transparent;
+  }
+}
+input, textarea {
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+    &:focus {
+      outline: 0;
+      border-bottom: solid 2px $b-blue;
+    }
+}
+.other-requests{
+  label{
+    position: absolute;
+    padding-left: 0;
+    bottom: 50px;
+  }
+  .input-field {
+    padding: initial;
+    &.active label{
+      bottom: 75px;
+    }
+  }
+}
+span {
+  &.card-img {
+    width: 30px;
+    height: 20px;
+    right: 0;
+    img{
+      max-width: 100%;
+      height:auto;
+    }
+  }
+  &.security-code {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    bottom: 23px;
+    right: 10px;
+    z-index: 5;
+  }
+}
+.expiry {
+  width: 45%;
+  float: left;
+  &.year {
+    float: right;
+  }
+}
+.expiry-block {
+  display: table;
+  &.input-field label {
+    bottom: 13px;
+  }
+  &.card-name label {
+    bottom: 20px;
+  }
+}
+.checkbox {
+  background: $bgnd-white;
+  border: 2px solid $b-default;
+  @include opacity5();
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  border-radius: 2px;
+  position: relative;
+
+  &.checked{
+    opacity: 1;
+    background: $bgnd-cornflower-blue;
+    border: 2px solid $b-blue;
+    @include check-box();
+    height: 16px;
+    width: 16px;
+    &:after{
+      width: 9px;
+      height: 5px;
+      top: 3px;
+      left: 2px;
+    }
+  }
+}
+.your-book{
+  margin: 0 0 70px 0;
+  padding: 20px 0 0 0;
+  line-height: 20px;
+}
+.get-choice {
+  font-size: 20px;
+  padding-top: 20px;
+  color: $txt-light-purple;
+}
+.get-options {
+    color: $txt-light-purple;
+}
+.your-book-image{
+  height: 235px;
+  padding-bottom: 0;
+}
+.book-place {
+  border-bottom: solid 2px $b-light;
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+.hotel-place {
+  font-size: 14px;
+  padding: 4px 9px 0 0;
+}
+.hotel-ratings {
+  padding: 3px 0 0 0;
+}
+.all-inclusive, .double {
+  padding-top: 2px;
+}
+.change-link {
+  font-size: 13px;
+  padding: 5px 0 8px 0;
+  text-decoration: underline;
+  border-bottom: solid 2px $b-light;
+  margin-bottom: 12px;
+}
+.stay-details-row {
+  padding: 2px 0;
+}
+.chk-in, .stay-label {
+  font-size: 13px;
+  min-width: 92px;
+}
+.chk-in-date, .stay-detail {
+  min-width: 118px;
+}
+.chk-in-time {
+  font-size: 12px;
+  display: block;
+  padding-left: 92px;
+  line-height: normal;
+}
+.chk-in-out-row{
+  padding-bottom: 5px;
+}
+.purple-total-innner, .enter-details, .or, .room, .bed-breakfast span{
+  display: none;
+}
+.content-left{
+  h2{
+    &.reveiw-ipad-show{
+      display: none;
+    }
+  }
+  .atol {
+    display: none;
+  }
+}
+.purple-total-innner{
+    &.purple-total-ipad-none{
+      padding: 15px 20px;
+      display: table;
+    }
+}
+.purple-price{
+  font-size: 22px;
+}
+.saving-detail {
+  padding: 11px 0 16px 0;
+  margin-top: 18px;
+  border-top: solid 2px $b-light;
+}
+.your-book-txt{
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  padding: 15px 0 15px 18px;
+  color: $txt-white;
+}
+.left-book-circle{
+  margin-right: 18px;
+  color: transparent;
+  z-index:2;
+  svg{
+    fill:transparent;
+  }
+  circle {
+    stroke:$bgnd-pickled-bluewood;
+    stroke-width: 4;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 380;
+    animation: rotate 5s linear infinite;
+  }
+}
+.circle-box, .lower-circle{
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+.lower-circle {
+  @include border-radius(100px);
+  border: 3px solid $bgnd-sunset-orange;
+}
+.chk-in-date,
+.stay-detail,
+.get-options,
+.all-inclusive,
+.double,
+.saving-txt {
+  font-size: 15px;
+}
+.hotel-name,
+.running-price,
+.purple-total,
+.saving-price,
+.your-book-txt{
+  font-size: 17px;
+}
+.stay-detail, .stay-label{
+  letter-spacing: -0.2px;
+}
+.time-to-book{
+  padding: 8px 18px 8px 21px;
+}
+.total-price{
+  padding: 16px 20px 8px 20px;
+}
+.left-time{
+  font-size: 22px;
+}
+.left-time-txt{
+  font-size: 13px;
+  display: inline-block;
+}
+.hurry-price{
+  font-size: 11px;
+  width: 90px;
+}
+.total-price{
+  &.bgnd-emerald{
+  background: transparent;
+  }
+}
+.total-price {
+  .price-amount-txt{
+    color: $txt-default;
+  }
+  .price-cost{
+    color: $txt-orange;
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .savings-price{
+    color: $txt-emerald;
+    font-size: 13px;
+  }
+  button{
+    padding:14px 20px 14px 25px;
+    background: $bgnd-emerald;
+    color: $txt-white;
+    font-size: 18px;
+    min-width: 156px;
+    &:after{
+      content: '';
+      width: 13px;
+      height: 13px;
+      border-right: 3px solid $b-white;
+      border-top: 3px solid $b-white;
+      line-height: 30px;
+      text-indent: 400px;
+      display: inline-block;
+      @include rotate(45deg);
+      margin: 0 0 0 20px;
+    }
+  }
+ }
+ .get {
+   border: none;
+ }
+ .error-msgs{
+   color: $txt-sunset;
+   font-size: 13px;
+   padding: 2px 0 0 0;
+   left: 0;
+   top:64px;
+ }
+ .receive-holiday {
+   .error-msgs{
+   position: relative;
+   bottom:-4px;
+   top:auto;
+  }
+ }
+ .expiry {
+   .error-msgs{
+   top: 41px;
+  }
+ }
+ select{
+   -webkit-appearance: none;
+      -moz-appearance: none;
+       appearance: none;
+       z-index: 6;
+       width: 100%;
+       background: transparent;
+       bottom: 2px;
+       left: 0;
+       right: 0;
+       top: 0;
+       position: absolute;
+       color: $txt-lynch;
+       font-size: 15px;
+       padding: 5px;
+  }
+.find-disabled{
+  @include opacity5();
+  pointer-events:none;
+}
+.savings-price,
+.saving-detail,
+#chktime,
+#chkouttime{
+  display:none;
+}
+.mnthDisabled{
+  cursor:not-allowed;
+  @include opacity();
+}
+#dvPassengerList  {
+  .input-group:nth-child(3){
+  margin-bottom:25px;
+ }
+}
+.rooms-list-section{
+  padding:0 20px;
+}
+.pymnt-pop-cctype {
+   bottom: 45px;
+   right: 0;
+   z-index: 10;
+   width: 190px;
+   padding: 15px;
+   background: $bgnd-lynch;
+   color: $txt-white;
+   text-align: center;
+}
+ .fa-sort-desc{
+   bottom: -9px;
+   color: $txt-lynch;
+   font-size: 24px;
+   right: 15px;
+   margin: auto;
+}
+.pymnt-pop-cctype,
+.pymnt-amrcn-crd img,
+.pymnt-visa-crd img {
+  @include border-radius(5px);
+}
+.pymnt-amrcn-crd img,
+.pymnt-visa-crd img{
+  width:100%;
+  height:auto;
+  margin-top:5px;
+}
+.pymnt-amrcn-crd,
+.pymnt-visa-crd {
+   vertical-align: top;
+   text-align: left;
+}
+.pymnt-pop-cctype {
+  .close--icon{
+  top:10px;
+ }
+}
+.fa-sort-up:before,
+.fa-sort-desc:before {
+  content: "\f0dd";
+}
+.book-flex{
+  display:flex;
+  width:100%;
+  padding-top:15px;
+}
+.book-flex1{
+  flex:1;
+}
+.book-flex3{
+  flex:3;
+}
+
+.try-again-box{
+  border:1px solid #cb3544;
+  @include border-radius(2px);
+  margin-bottom:27px;
+}
+.try-again-left{
+  background:$bgnd-red-light;
+  width:45px;}
+  .try-again-right{
+    background:$bgnd-light;
+  }
+.unfortunately, .plz-try,
+&.try-again .payment-details .input-field.active label,
+&.try-again .expiry-txt{
+  color:$txt-favourate;
+}
+.plz-try{
+  padding-bottom:5px;
+}
+.unfortunately{
+  padding-bottom:15px;
+}
+.plz-try{
+  font-size:17px;
+}
+.unfortunately{
+  font-size:15px;
+}
+.card-instruction{
+  font-size:13px;
+}
+.card-instruction{
+  color:$txt-lynch;
+  line-height:18px;
+}
+.try-again-left, .try-again-right{
+  padding:10px 20px 15px 20px;
+}
+&.try-again .payment-details .input-field.active input,
+&.try-again .payment-details .input-field.active input:focus,
+&.try-again .expiry input{
+    border-bottom: solid 2px $b-sunset;
+}
+.price-label{
+  top:-121px;
+  right:0;
+  left:0;
+  background:$bgnd-sunset;
+  color:$txt-white;
+  padding:16px 10px 16px 20px;
+  font-size:14px;
+  z-index:9;
+  text-align:left;
+  font-size:15px;
+  line-height:19px;
+}
+.price-label>div{
+  display:inline-block;
+  line-height:16px;
+  margin:10px 0 0;
+  font-size:14px;
+  max-width:90%;
+}
+.price-widget{
+  right:0;
+  left:0;
+}
+.price-widget-arrow{
+  background:$bgnd-sunset;
+  height:13px;
+  top:-68px;
+  @include rotate(45deg);
+  width:13px;
+  z-index:18;
+  right:auto;
+  left:40px;
+}
+.we-are-sry{
+  float:left;
+  width:90%;
+}
+.info-circle{
+  float:right;
+  width:20px;
+  padding-top:8px;
+  font-size:18px;
+}
+.priceChangeBannerDesk.success .price-label,
+.priceChangeBannerDesk.success .price-widget-arrow,
+.priceChangeBannerIpad.success .price-label,
+.priceChangeBannerIpad.success .price-widget-arrow
+.priceChangeBannerMob.success .price-label,
+.priceChangeBannerMob.success .price-widget-arrow{
+  background:$bgnd-emerald;
+}
+.priceChangeBannerDesk.success.weare-sorry,
+.priceChangeBannerIpad.success.weare-sorry,
+.priceChangeBannerMob.success.weare-sorry{
+  color:$bgnd-emerald;
+}
+&.try-again {
+  .try-again-box{
+  display:block;
+ }
+}
+.weare-sorry{
+  color:$txt-sunset;
+  font-size:15px;
+  padding:0 10px 10px 10px;
+}
+.weare-sorry i{
+  font-size:16px;
+  padding-right:14px;
+}
+
+.mobile-top{
+  .price-label{
+  top:-25px;
+ }
+}
+.priceChangeBannerDesk,
+.priceChangeBannerIpad,
+.priceChangeBannerMob{
+  display:none;
+ }
+ input:focus + label{
+   color:$txt-cornflower-blue;
+ }
+ .sorry-message{
+   margin-top:75px;
+   }
+   .post-code-margin{
+     margin-top: 20px;
+   }
+   .email-error {
+     .error-msgs{
+       top:78px;
+     }
+   }
+   .checkbox-terms{
+     overflow:hidden;
+   }
+ }
+}

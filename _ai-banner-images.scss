@@ -1,0 +1,27 @@
+@media (min-width:1400px){
+.all-inclusive-banner{
+  background:url(https://resources.teletextholidays.co.uk/drupal/images/all-inclusive/all-inclusive-head-l.jpg);
+ }
+}
+@media (max-width:1400px) and (min-width:1200px){
+.all-inclusive-banner{
+  background:url(https://resources.teletextholidays.co.uk/drupal/images/all-inclusive/all-inclusive-head-d.jpg);
+ }
+}
+@media (max-width:1200px) and (min-width:992px){
+.all-inclusive-banner{
+  background:url(https://resources.teletextholidays.co.uk/drupal/images/all-inclusive/all-inclusive-head-sd.jpg);
+ }
+}
+@media (max-width:991px) and (min-width:768px){
+.all-inclusive-banner{
+  background:url(https://resources.teletextholidays.co.uk/drupal/images/all-inclusive/all-inclusive-head-t.jpg);
+  }
+}
+ @media (max-width:767px){
+ .all-inclusive-banner{
+   background:url(https://resources.teletextholidays.co.uk/drupal/images/all-inclusive-mobile.jpg);
+   height:inherit;
+   padding-bottom:10px;
+ }
+}

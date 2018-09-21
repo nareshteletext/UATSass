@@ -1,0 +1,25 @@
+.on-scroll-popup {
+  .gray-input-box {
+    width:200px;
+    padding:16px;
+    background-color:$bgnd-concrete;
+    @include border-radius(2px);
+  }
+  @include breakpoint (large-desktop) {
+    .gray-input-box {
+      width:250px;
+      padding:17px;
+    }
+  }
+  @include breakpoint (landscape-tablet) {
+    .gray-input-box {
+      width:180px;
+      padding:12px 16px;
+    }
+  }
+  @include breakpoint (mobile) {
+    .gray-input-box {
+      width:100%;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.sort-options {
+  animation:sortOptions 0.5s  ease-in-out;
+  animation-fill-mode:forwards;
+  animation-delay:0.1s;
+  height:0px;
+  top:25px;
+  opacity:0;
+  .radio-button {
+    margin-left:0;
+  }
+  .radio-row {
+    padding:7px 0;
+  }
+  .radio-label {
+    padding-left:15px;
+  }
+  .radio-wrapper {
+    border-top: dashed 1px $grid-border;
+    padding:13px 0 13px 12px;
+    margin-top:15px;
+  }
+}
+
+
+@keyframes sortOptions {
+  0% {
+    top:25px;
+    opacity:0;
+    height:0px;
+  }
+  100% {
+    top:0;
+    opacity:1;
+    height:auto;
+  }
+}

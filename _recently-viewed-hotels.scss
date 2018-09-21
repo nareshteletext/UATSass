@@ -1,0 +1,122 @@
+@include breakpoint(when-desktop) {
+.recent-viewed-hotels {
+  padding:30px 0 70px 0;
+  .content-header {
+    @include desktop-header-left();
+  }
+  .recent-hotel {
+    width:262px;
+    margin-left:29px;
+    .full-image {
+      margin-bottom:10px;
+      width:262px;
+      height:180px;
+      @include border-radius(2px);
+      overflow:hidden;
+    }
+    &:first-child {
+      margin-left:0;
+    }
+  }
+  .hotel-content {
+    span{
+      font-size:20px;
+    }
+    p {
+      font-size:13px;
+      @include opacity();
+      padding:5px 0;
+    }
+    i {
+      font-size:12px;
+      letter-spacing:2px;
+    }
+  }
+  .more-then4 {
+    .full-image {
+      margin-bottom:10px;
+      width: 165px;
+      height: 140px;
+      }
+    span{
+      font-size:15px;
+    }
+    p {
+      font-size:13px;
+      padding:0 0 5px 0;
+    }
+    .recent-hotel {
+      width: 165px;
+      }
+    }
+  }
+}
+@include breakpoint(small-desktop) {
+  .recent-viewed-hotels {
+    .owl-wrapper-outer {
+      padding-left:40px;
+    }
+  }
+}
+
+@include breakpoint(when-landscape-tablet) {
+  .recent-viewed-hotels {
+    padding:15px 0 40px 0;
+  }
+
+}
+
+@include breakpoint(when-portrait-tablet) {
+  .recent-viewed-hotels {
+    .more-then4 {
+      .recent-hotel, .full-image {
+        width:150px;
+      }
+    }
+    .recent-hotel {
+      margin-left:29px;
+      &:first-child {
+        margin-left:0;
+      }
+    }
+  }
+
+}
+
+
+@include breakpoint(mobile) {
+  .recent-viewed-hotels {
+    .content-middle {
+      padding:0;
+    }
+    padding:40px 0 20px 0;
+    .owl-wrapper-outer {
+      padding-left:20px;
+    }
+    .full-image {
+      width:150px;
+      height:128px;
+      overflow:hidden;
+      margin-bottom:10px;
+      @include border-radius(2px);
+    }
+    .content-header {
+      @include mobile-header();
+    }
+    .hotel-content {
+      .hotel-dest {
+        font-size:12px;
+        padding-bottom:5px;
+        @include opacity();
+        max-width:140px;
+      }
+      i {
+        font-size:12px;
+        letter-spacing:2px;
+      }
+    }
+    .recent-hotel {
+      width:150px;
+    }
+  }
+}

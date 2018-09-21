@@ -1,0 +1,99 @@
+.container:before, .container:after{
+    display: table;
+    content: " ";
+}
+.CookiesBanner{
+    padding-bottom:60px
+}
+.CookiesPolicyBanner{
+    -webkit-box-shadow:0 -1px 10px 0 rgba(0,0,0,.2);
+    -moz-box-shadow:0 -1px 10px 0 rgba(0,0,0,.2);
+    box-shadow:0 -1px 10px 0 rgba(0,0,0,.2);
+    position:fixed;
+    bottom:-155px;
+    width:100%;
+    background-color:#fff;
+    z-index:113;
+    border-top:1px solid rgba(88,89,90,.2)
+}
+.cookiesPolicyContent{
+    font-size:14px;
+    line-height:17px!important;
+    color:#58595b;
+    padding:0 20px;
+    width:85%;
+    display:inline-block;
+    vertical-align:middle
+}
+.btn-acptCookie{
+    border-radius: 2px!important;
+    display: inline-block;
+    padding: 6px 12px;
+    line-height: 1.428571429;
+    text-align: center;
+    border: 1px solid transparent!important;
+    width: 100px;
+    height: 36px;
+    font-size: 15px;
+    background-color: #37bdd1;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: .5px;
+    margin: 12px;
+    transition: all .2s ease-in-out;
+}
+.cookiesAnchortag{
+    color:#fff!important;
+    cursor:auto;
+    text-decoration:none
+}
+.divacptCookie{
+    height:100%;
+    width:15%;
+    display:inline-block;
+    text-align:right
+}
+.cookie-plcy-container{
+    max-width:85%;
+    width:100%;
+    margin:0 auto
+}
+.btn-acptCookie:hover{
+    background-color:#2ba7ba
+}
+.cookiesPolicyContent a{
+    color:#37bdd1;
+    transition:all .2s ease-in-out
+}
+.cookiesPolicyContent a:hover{
+    color:#2ba7ba
+}
+.btn-acptCookie{
+    border-radius:2px!important;
+    width:100px;
+    height:36px;
+    font-size:15px;
+    background-color:#37bdd1;
+    font-weight:bolder;
+    letter-spacing:.5px;
+    margin:12px;
+    transition:all .2s ease-in-out
+}
+@media(min-width:1200px){
+    .CookiesPolicyBanner .container{
+        width:1085px
+    }
+}
+@media(max-width:767px){
+	.cookiesPolicyContent{
+		padding:12px 20px;
+		width:100%;
+		text-align:center;
+		line-height:17px!important
+	}
+	.divacptCookie{
+		width:100%;
+		float:none;
+		text-align:center
+	}
+}

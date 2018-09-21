@@ -1,0 +1,56 @@
+.faq-ai {
+  &.section-gutters {
+    padding:60px 0 5px 0;
+  }
+  .col-left {
+    flex:1;
+  }
+  .col-right {
+    flex:1;
+  }
+  .grid-col {
+    max-width:inherit;
+    min-width:inherit;
+  }
+  .content-grid {
+    padding-top:38px;
+  }
+  p {
+    line-height:24px;
+    font-size:16px;
+    padding-right:60px;
+  }
+  .content-col {
+    padding-bottom:50px;
+  }
+  @include breakpoint(portrait-tablet) {
+    .col-left, .col-right {
+      flex:inherit;
+    }
+    .content-middle > .content-middle {
+      padding:0;
+    }
+    &.section-gutters {
+      padding:30px 0 5px 0;
+    }
+    .content-col {
+      padding-bottom:35px;
+    }
+  }
+}
+
+
+
+@include breakpoint(mobile) {
+    .faq-ai-mobile {
+      &:before {
+        content:'';
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        background-color:$bgnd-white;
+        width:20px;
+      }
+    }
+}

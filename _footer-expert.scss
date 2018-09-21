@@ -1,0 +1,35 @@
+.footer-expert {
+    width:100%;
+    margin:45px 0;
+    h2 {
+      font-size:28px;
+    }
+    .expert-options-wrapper {
+      margin:30px 0 0 0;
+    }
+    .space {
+      margin:0 100px;
+    }
+    .label-wrapper {
+      span {
+        font-size:13px;
+        &:first-child {
+          font-size:18px;
+        }
+      }
+    }
+    .icon-wrapper {
+      margin-bottom:10px;
+      img {
+        width:48px;
+      }
+    }
+    @include breakpoint(portrait-tablet) {
+      .space {
+        margin:0 8%;
+      }
+      h2 {
+        font-size:22px;
+      }
+    }
+}

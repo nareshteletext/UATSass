@@ -1,0 +1,42 @@
+@include breakpoint(mobile) {
+  .mobile-widget-sticky {
+    top:auto;
+    bottom:50px;
+    z-index:2;
+    max-width:80%;
+    margin:auto;
+    @include box-shadow(0 2px 20px 0 rgba(0, 0, 0, 0.34));
+    @include border-radius(100px);
+    .txt-bold {
+      font-size:13px;
+      padding-left:5px;
+    }
+    @include dtable-no-padding();
+    > div {
+      vertical-align: baseline;
+      text-align:center;
+      padding:10px;
+    }
+    .nav-map {
+    }
+    .map-icon {
+      width:11px;
+      height:14px;
+      top:2px;
+      background-position:-72px 0;
+    }
+    .filters-icon {
+      top:2px;
+      @include filters-icon-small();
+    }
+    .nav-filter {
+      border-left:solid $b-eee 2px;
+      border-right:solid $b-eee 2px;
+    }
+    .nav-sort {
+      .txt-bold {
+        padding-left:0;
+      }
+    }
+  }
+}

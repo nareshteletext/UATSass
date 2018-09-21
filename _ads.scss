@@ -1,0 +1,47 @@
+.promotions{
+  margin-top:30px;
+  .box1, .box2, .box3{
+    width:32%;
+    max-width:360px;
+  }
+  .box2, .box1 {
+    margin-right:2.5%;
+  }
+  a img {
+    width:100%;
+  }
+  a {
+    .overlay {
+      opacity:0;
+      bottom:4px;
+      z-index:2;
+      &:hover {
+        opacity:0.5;
+      }
+    }
+  }
+
+  @include breakpoint(small-desktop) {
+    .box2, .box1 {
+      margin-right:2%;
+    }
+  }
+
+  @include breakpoint(portrait-tablet) {
+    margin-top:20px;
+  }
+
+  @include breakpoint(mobile) {
+    .show-on-mobile {
+      width:100%;
+    }
+    .box1, .box2, .box3 {
+      width:100%;
+      float:none;
+      display:inline-block;
+    }
+    .box2, .box1 {
+      margin:0 0 10px 0;
+    }
+  }
+}

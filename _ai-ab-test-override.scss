@@ -1,0 +1,296 @@
+.header, .mobile-widget-header.pstn-fxd, .mega-menu-wrapper {
+  position:absolute;
+}
+.hotel-deals {
+  .owl-carousel .owl-wrapper-outer {
+    padding:5px 0 30px 0;
+  }
+}
+.travel-active {
+  .header {
+    top:0!important;
+  }
+  .sticky-nav.sticky-pstn-fxd {
+    z-index:111;
+  }
+  .main-banner {
+    margin-top:23px;
+  }
+  @include breakpoint(mobile) {
+    .sticky-nav {
+      top:121px;
+      &.sticky-pstn-fxd {
+        top:0;
+      }
+    }
+  }
+  .sedebar-nav-overlay {
+    z-index:112;
+  }
+  .sidebarnav-wrapper {
+    z-index:113;
+  }
+}
+.footer-description {
+  display:none;
+}
+.deals-info {
+  display:flex;
+  justify-content:space-between;
+  > div, span {
+    align-self:center;
+  }
+  p {
+    opacity:0.7;
+    font-size:11px;
+  }
+  a {
+    display:flex;
+    background-color:#37bdd1;
+    padding:12px 15px;
+    @include border-radius(2px);
+    color:#fff;
+    &:before {
+      content:'';
+      position:absolute;
+      top:19px;
+      right:16px;
+      width:12px;
+      height:2px;
+      background-color:$bgnd-white;
+    }
+    &:hover {
+      background-color:#27aabd;
+    }
+  }
+  .line-arrow-right {
+    border-color:#fff;
+    width:8px;
+    height:8px;
+    margin-left:20px;
+  }
+  @include breakpoint(small-desktop) {
+    a, .line-arrow-right {
+      display:none;
+    }
+    padding:0 0 0 40px;
+  }
+  @include breakpoint(portrait-tablet) {
+    padding:0 0 0 20px;
+    margin-top:-6px;
+  }
+  @include breakpoint(mobile) {
+    padding:0 0 0 20px;
+  }
+}
+.most-popular-hotels .reveal-mask {
+  background-color:$bgnd-white;
+}
+hr {
+  border-bottom:solid rgba($b-lynch, 0.2) 1px;
+  //border-bottom:dashed #e6eaee 2px;
+}
+.top-nav-sale {
+  display:none;
+}
+.hotel-deals {
+  border:none;
+  padding:55px 0 0 0;
+  .hotel-deals-price {
+    margin:0;
+  }
+  @include breakpoint(portrait-tablet) {
+    .owl-carousel .owl-wrapper-outer {
+      padding:0 0 30px 20px;
+    }
+  }
+}
+.multi-component {
+  padding:55px 0 0 0;
+  margin-bottom:100px;
+}
+.banners-footer-strip {
+    &.ai-ab-test {
+      margin-bottom:40px;
+    }
+    .lg-flex-box.item-flex.space-center {
+      justify-content:center;
+    }
+    .small-icons {
+      justify-content:stretch;
+      padding-bottom:5px;
+    }
+    .trust-pilot-logo {
+      width:128px;
+      img {
+        width:100%;
+      }
+    }
+    .icon-star {
+      width:14px;
+      height:14px;
+      margin-right:2px;
+      img {
+        width:100%;
+      }
+    }
+    .totalTrustPilotRate {
+      font-size:15px;
+      padding-left:5px;
+    }
+
+    @include breakpoint(portrait-tablet) {
+      #ravelExperience, .border-2 {
+        display:none;
+      }
+      .show-on-large-screen {
+        display:block;
+      }
+      .b-right {
+        margin:0 15px;
+      }
+      .content-middle {
+        padding:0;
+      }
+    }
+}
+
+@include breakpoint(landscape-tablet) {
+  .hotel-deals .carousel-title-2 {
+    padding:0 40px 35px 40px;
+  }
+}
+
+@include breakpoint (portrait-tablet) {
+  .content-middle, .content-full {
+    padding:0 20px;
+  }
+  .footer-guides .content-middle {
+    padding:30px 20px 10px 20px;
+  }
+  .hotel-deals .carousel-title-2 {
+    padding:0 20px 35px 20px;
+  }
+}
+
+@media(min-width:768px) and (max-width:992px) {
+  .multi-component {
+    padding:46px 0 0 0;
+  }
+  /* Newsletter section */
+  .newsletter {
+    padding:20px 0 20px 0;
+    min-height:inherit;
+  }
+}
+@include breakpoint(mobile) {
+  .multi-component {
+    padding: 40px 0 0 0;
+    margin-bottom:0;
+  }
+  .hotel-deals .carousel-title-2 {
+    padding:0 20px 25px 20px;
+  }
+  .hotel-deals {
+    padding:36px 0 0 0;
+  }
+  /*.hotel-deals {
+    .carousel-footer .grid-stay {
+      padding:0 10px;
+    }
+  }
+  /* Mobile ATOAL */
+  .mobile-gray-strip {
+    font-size:12px;
+    padding-bottom:20px;
+    .gray-right, .tth-price {
+      font-size:11px;
+    }
+    .totalTrustPilotRate {
+      padding-left:5px;
+    }
+    .ratings-images {
+      img {
+        margin-right:2px;
+      }
+    }
+    .gray-strip-ratings {
+      padding-top:7px;
+    }
+    .icon-and-label {
+      padding-top:5px;
+      &:first-child {
+        padding-top:0;
+      }
+      img {
+        margin-right:7px;
+      }
+    }
+    .trust-pilot-logo {
+      padding-top:7px;
+      width:118px;
+      margin:0 auto;
+      img {
+        width:100%;
+      }
+    }
+    .gray--middle {
+      border:solid 1px rgba($separator, 0.5);
+      align-self:center;
+      height:72px;
+    }
+    .tth-pp {
+      left:0;
+      font-size:9px;
+    }
+    .tth-asterisk {
+      top:-1px;
+      right:-4px;
+      font-size:12px;
+    }
+  }
+  .border-dashed {
+    margin:2px 0 11px 0;
+  }
+
+  /* FAQ Overrides */
+  .accordion {
+    hr {
+      border:none;
+    }
+    .accordion-header {
+      h2 {
+        font-size:18px;
+        padding-right:24px;
+      }
+      @include box-shadow(none);
+    }
+    .accordion-section {
+      border-top:solid rgba(88, 89, 91, 0.2) 1px;
+    }
+    .accordion-section {
+      hr {
+        display:none;
+      }
+    }
+  }
+}
+.deals-accordion >div:first-child .accordion-section {
+  border:none;
+}
+
+
+.mobile-dstn-icon {
+  background-image: url('https://resources.teletextholidays.co.uk/drupal/images/sprite/v1/common-icons.svg');
+  background-position:-302px -114px;
+}
+
+
+
+
+
+
+
+
+
+// end

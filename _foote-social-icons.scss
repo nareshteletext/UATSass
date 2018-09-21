@@ -1,0 +1,22 @@
+.foote-social-icons {
+  a {
+    margin-left:6px;
+    width:34px;
+    img {
+      width:100%;
+    }
+  }
+}
+@include breakpoint(portrait-tablet) {
+  .foote-social-icons {
+    a {
+      width:20px;
+      margin-left:3px;
+    }
+  }
+  .footer-grid-links {
+    a {
+      font-size:12px;
+    }
+  }
+}

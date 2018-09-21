@@ -1,0 +1,7 @@
+.dtable{
+  display:table;
+  width:100%;
+  >div {
+    display:table-cell;
+  }
+}

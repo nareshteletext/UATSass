@@ -1,0 +1,82 @@
+/* Checkbox */
+.check-box, .uncheck-box{width:18px;height:18px;border-radius:1px;}
+.check-box span{width:12px;height:6px;border-left:solid #fff 2px;border-bottom:solid #fff 2px;transform:rotate(-45deg);-moz-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);top:4px;left:3px;}
+.uncheck-box{border:solid 1px #6f859f;}
+
+/* Calendar */
+.wild-search table tr td{text-align:center;padding:10px 14px;/*border-radius:100px;*/font-size:15px;position:relative;}
+.wild-search table tr td:hover a{color:$txt-cornflower-blue;}
+.wild-search table tr td:hover{cursor:pointer;}
+.wild-search  tr th{font-size:15px;padding:5px;opacity:0.7}
+.wild-search .ui-datepicker-header{text-align:center;max-width:308px;padding-bottom:20px;}
+.wild-search .ui-datepicker-title{font-size:15px;font-weight:bold;}
+.wild-search .ui-state-disabled.ui-datepicker-today{opacity:1;}
+.wild-search .ui-state-disabled.ui-datepicker-today a{color:#FFBA00;}
+.wild-search .ui-datepicker-today:before{border:solid #FFBA00 2px;width:34px;height:34px;left:6px;top:1px;position:absolute;content:'';border-radius:100px}
+.wild-search .SelectedDate:before, .wild-search .to-date:before{border:solid $b-green 2px;width:34px;height:34px;left:5px;top:1px;position:absolute;content:'';border-radius:100px;background:$bgnd-emerald;}
+.wild-search .ui-datepicker .available a{color:$txt-cornflower-blue}
+.wild-search .ui-datepicker .SelectedDate a, .wild-search .ui-datepicker .to-date a{color:#fff;position:relative;}
+.wild-search .ui-state-disabled{opacity:0.4;}
+.wild-search .owl-item{width:325px;}
+.wild-search a.ui-datepicker-prev, .wild-search a.ui-datepicker-next{display:none;}
+.wild-search .owl-theme .owl-controls{position:absolute;top:-10px;right:0;left:0;height:0;}
+.wild-search .owl-theme .owl-controls .owl-buttons div{position:absolute;margin:0;opacity:1;background:#eaebed;width:24px;height:24px;font-size:0px;}
+.wild-search .owl-prev, .wild-search .owl-next{text-indent:-100px;}
+.wild-search .owl-prev:before, .wild-search .owl-next:before{content:'';position:absolute;top:8px;width:8px;height:8px;border-top:solid #8b939c 2px;border-left:solid #8b939c 2px;}
+.wild-search .owl-prev:before{transform:rotate(-45deg);-moz-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);left:9px;}
+.wild-search .owl-next:before{transform:rotate(130deg);-moz-transform:rotate(130deg);-webkit-transform:rotate(130deg);left:7px;}
+.wild-search .owl-prev{left:0;}
+.wild-search .owl-next{right:0;}
+.wild-search .owl-carousel .owl-wrapper-outer{margin-left:-14px;}
+.wild-search .tt-dropdown-menu{box-shadow:none;right:0;left:0;}
+.wild-search .date-range-selection:after{content:'';position:absolute;top:1px;right:0;bottom:0;left:0;background-color:#ecf8ee;z-index:-1;height:34px;}
+.wild-search .date-range-selection.to-date:after{border-top-right-radius:100px;border-bottom-right-radius:100px;right:7px;}
+.wild-search .ui-datepicker-calendar{border-collapse:collapse;}
+.wild-search .date-range-selection.SelectedDate:after{border-top-left-radius:100px;border-bottom-left-radius:100px;left:5px;}
+.wild-search .ui-datepicker-week-end.date-range-selection:after{border-top-right-radius:100px;border-bottom-right-radius:100px;width:40px;}
+.wild-search .nights1 .date-range-selection.to-date:after{display:none}
+.wild-search .nights2 .ui-datepicker-week-end.date-range-selection:after{display:none;}
+.wild-search .date-range-selection.SelectedDateend:after{border-top-right-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:0;border-bottom-left-radius:0;left:0;right:5px;}
+.wild-search .ui-datepicker-calendar tr .ui-datepicker-week-end.date-range-selection:first-child:after{border-top-right-radius:0;border-bottom-right-radius:0;border-top-left-radius:100px;border-bottom-left-radius:100px;width:47px;}
+.wild-search .ui-datepicker-other-month.ui-datepicker-unselectable.ui-state-disabled{opacity:0;}
+.wild-search .SelectedDateend:after{border-top-right-radius:100px!important;border-bottom-right-radius:100px!important;width:inherit!important;}
+.calendar-title {font-size:16px;}
+
+@media(max-width:991px) {
+  .wild-search .owl-carousel .owl-wrapper-outer{margin-left:0;}
+}
+@media(max-width:767px) {
+  .wild-search .ui-datepicker-group{text-align:center;}
+  .wild-search .ui-datepicker-calendar{display:inline-block;}
+  .wild-search .ui-datepicker-header{max-width:inherit;}
+  .wild-search .date-range-selection:after{top:0;}
+  .wild-search .SelectedDate:before, .wild-search .ui-datepicker-today:before, .wild-search .to-date:before{left:6px;top:2px;}
+}
+
+@media(max-width:425px) {
+  .wild-search table tr td{padding:17px;}
+  .wild-search .SelectedDate:before, .wild-search .ui-datepicker-today:before, .wild-search .to-date:before{left:8px;top:9px;}
+  .wild-search .date-range-selection:after{top:8px;}
+  .wild-search .ui-datepicker-calendar tr .ui-datepicker-week-end.date-range-selection:first-child:after{width:inherit;}
+  .wild-search .owl-item:first-child{margin-right:0}
+  .wild-search .date-range-selection.SelectedDateend:after{right:9px;}
+}
+
+
+@media(max-width:375px) {
+  /* Search popup */
+  .wild-search table tr td{padding:14px;}
+  .wild-search .SelectedDate:before, .wild-search .ui-datepicker-today:before, .wild-search .to-date:before{left:5px;top:6px;}
+  .wild-search .date-range-selection:after{top:6px;}
+}
+
+@media(max-width:360px) {
+  .wild-search table tr td{padding:10px;}
+  .wild-search .SelectedDate:before, .wild-search .ui-datepicker-today:before, .wild-search .to-date:before{left:3px;top:3px;}
+  .wild-search .date-range-selection:after{top:2px;}
+}
+
+@media(max-width:320px){
+  /* Search popup */
+  .wild-search table tr td{padding:11px;}
+}

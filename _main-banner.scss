@@ -1,0 +1,16 @@
+.main-banner {
+  height:432px;
+  background:$bgnd-img;
+  padding-top:140px;
+  .banner-slogan {
+    color:$txt-white;
+    padding-bottom:50px;
+    text-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+    h1 {
+      font-size:60px;
+    }
+    span {
+      font-size:32px;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+@include breakpoint(when-desktop) {
+.about-features {
+  .content-header {
+    border-bottom: solid $b-sticky 2px;
+    margin-bottom: 33px;
+  }
+  padding:46px 0;
+  .features {
+    font-size: 24px;
+    padding-top: 10px;
+  }
+  .icon-cmn {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto 20px auto;
+    font-size: 15px;
+    @include icon-opacity();
+  }
+  .icon-and-label{
+    font-size: 15px;
+    padding: 0 6%;
+  }
+  .content {
+    margin: 47px 0 0 0;
+    font-size: 17px;
+    line-height:25px;
+    clear:both;
+    p {
+      padding: 0 0 30px 0;
+    }
+  }
+  .info-strip {
+    padding: 20px 0;
+    font-size: 15px;
+  }
+  .dividor {
+    padding: 0 8px;
+  }
+  .features-icons{
+    width: 75%;
+  }
+ }
+}
+@include breakpoint (when-landscape-tablet) {
+  .icon-and-label{
+    padding: 0 6%;
+  }
+}
+@include breakpoint (when-portrait-tablet) {
+  .about-features {
+    padding:0 0 50px 0;
+      .features{
+        display: block;
+        margin-bottom: 35px;
+      }
+      .features-icons, .features{
+        width: 100%;
+      }
+      .icon-and-label{
+        min-width: 80px;
+        float: left;
+        text-align: center;
+        margin: 0;
+        padding: 0 10% 0 0;
+      }
+    .info-strip{
+      .dividor{
+        color: transparent;
+        display: block;
+        height: 0;
+      }
+    }
+  }
+}
+@include breakpoint(mobile) {
+  .about-features {
+    padding:50px 0 0 0;
+    .content p {
+      font-size:17px;
+      line-height:25px;
+      padding-top:30px;
+    }
+    .features {
+      font-size:20px;
+      padding-bottom:25px;
+    }
+    .icon-and-label {
+      width:45%;
+      float:left;
+      margin-right:5%;
+      min-height:50px;
+
+    }
+    .features-icons {
+      padding:30px 0 30px 0;
+      text-align:left;
+      float:none;
+    }
+    .info-strip {
+      margin:25px -10px 0 -10px;
+      text-align:left;
+      padding:10px;
+      line-height:20px;
+      font-size:15px;
+      > div {
+        display:block;
+        &:nth-child(3) {
+          padding-top:25px;
+        }
+      }
+    }
+    .fclts-icon-check {
+      @include check-box-small();
+    }
+    .mobile-fclts {
+      padding-top:12px;
+    }
+    .fclts-label {
+      padding-left:20px;
+      font-size:15px;
+    }
+    .charges-info {
+      padding:0 0 50px 0;
+      font-size:13px;
+      line-height:18px;
+      text-align:left;
+    }
+    .txt-more {
+      padding:0;
+    }
+    .more-fclts-wrapper {
+      .bottom-toggle-arrow {
+        border-color:$b-blue;
+        top:-2px;
+        margin-left:12px;
+      }
+      .line-arrow-up {
+        top:2px;
+      }
+    }
+    .icon-beach {
+      position:absolute;
+      opacity:0.4;
+      top:0;
+      left:0;
+    }
+    .fname {
+      top:6px;
+      padding-left:35px;
+      display:inline-block;
+    }
+  }
+}

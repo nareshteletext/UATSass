@@ -1,0 +1,91 @@
+.w-100 {width:100%;}
+.image-2 {
+  display:flex;
+  justify-content:space-between;
+}
+.individual-images {
+  padding:0 30px;
+  margin-top:80px;
+}
+.image-1 {
+  padding-bottom:20px;
+}
+.sunshine-titles {
+  font-size:25px;
+  color:#fbdb3e;
+  line-height:24px;
+  align-self:center;
+}
+.sunshine-titles span {
+  display:block;
+}
+.banner-slogan {
+  display:none;
+}
+.sunshine-image {
+  left:0;
+  top:113px;
+  right:0;
+  height:337px;
+  z-index:2;
+}
+.yellow-img2 {
+  display:none;
+}
+.content-middle {
+  max-width:1140px;
+  margin:0 auto;
+  width:100%;
+  padding:0;
+  height:337px;
+}
+.campaign-page-header {
+  background-image: url('https://resources.teletextholidays.co.uk/drupal/images/sales/1970_Sale_laning_header_image.png') !important;
+  background-size:initial !important;
+  background-position:center!important;
+  height:458px;
+}
+
+@media(max-width:1400px) {
+  .campaign-page-header {background-image: url('https://resources.teletextholidays.co.uk/drupal/images/sales/1400_Sale_laning_header_image.png') !important;
+    background-position:center!important;
+  }
+}
+
+@media(max-width:1200px) {
+  .campaign-page-header {background-image: url('https://resources.teletextholidays.co.uk/drupal/images/sales/1200_Sale_laning_header_image.png') !important;
+    background-position:center!important;
+  }
+  .content-middle {
+    max-width:900px;
+  }
+}
+
+@media(max-width:1000px){
+  .campaign-page-header {background-image:url('https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/v2/992_homepage_sunshine_header.png') !important;
+    background-position:center!important;
+  }
+}
+
+@media(max-width:768px) {
+  .campaign-page-header {background-image: url('https://resources.teletextholidays.co.uk/drupal/images/sales/768_Sale_laning_header_image.png') !important;
+    background-position:center!important;
+  }
+  .sunshine-image {
+    top:105px;
+  }
+  .content-middle {
+    max-width:675px;
+  }
+}
+
+@media(max-width:767px) {
+  .campaign-page-header {background-image:url('https://resources.teletextholidays.co.uk/drupal/images/sales/640_Sale_laning_header_image.png') !important;
+    background-position:bottom!important;
+    height:300px;
+    min-height:inherit;
+  }
+  .yellow-img2, .yellow-img1 {
+    display:none;
+  }
+}

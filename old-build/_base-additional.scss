@@ -1,0 +1,112 @@
+.bgnd-purple {
+    background-color:$bgnd-butterfly;
+}
+.bgnd-youtube {
+    background-color:$bgnd-red-light;
+}
+.bgnd-blue {
+    background-color:$bgnd-cornflower-blue;
+}
+.bgnd-yellow {
+    background-color:$bgnd-yellow;
+}
+.flex-grid-box {
+  @include grid-flex();
+}
+.item-flex {
+  @include item-flex(1);
+}
+.items-center {
+ align-items:center;
+}
+.b-right {
+  border-right:solid $line 1px;
+  height:30px;
+  align-self:center;
+}
+.space-between {
+  justify-content:space-between;
+}
+.call-now-icon {
+  @include border-radius(100px);
+  border:2px solid;
+  width:30px;
+  height:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:17px;
+}
+.view-deal {
+  margin:8px 0;
+  .view-deal-button {
+    padding:7px 14px 6px 14px;
+    &:hover {
+      background-color:daken($txt-emerald, 5%);
+    }
+  }
+}
+.title-medium {
+  font-size:20px;
+  white-space:nowrap;
+}
+.section {
+  padding:30px 0;
+}
+.no-mrgn {
+  margin:0!important;
+}
+.bgnd-green {
+  background-color:$bgnd-emerald;
+}
+.carouse-title {
+  padding:30px 0 20px 0;
+  line-height:25px;
+  h2 {
+    font-size:28px;
+    color:$txt-default;
+  }
+  span, p {
+    display:block;
+    line-height:16px;
+    padding:9px 0;
+  }
+}
+.carousel {
+  margin-bottom:80px;
+}
+@media (max-width: 991px) {
+  .content-middle, .content-full {
+    padding:0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .view-deal {
+    .view-deal-button {
+      padding:10px 14px 10px 14px;
+    }
+  }
+  .carousel {
+    margin-bottom:10px;
+  }
+  .carouse-title {
+    padding:20px 0;
+    h2 {
+      font-size:18px;
+    }
+    span, p {
+      line-height:16px;
+    }
+  }
+}
+@include breakpoint(when-above-tablet) {
+  .grid-when-desktop {
+    @include item-dflex();
+  }
+}
+@include breakpoint(small-desktop) {
+    .show-on-large-screen {
+      display:none;
+    }
+}

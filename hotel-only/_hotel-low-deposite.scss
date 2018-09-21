@@ -1,0 +1,295 @@
+@include breakpoint (when-desktop) {
+  .thin-lowdeposit {
+    padding: 25px 0 25px 0;
+    .low-depst-rating-stars {
+      padding: 0;
+      margin: 0;
+    }
+    .low-depst-trust-rating ul li {
+      width: 16px;
+      height: 16px;
+      float: left;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      margin-right: 2px;
+      background: #d8d8d8;
+      &.active {
+        background: #73b143;
+      }
+      span {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        position: relative;
+        left:1px;
+        background-position:-177px -57px;
+      }
+    }
+    .totalTrustPilotRate, .feefo-main .feeforating {
+      font-size: 15px;
+      color: #58595b;
+      line-height: 16px;
+      padding-left: 6px;
+      font-family:$font-bold;
+    }
+    .low-depst-trust-logo {
+      width: 140px;
+      height: 18px;
+      padding-top: 3px;
+    }
+    .strip-column-label {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    .strip-icon-happy {
+      margin-right: 7px;
+    }
+    .carousel-low-deposit {
+      i {
+        font-size: 27px;
+        vertical-align: middle;
+        margin-right: 7px;
+      }
+      .payMonthly2 {
+        margin-right: 40px;
+      }
+    }
+    .deposit-options {
+      margin-right: 40px;
+    }
+    .carousel-low-deposit {
+      padding: 15px 0 30px 0;
+    }
+    .call-to-book {
+      vertical-align: top;
+      top: -3px;
+      font-size: 32px;
+      padding-right: 60px;
+      letter-spacing: -0.7px;
+    }
+    .new-trust {
+      width: 140px;
+      height: 17px;
+      background-position:-2px -57px;
+    }
+    .feefo-main i {
+      font-size: 16px;
+    }
+    .feefo-icon {
+      width: 82px;
+      height: 20px;
+      background-position:-3px -82px;
+      margin-top: 3px;
+    }
+    .low-dpst-logo, .pay-monthly, .atol-ttaicon {
+      width: 46px;
+      height: 45px;
+    }
+    .strip-column-label > span {
+      display: block;
+    }
+    .call-us {
+      font-size: 16px;
+      line-height: 18px;
+      padding: 0;
+      .inblock {
+        vertical-align: middle;
+      }
+    }
+    .mbl-hide {
+      display: block;
+    }
+    .mbl-show {
+      display: none;
+    }
+    .strip-column-space {
+      width: 1px;
+      background: #d8d8d8;
+      height: 30px;
+      margin: 0 23px;
+      display: inline-block;
+    }
+  }
+}
+_:-ms-lang(x), .thin-lowdeposit .strip-column-space{margin:0 22px;}
+
+@include breakpoint (when-landscape-tablet) {
+  .thin-lowdeposit {
+    text-align: center;
+    .deposit-label {
+      display:block;
+    }
+    .totalTrustPilotRate, .feefo-main .feeforating {
+      font-size: 13px;
+      padding-left: 2px;
+    }
+    .new-trust {
+      width: 117px;
+      height: 14px;
+    }
+    .feefo-main i {
+      font-size: 12px;
+    }
+    .call-us {
+      .gutter-space {
+        margin: 0 21px;
+      }
+      font-size: 14px;
+    }
+    .low-depst-trust-logo {
+      width: auto;
+    }
+    .low-depst-trust-rating ul li {
+      width: 13px;
+      height: 14px;
+      span {
+        width:9px;
+        height:12px;
+        left:2px;
+        top:0px;
+      }
+    }
+    .strip-column-space {
+      margin: 0 18px;
+    }
+    .feefo-icon {
+      margin-top: 2px;
+    }
+    .low-depst-trust-rating {
+      text-align: left;
+    }
+  }
+}
+
+@include breakpoint (when-portrait-tablet) {
+  .thin-lowdeposit {
+  .low-depst-trust-rating ul li {
+    width: 18px;
+    height: 17px;
+  }
+  .content-middle {
+    text-align: center;
+  }
+  .feefo-main i {
+    font-size: 17px;
+  }
+  .totalTrustPilotRate, .feefo-main .feeforating {
+    font-size: 15px;
+  }
+  .call-us {
+    margin-top: 25px;
+  }
+  .s2 {
+    display: none;
+  }
+  .new-trust {
+    width: 145px;
+    height: 19px;
+  }
+  .feefo-icon {
+    width: 82px;
+    height: 20px;
+    margin-top: 5px;
+  }
+  .new-trust {
+    margin-top: 2px;
+  }
+  .low-depst-trust-rating ul li {
+    height:18px;
+    width:18px;
+    span {
+      height:12px;
+      width:12px;
+      top:2px;
+    }
+  }
+  .low-depst-trust-logo {
+    padding-top: 0;
+  }
+  .strip-column-space {
+    margin: 0 40px;
+  }
+}
+}
+
+@include breakpoint(mobile) {
+  .thin-lowdeposit {
+    padding: 45px 0 0 0;
+    text-align:center;
+    ul li {
+      width:13px;
+      height:14px;
+      float:left;
+      @include border-radius(3px);
+      margin-right:2px;
+      background:#d8d8d8;
+      span {
+        height:14px;
+        width:13px;
+        display:inline-block;
+        left:1px;
+        position:relative;
+        top:1px;
+        background-position:-178px -59px;
+      }
+    }
+   .active {
+     background:#73b143;
+   }
+   .new-trust {
+     width:117px;
+     height:14px;
+     background-position:-323px -57px;
+   }
+   .feefo-icon {
+     display:block;
+     margin-top:2px;
+     width: 82px;
+     height: 20px;
+     background-position:-3px -82px;
+    }
+    .s1 {
+      margin:6px 18px 0 18px;
+      display:inline-block;
+      width:1px;
+      background:#d8d8d8;
+      height:30px;
+    }
+    .mobile-widget-call-us {
+      border-top:solid #f2f2f2 1px;
+      padding-top:15px;
+      margin:15px 0 10px 0;
+    }
+    .low-depst-trust-rating {
+      text-align:left;
+    }
+    .totalTrustPilotRate, .feeforating {
+      font-family:$font-bold;
+    }
+    .tth-pp {
+      left:-1px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

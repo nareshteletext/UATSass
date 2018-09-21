@@ -1,0 +1,52 @@
+/* Common */
+@import '../hp-sprite';
+@import '../control';
+@import '../bootstrap';
+@import '../header';
+@import '../sidemenu';
+@import '../login-signup';
+@import '../mega-menu';
+@import '../newsletter';
+@import '../footer';
+
+/* SERP */
+@import '../serp-info-strip';
+@import '../serp-ribbon';
+@import '../serp-short-by';
+@import '../serp-results';
+@import '../filters';
+@import '../serp-blue-strip';
+@import '../ratings';
+@import '../sticky-breadcrumb';
+
+/* FOD */
+@import '../fod/fod-header';
+@import '../fod/fod-carousel';
+@import '../section-header';
+@import '../fod/rooms-grid';
+@import '../fod/rooms';
+@import '../fod/fod-map';
+@import '../fod/about-features';
+@import '../fod/facilities';
+@import '../fod/nearest-essentials';
+@import '../fod/reviews';
+@import '../things-to-do.scss';
+
+
+
+
+
+.serp {
+  padding:152px 0 30px 0;
+}
+.fixed-nav-container{
+  background-color:$bgnd-butterfly
+}
+.serp-inner {
+  padding:0 95px;
+}
+@include breakpoint(landscape-tablet) {
+    .serp-inner {
+      padding:0 95px;
+    }
+}

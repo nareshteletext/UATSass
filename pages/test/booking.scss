@@ -1,0 +1,19 @@
+/* Common */
+@import '../control';
+@import '../bootstrap';
+@import '../header';
+@import '../sidemenu';
+@import '../login-signup';
+@import '../mega-menu';
+@import '../newsletter';
+@import '../footer';
+
+/* Components */
+@import '../booking-summary';
+@import '../review-pay';
+@import '../booking-your-details';
+@import '../booking-confirmation-banner';
+
+.fixed-nav-container {
+  background-color:$bgnd-butterfly
+}

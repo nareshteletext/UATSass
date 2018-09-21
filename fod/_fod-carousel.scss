@@ -1,0 +1,566 @@
+.fod-carousel {
+  @include section();
+  .carousel-images {
+    width:74%;
+  }
+  .hero-image, .fodowl-carousel {
+    height:462px;
+  }
+  .info-button {
+    @include info-button();
+    top:35px;
+    right:15px;
+  }
+  .fodowl-carousel {
+    overflow:hidden;
+    @include owl-arrows-with-box();
+  }
+  .carousel-content {
+    width:26%;
+    border:solid $b-gray 1px;
+    height:533px;
+    .gutter {
+      padding-right:30px;
+      padding-left:30px;
+    }
+    .tt-dropdown-menu {
+        @include tt-dropdown-menu();
+        margin-top:0;
+    }
+  }
+  .img-small {
+    width:68px;
+    height:69px;
+    margin-left:2px;
+    position:relative;
+    &:first-child {
+      margin-left:0;
+    }
+    &.img-active {
+      @include content-pstn-abslt();
+      &:after{
+        border:solid $b-blue 3px;
+      }
+      &:before {
+        border:solid $b-white 2px;
+        top:3px;
+        right:3px;
+        left:3px;
+        bottom:3px;
+      }
+    }
+  }
+  .thumbnails {
+    margin-top:2px;
+  }
+  .dstn-info {
+    font-size:15px;
+    border-top:solid $line 1px;
+    border-bottom:solid $line 1px;
+    .gutter {
+      .close--icon {
+        display:none;
+        top:11px;
+        right:58px;
+        width:13px;
+        height:13px;
+        @include rotating();
+      }
+    }
+    input {
+      width:80%;
+      font-size:15px;
+      @include truncate();
+    }
+  }
+  .dsnt-title {
+    @extend .content-padding;
+    background:transparent;
+  }
+  .price-row {
+    .flex-box {
+      @include flex-box-2();
+    }
+    @extend .content-padding;
+    > .float-left {
+      span{
+        display:block;
+      }
+    }
+    .deal-label{
+      font-size:15px;
+        display:block;
+    }
+    .roomtype-desc {
+      padding-top:10px;
+    }
+    .tth-price {
+      font-size:28px;
+    }
+    button {
+      padding:12px 14px;
+      font-size:15px;
+    }
+  }
+  .check-in{
+    border-top:solid $line 1px;
+    border-bottom:solid $line 1px;
+  }
+  .check-in {
+    line-height:23px;
+    i {
+      font-size:12px;
+    }
+    .float-left{
+      @extend .content-padding;
+      width:50%;
+      border-right:solid $line 1px;
+      span:first-child {
+        font-size:13px;
+      }
+    }
+    .float-right{
+      @extend .content-padding;
+      width:50%;
+      padding-left:20px;
+      span:first-child {
+        font-size:13px;
+      }
+    }
+    .mobile-nghts-value {
+      display:inline-block;
+      padding:0;
+    }
+  }
+  .content-padding {
+    padding-top:13px;
+    padding-bottom:13px;
+  }
+  .dd-room {
+    @extend .content-padding;
+  }
+  .check-out-btn{
+    border-top:solid $line 1px;
+    @extend .content-padding;
+    button {
+     @extend .content-padding;
+      width:100%;
+      font-size:15px;
+    }
+  }
+  .search-icon{
+    width:16px;
+    height:16px;
+    background-position:-422px -2px;
+    top:13px;
+  }
+  .down-arrow-icon {
+    top:3px;
+    font-size:12px;
+  }
+  .destination-badge {
+    @include serp-badge();
+  }
+  .behind-patch {
+    @include serp-badge-behind();
+    left: -20px;
+    top:72px;
+  }
+  .carousel-amazing {
+    bottom:15px;
+    right:15px;
+    padding:9px 15px;
+    min-width:220px;
+    h3 {
+      font-size:20px;
+    }
+    .ratings-wrapper {
+      margin-bottom:5px;
+    }
+    p {
+      font-size:13px;
+    }
+    .ratings-num {
+      font-size:20px;
+      color:$txt-p-green;
+      padding-left:5px;
+    }
+    .ratings {
+      div div {
+        width:19px;
+        height:19px;
+      }
+      span {
+        width:11px;
+        height:11px;
+      }
+      .fill2 {
+        left:23px;
+      }
+      .fill3 {
+        left:42px;
+      }
+      .fill4 {
+        left:61px;
+      }
+      .fill5 {
+        left:80px;
+      }
+      .trp_0-5 {
+        .reveal-mask {
+          left:10px;
+        }
+      }
+      .trp_1-0 {
+        .reveal-mask {
+          left:17px;
+        }
+      }
+      .trp_1-5 {
+        .reveal-mask {
+          left:29px;
+        }
+      }
+      .trp_2-0 {
+        .reveal-mask {
+          left:40px;
+        }
+      }
+      .trp_2-5 {
+        .reveal-mask {
+          left:48px;
+        }
+      }
+      .trp_3-0 {
+        .reveal-mask {
+          left:55px;
+        }
+      }
+      .trp_3-5 {
+        .reveal-mask {
+          left:67px;
+        }
+      }
+      .trp_4-0 {
+        .reveal-mask {
+          left:75px;
+        }
+      }
+      .trp_4-5 {
+        .reveal-mask {
+          left:86px;
+        }
+      }
+      .trp_5-0 {
+        .reveal-mask {
+          left:96px;
+        }
+      }
+    }
+    .owl-icon {
+      @include owl-icon-big();
+      margin:-3px 5px 0 0;
+    }
+  }
+  .user-reviews {
+    @extend .content-padding;
+  }
+  .prev-btn, .next-btn{
+    width:24px;
+    height:24px;
+    &:hover {
+      background:#adadad;
+      .line-arrow-left, .line-arrow-right {
+        border-color:#fff;
+        opacity:1;
+      }
+    }
+  }
+  .line-arrow-left, .line-arrow-right {
+      width:8px;
+      height:8px;
+      @include opacity();
+      top:8px;
+    }
+  .line-arrow-left {
+    left:9px;
+  }
+  .line-arrow-right {
+    right:9px;
+  }
+  .review-content{
+    line-height:18px;
+    font-size:13px;
+    margin-top:8px;
+    .txt-more {
+      padding-top:0;
+      cursor:pointer;
+    }
+  }
+  .critic-name{
+    font-size:15px;
+    font-weight:bold;
+    padding-top:15px;
+    padding-bottom:2px;
+  }
+  .critic-location{
+    font-size:13px;
+    display:block;
+    @include opacity();
+  }
+  .line-separator{
+    width:1px;
+    height:16px;
+    background-color:$line;
+    margin:0 6px 0 3px;
+    vertical-align: middle;
+  }
+  .ratings-wrapper {
+    margin-top:5px;
+  }
+  .more-images {
+    width:73px;
+    padding-top:15px;
+    margin:2px 0 0 2px;
+    height:69px;
+    span {
+      display:block;
+      font-size:13px;
+    }
+    span:first-child {
+      font-size:17px;
+    }
+  }
+}
+
+@include breakpoint (when-medium-desktop) {
+    .fod-carousel {
+    .carousel-images {
+      width:69%;
+    }
+    .content-padding {
+      padding-top:15px;
+      padding-bottom:15px;
+    }
+    .hero-image, .fodowl-carousel {
+      height:350px;
+    }
+    .img-small {
+      width:52px;
+      height:50px;
+    }
+    .more-images {
+      width:57px;
+      height:50px;
+      line-height:14px;
+      padding-top:12px;
+      span {
+        display:block;
+        font-size:11px;
+      }
+      span:first-child {
+        font-size:15px;
+      }
+    }
+    .carousel-content {
+      height:402px;
+      width:31%;
+      .user-reviews {
+        display:none;
+      }
+    }
+    .dstn-info {
+      border-bottom:none;
+    }
+    .check-out-btn {
+      background-color:$bgnd-white;
+      padding-top:30px;
+    }
+    .carousel-amazing {
+      min-width:190px;
+      .ratings-wrapper {
+        margin:0;
+      }
+      .ratings {
+        div div {
+          width:16px;
+          height:16px;
+        }
+        span {
+          width:8px;
+          height:8px;
+          top:4px;
+        }
+        .fill1 {
+          left:4px;
+        }
+        .fill2 {
+          left:20px;
+        }
+        .fill3 {
+          left:36px;
+        }
+        .fill4 {
+          left:52px;
+        }
+        .fill5 {
+          left:68px;
+        }
+      }
+      .owl-icon {
+        @include owl-icon-small();
+      }
+    }
+  }
+}
+
+@include breakpoint (when-portrait-tablet) {
+  .fod-carousel {
+    padding:20px 0 30px 0;
+    .hero-image, .fodowl-carousel {
+      height:263px;
+    }
+    .carousel-content {
+      height:312px;
+      .gutter {
+        padding-right:15px;
+        padding-left:15px;
+        > .roomtype-desc {
+          display:none;
+        }
+      }
+    }
+    .content-padding {
+      padding-top:11px;
+      padding-bottom:7px;
+    }
+    .price-row {
+      .row-float {
+        > div {
+          float:none;
+        }
+      }
+      button {
+        padding:9px 30px;
+        top:0;
+        width:100%;
+        margin:5px 0 7px 0;
+      }
+      .deal-label {
+        font-size:13px;
+      }
+      .flex-box {
+        display:block;
+      }
+    }
+    .dstn-info {
+      font-size:13px;
+      .gutter {
+        .close--icon {
+          top:9px;
+          right:43px;
+        }
+      }
+    }
+    .dsnt-title {
+      @include truncate();
+      max-width:70%;
+    }
+    .check-in {
+      line-height: 19px;
+      .float-right, .float-left {
+         span {
+           &:first-child {
+             font-size:11px;
+           }
+         }
+      }
+    }
+    .search-icon {
+      top:10px;
+    }
+    .check-out-btn {
+      padding-top:18px;
+    }
+    .img-small {
+      width:50px;
+      height:50px;
+    }
+     .more-images {
+       width:58px;
+       margin:-1px 0 0 0;
+     }
+     .thumbnails {
+       margin-top:-1px;
+     }
+
+     .fodowl-carousel {
+       .owl-controls .owl-buttons div{
+         width:32px;
+         height:40px;
+         &:after {
+           border-width:2px;
+           width:12px;
+           height:12px;
+           top:14px;
+         }
+       }
+       .owl-next {
+         right:7px;
+       }
+       .owl-prev {
+         left:7px;
+         &:after {
+           left:13px;
+         }
+       }
+     }
+     .carousel-amazing {
+       right:7px;
+       bottom:9px;
+       min-width:160px;
+       .ratings-wrapper {
+         margin:2px 0 3px 0;
+       }
+       h3, .ratings-num {
+         font-size:15px;
+       }
+       p {
+         font-size:11px;
+       }
+       .ratings {
+         div div {
+           width:14px;
+           height:14px;
+         }
+         span {
+           width:6px;
+           height:6px;
+           top:4px;
+         }
+         .fill1 {
+           left:4px;
+         }
+         .fill2 {
+           left:18px;
+         }
+         .fill3 {
+           left:32px;
+         }
+         .fill4 {
+           left:46px;
+         }
+         .fill5 {
+           left:60px;
+         }
+       }
+       .owl-icon {
+         @include owl-icon-small();
+       }
+     }
+     .info-button {
+       top:25px;
+       right:7px;
+     }
+   }
+}

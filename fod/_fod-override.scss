@@ -1,0 +1,126 @@
+.fod-icons{
+    @include fod-icons();
+}
+.footer-icons {
+    @include social-icons();
+}
+.sidemenu-sprite {
+  @include sidemenu-sprite();
+}
+.legend-2 {
+  display:none;
+}
+.common-icons {
+  @include common-icons-v2();
+}
+.newsletter {
+  min-height:inherit;
+  padding:60px 0 60px 0;
+}
+.serp {
+  padding:152px 0 30px 0;
+}
+.fixed-nav-container{
+  background-color:$bgnd-butterfly
+}
+.disabled {
+  @include btn-disabled();
+}
+.tool-tip {
+  @include titp();
+}
+.t-auto {
+  @include t-auto();
+}
+.b-auto {
+  @include b-auto();
+}
+.l-auto {
+  @include l-auto();
+}
+.r-auto {
+  @include r-auto();
+}
+.fod-dstn-dropdown {
+  z-index:10;
+  top:43px;
+  .tt-dropdown-menu {
+    border:none;
+  }
+}
+.yotpo-data {
+  h3 {
+    font-size:$h3;
+    top:42px;
+    font-family:"proximanova-bold"!important;
+    text-align:left;
+  }
+}
+@include breakpoint(when-desktop) {
+  .calendar-dd {
+      @include fade-slide-right-container();
+      right:294px;
+      &:after, &:before {
+        top:30%;
+        left:auto;
+        right:-8px;
+      }
+      &:before {
+        right:7px;
+      }
+      &.active-ribbon-dd {
+        &:after, &:before {
+          left:auto;
+          top:42%;
+        }
+      }
+  }
+  .continue-button {
+    &:hover {
+      .tool-tip {
+        display:block;
+      }
+    }
+    .tool-tip {
+      bottom:100%;
+      left:21px;
+    }
+  }
+}
+
+@include breakpoint(when-landscape-tablet) {
+  .calendar-dd {
+    width:640px;
+    margin-top:-70px;
+    padding:30px 30px 0 30px;
+    &:after, &:before {
+      top:46%;
+    }
+    &.active-ribbon-dd {
+      &:after, &:before {
+        top:59%;
+      }
+    }
+  }
+  .fod-dstn-dropdown {
+    top:35px;
+  }
+}
+
+@include breakpoint(when-portrait-tablet) {
+  .calendar-dd {
+    right:0;
+    &:after, &:before {
+      display:none
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  .serp {
+    padding:50px 0 30px 0;
+  }
+  .mobile-widget-call-us .call-us-set-2 {
+    margin:0 6% 0 0;
+  }
+}

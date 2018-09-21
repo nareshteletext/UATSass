@@ -1,0 +1,450 @@
+@include breakpoint(when-desktop) {
+.reviews {
+  .owl-pagination {
+    position:absolute;
+    top:30px;
+    right:0;
+    left:0;
+  }
+  .owl-theme {
+    @include owl-coins();
+  }
+  .ratings-wrapper {
+    display:inline-block;
+    span {
+      width:11px;
+      height:11px;
+    }
+    .trp_0-5 {
+      .reveal-mask {
+        left:10px;
+      }
+    }
+    .trp_1-0 {
+      .reveal-mask {
+        left:20px;
+      }
+    }
+    .trp_1-5 {
+      .reveal-mask {
+        left:29px;
+      }
+    }
+    .trp_2-0 {
+      .reveal-mask {
+        left:39px;
+      }
+    }
+    .trp_2-5 {
+      .reveal-mask {
+        left:47px;
+      }
+    }
+    .trp_3-0 {
+      .reveal-mask {
+        left:57px;
+      }
+    }
+    .trp_3-5 {
+      .reveal-mask {
+        left:67px;
+      }
+    }
+    .trp_4-0 {
+      .reveal-mask {
+        left:77px;
+      }
+    }
+    .trp_4-5 {
+      .reveal-mask {
+        left:86px;
+      }
+    }
+    .trp_5-0 {
+      .reveal-mask {
+        left:96px;
+      }
+    }
+  }
+
+  .right-rating {
+    .trp_0-5 {
+      .reveal-mask {
+        left:6px;
+      }
+    }
+    .trp_1-0 {
+      .reveal-mask {
+        left:11px;
+      }
+    }
+    .trp_1-5 {
+      .reveal-mask {
+        left:18px;
+      }
+    }
+    .trp_2-0 {
+      .reveal-mask {
+        left:24px;
+      }
+    }
+    .trp_2-5 {
+      .reveal-mask {
+        left:30px;
+      }
+    }
+    .trp_3-0 {
+      .reveal-mask {
+        left:35px;
+      }
+    }
+    .trp_3-5 {
+      .reveal-mask {
+        left:42px;
+      }
+    }
+    .trp_4-0 {
+      .reveal-mask {
+        left:46px;
+      }
+    }
+    .trp_4-5 {
+      .reveal-mask {
+        left:54px;
+      }
+    }
+    .trp_5-0 {
+      .reveal-mask {
+        left:58px;
+      }
+    }
+  }
+  padding:60px 0 40px 0;
+  .carousel {
+    min-height:250px;
+    position: relative;
+  }
+  .circle {
+    margin: 35px 0 0 0;
+  }
+  .pagination {
+    width: 10px;
+    height: 10px;
+    margin: 3px 4px;
+    cursor: pointer;
+    background-color: $bgnd-silver;
+  }
+  .circle-active {
+    border: 1px solid $bgnd-cornflower-blue;
+    background: $bgnd-white;
+  }
+  .carousel {
+    border-top: solid 1px $b-sticky;
+  }
+  .carousel-inner {
+    padding: 75px 0 0 0;
+  }
+  .carousel-left {
+    min-width: 250px;
+    width: 30%;
+    padding-left: 75px;
+  }
+  .carousel-right {
+    width: 65%;
+    margin: 0 0 0 2%;
+    padding-right: 75px;
+    p {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+  .icon-tripadvisor {
+    width: 129px;
+    height: 24px;
+    margin: 0 0 0 15px;
+  }
+  .these {
+    font-size: 20px;
+  }
+  .name {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+  .place {
+    font-size: 13px;
+  }
+  .review-time {
+    font-size: 13px;
+    padding-top: 5px;
+  }
+  .subject {
+    font-size: 24px;
+    padding: 0 0 18px 0;
+  }
+  .more {
+    padding-top: 0;
+  }
+  .rating-large {
+    font-size: 60px;
+    color:$txt-p-green;
+    padding: 25px 60px 0 0;
+  }
+  .right-rating {
+    padding: 20px 0 0 0;
+  }
+  .trip-advisor-row {
+    margin: 0 0 6px 0;
+  }
+  .carousel-left {
+    .ratings div div {
+      width: 19px;
+      height: 19px;
+    }
+    span {
+      width: 11px;
+      height: 11px;
+    }
+    .fill1 {
+      left: 4px;
+    }
+    .fill2 {
+      left: 23px;
+    }
+    .fill3 {
+      left: 42px;
+    }
+    .fill4 {
+      left: 61px;
+    }
+    .fill5 {
+      left: 80.1px;
+    }
+  }
+  .carousel-right {
+    .ratings{
+      margin-right: 10px;
+    }
+    .ratings div div {
+      width: 12px;
+      height: 12px;
+    }
+    span {
+      width: 6px;
+      height: 6px;
+      top: 3px;
+    }
+    .fill1 {
+      left: 3px;
+    }
+    .fill2 {
+      left: 15px;
+    }
+    .fill3 {
+      left: 27px;
+    }
+    .fill4 {
+      left: 39px;
+    }
+    .fill5 {
+      left: 51.1px;
+    }
+  }
+  @include owl-arrows-with-box();
+  .owl-controls .owl-buttons div {
+    background:$bgnd-black-squeeze;
+    &.disabled {
+      background:$bgnd-black-squeeze;
+      opacity:0.2;
+      pointer-events:none;
+      }
+    }
+  }
+}
+@include breakpoint (when-landscape-tablet) {
+.reviews{
+  padding-bottom: 30px;
+  .carousel-left{
+    padding-left: 70px;
+  }
+  .carousel-right{
+    padding-right: 70px;
+    margin: 0 0 0 3%;
+  }
+  .more{
+    padding-top: 0;
+  }
+ }
+}
+@include breakpoint (when-portrait-tablet) {
+  .reviews{
+    padding-bottom: 20px;
+    .content-middle{
+      padding: 0 20px;
+    }
+    .carousel-left{
+      min-width: 230px;
+    }
+    .carousel-right{
+      padding-right: 20px;
+      margin: 0 0 0 3%;
+      width: 62%;
+    }
+     .more {
+      padding-top: 0;
+    }
+    .owl-prev{
+      left: -10px;
+    }
+    .owl-next {
+      right: -10px;
+    }
+  }
+}
+@include breakpoint(mobile) {
+  .reviews{
+    .content-middle{
+      padding: 0;
+    }
+    .owl-theme {
+      @include owl-coins();
+    }
+    .owl-controls {
+      margin:24px 0 5px 0;
+    }
+    .content-header{
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 33px;
+      .title{
+        padding-bottom:25px;
+        display:block;
+      }
+    }
+    .these{
+      width: 100%;
+      font-size: 20px;
+      line-height: 23px;
+      border-bottom: 2px solid $b-sticky;
+      padding-bottom: 20px;
+      margin-bottom: 10px;
+    }
+    .icon-tripadvisor {
+      width: 129px;
+      height: 24px;
+      margin: 0 0 0 15px;
+    }
+    .circle{
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      span{
+        cursor: pointer;
+      }
+    }
+    .carousel{
+      padding-bottom:15px;
+    }
+    .owl-wrapper-outer{
+      padding-left: 20px;
+    }
+    .carousel-inner{
+      text-align: center;
+      float: left;
+      padding-right: 20px;
+      margin-right: 20px;
+      border-right: 1px solid $b-sticky;
+    }
+    .carousel-left{
+      padding-left: 0;
+      min-width: 100%;
+    }
+    .carousel-right{
+      padding-right: 0;
+      margin: 0;
+      width: 100%;
+      p{
+        font-size: 13px;
+        line-height: 18px;
+      }
+    }
+    .subject{
+      font-size: 20px;
+      padding-bottom: 11px;
+    }
+    .trip-advisor-main{
+      padding-bottom: 16px;
+    }
+    .name{
+      font-size: 15px;
+    }
+    .right-rating{
+      margin-top: 10px;
+      width: 100%;
+    }
+   .trip-advisor-row{
+     padding: 5px 0 5px 0;
+   }
+   .pagination{
+     width: 10px;
+     height: 10px;
+     margin: 3px 4px;
+     background-color:$bgnd-silver;
+   }
+   .circle-active {
+     border: 1px solid $b-blue;
+     background: $bgnd-white;
+   }
+    .carousel-right{
+      .txt-more{
+        padding-top: 0;
+      }
+      .ratings {
+        margin-right: 10px;
+      span{
+        top:3px;
+        width: 6px;
+        height: 6px;
+      }
+      .fill1{
+        left: 3px;
+      }
+      .fill2 {
+        left: 15px;
+      }
+      .fill3 {
+        left: 27px;
+      }
+      .fill4 {
+        left: 39px;
+      }
+      .fill5 {
+        left: 51px;
+      }
+        div{
+          div{
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+    .place, .review-time{
+      font-size: 13px;
+    }
+    .place {
+      padding: 2px 0 2px 0;
+    }
+    .left-inner{
+      padding-bottom: 10px;
+      padding-top: 30px;
+    }
+    .rating-large, .owl-controls{
+      display: none;
+    }
+    .rating-top{
+      color:$txt-p-green;
+      font-size: 15px;
+    }
+  }
+}

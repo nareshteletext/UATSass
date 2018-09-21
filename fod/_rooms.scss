@@ -1,0 +1,102 @@
+@include breakpoint(when-desktop) {
+  .rooms {
+    border-top:solid $b-light1 2px;
+    padding-top:50px;
+    .separator{
+      height:12px;
+      background-color:$grid-border;
+      width:2px;
+      margin:0 20px;
+    }
+    .font-size15 {
+      font-size:15px;
+    }
+    .date{
+      @extend .font-size15;
+      padding-right:20px;
+    }
+    .dd-room {
+      @extend .font-size15;
+    }
+    .toggle-wrapper {
+      span {
+        font-size:15px;
+      }
+    }
+    .toggle-btn{
+      @include toggle();
+      margin: 0 10px;
+    }
+    .content-header{
+      padding-bottom:25px;
+      i {
+        font-size: 12px;
+        margin: 0 5px 0 8px;
+      }
+    }
+    .charges-info {
+      padding:25px 0;
+      font-size:13px;
+      line-height:20px;
+    }
+    .txt-more {
+      padding:0;
+    }
+    .txt-center {
+        button {
+        padding:15px 50px;
+        font-size:20px;
+      }
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  .rooms {
+    padding:20px 0 2px 0;
+    border-color:$b-gray;
+    background-color:$bgnd-black-squeeze;
+    .content-middle {
+      padding:0 10px;
+    }
+    .toggle-btn{
+      @include toggle();
+      margin: 0 5px;
+    }
+    .content-header {
+      .title {
+        padding-left:10px;
+      }
+      > div {
+        padding:5px 0;
+        font-size:13px;
+      }
+      span {
+        font-weight:normal;
+      }
+    }
+  /*    > .txt-center {
+        position:relative;
+        top:28px;
+        button {
+        padding:15px 50px;
+        font-size:20px;
+        width:95%;
+      }
+    } */
+    .viewmore-continue {
+      .tool-tip {
+        display:none;
+      }
+      > div {
+        float:none;
+        button {
+          width:100%;
+        }
+      }
+      .float-right {
+        margin:15px 0;
+      }
+    }
+  }
+}

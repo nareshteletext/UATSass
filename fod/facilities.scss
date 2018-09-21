@@ -1,0 +1,38 @@
+@include breakpoint(when-desktop) {
+.fod-facilities{
+  padding-bottom:50px;
+  .content-header {
+      font-size:24px;
+      padding-bottom: 33px;
+  }
+  .fclts-col {
+    .fclts-icon-check {
+      @include check-box-small();
+    }
+    .pstn-reltv{
+      margin-bottom:4px;
+      width:25%;
+    }
+  }
+  .fclts-label {
+    padding-left:28px;
+    font-size: 15px;
+    float: left;
+  }
+ }
+}
+
+@include breakpoint (when-portrait-tablet) {
+.fod-facilities{
+  .content-header {
+    .title{
+      font-size: 24px;
+    }
+  }
+  .fclts-col{
+   .pstn-reltv{
+      width: 33%;
+    }
+  }
+ }
+}

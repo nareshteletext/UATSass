@@ -1,0 +1,746 @@
+@include breakpoint(when-desktop) {
+.customer-review {
+  padding: 60px 0 0 0;
+  .review-range-full {
+    background: $bgnd-light-green;
+    width: 100%;
+  }
+  .review-range-average {
+    background: $bgnd-orange;
+    width: 50%;
+  }
+  .review-range-medium {
+    background: $bgnd-light-sunset;
+    width: 50%;
+  }
+  .review-range-low {
+    background: $bgnd-sunset;
+    width: 30%;
+  }
+  .review-range-worst {
+    background: $bgnd-sunset;
+    width: 10%;
+  }
+  .review-green-full {
+    background: $bgnd-light-green;
+    width: 100%;
+  }
+  .review-green-average {
+    background: $bgnd-light-green;
+    width: 100%;
+  }
+  .review-green-medium {
+    background: $bgnd-light-green;
+    width: 50%;
+  }
+  .review-green-low {
+    background: $bgnd-light-green;
+    width: 30%;
+  }
+  .review-green-worst {
+    background: $bgnd-light-green;
+    width: 10%;
+  }
+  .content-header {
+    border-bottom: solid 2px $b-light;
+  }
+  .bgnd-light-green{
+    background: $bgnd-light-green;
+  }
+  .customer-block {
+    margin: 42px 0 0 0;
+  }
+  .rating-left-inner {
+    width: 211px;
+  }
+  .rating-midle-inner {
+    width: 430px;
+    margin-left: 75px;
+  }
+  .rating-right-inner {
+    width: 370px;
+    margin-left: 74px;
+  }
+  .ratings {
+    padding: 18px 0 8px 0;
+    i {
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+  }
+  button {
+    padding: 17px 42px;
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    line-height: 0.8;
+    letter-spacing: -0.1px;
+  }
+  .desc {
+    padding: 14px 0 0 0;
+    @include opacity();
+  }
+  .grey-bar, .accmdtn-bar {
+    height: 5px;
+    > span {
+      height: 5px;
+    }
+  }
+  .grey-bar {
+    width: 322px;
+  }
+  .accmdtn-bar {
+    width: 222px;
+  }
+  .float-right-inner {
+    margin: 0 0 0 63px;
+  }
+  .rate-count-left {
+    font-size: 13px;
+  }
+  .accmdtn {
+    font-size: 13px;
+    padding-right: 10px;
+    width: 106px;
+  }
+  .rate-count-left {
+    line-height: 1.85;
+    padding-right: 5px;
+    width: 15px;
+  }
+  .star-black {
+    padding-right: 35px;
+  }
+  .rate-count-right{
+    @include opacity5();
+  }
+  .rate-count-right, .accmdtn-count {
+    font-size: 11px;
+    line-height: 2.18;
+    width: 30px;
+  }
+  .star-black {
+    i{
+    font-size: 10px;
+    }
+  }
+  .icon-yotpo {
+    width: 32px;
+    height: 32px;
+    margin-left: 12px;
+  }
+  .sortby {
+    padding: 7px 0 6px 15px;
+    min-width: 195px;
+    margin: 25px 0 0 39px;
+  }
+  .arrow {
+    right: 10px;
+  }
+  .sortby-list {
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 30px;
+    right: 0;
+    border-radius: 0;
+    border: solid 1px $b-light;
+    ul {
+      width: 100%;
+      padding: 10px 0;
+      li {
+        padding: 7px 20px;
+        font-size: 15px;
+        &:hover, &.active {
+          background: $body-bgnd;
+          color: $txt-cornflower-blue;
+        }
+      }
+    }
+  }
+  .customer-main {
+    margin: 0 0 0 0;
+    display: table;
+    padding: 40px 0 38px 0;
+    border-top: solid 2px $b-sticky;
+  }
+  .icon-cstmr {
+    width: 48px;
+    height: 48px;
+  }
+  .customer-icon-inner {
+    margin-right: 18px;
+  }
+  .checked {
+    @include check-box();
+    height: 13px;
+    width: 13px;
+    bottom: 4px;
+    right: 0;
+    border: 1px solid $b-white;
+  &:after{
+    top: 4px;
+    left: 3px;
+    width: 6px;
+    height: 3px;
+    border-width: 1px;
+    }
+  }
+  .customer-name {
+    font-size: 15px;
+  }
+  .verifid-travelr {
+    padding: 3px 0 3px 0;
+    @include opacity();
+  }
+  .customer-rating{
+    font-family: $font-light;
+  }
+  .customer-ratings {
+    i {
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+    .fa-star-o{
+      color: $dis-link;
+      @include opacity();
+    }
+  }
+  .customer-dividr {
+    margin: 0 0 50px 0;
+  }
+  .hours-ago{
+    @include opacity5();
+  }
+  .verifid-travelr, .hours-ago, .was {
+    font-size: 13px;
+  }
+  .customer-left {
+    min-width: 250px;
+    width: 20%;
+  }
+  .subject {
+    font-size: 24px;
+    padding: 18px 0;
+  }
+  .more {
+    padding-top: 8px;
+  }
+  .customer-right {
+    width: 78%;
+    p {
+      font-size: 15px;
+    }
+  }
+  .recommended {
+    padding-top: 21px;
+  }
+  .icon-recomd {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+  .most {
+    padding-left: 10px;
+    @include opacity();
+  }
+  .showall {
+    padding-top: 14px;
+  }
+  .customer-help {
+    font-size: 11px;
+    border: solid 1px $b-sticky;
+    @include border-radius(5px)
+    width: 120px;
+    margin: 17px auto 0;
+    a {
+      padding: 5px 10px;
+      .fa-thumbs-up {
+        padding: 5px 0 5px 5px;
+        color: $txt-light-green;
+      }
+      .fa-thumbs-down {
+        padding: 5px 0 5px 5px;
+        color: $txt-sunset;
+      }
+    }
+  }
+  .customer-rating {
+    font-size: 60px;
+    color: $txt-p-green;
+    padding: 25px 60px 0 0;
+  }
+  .review-block {
+    padding: 36px 0 0 0;
+  }
+  .customer-inner {
+    border-right: solid 1px $b-sticky;
+    padding: 0 70px 0 0;
+  }
+  .customer-help-inner {
+    padding: 22px 0 0 58px;
+    > span{
+      font-size: 13px
+    }
+  }
+  .thumb-img {
+    padding: 33px 0 0 0;
+    img {
+      margin: 0 0 0 5px;
+      &:first-child {
+        margin: 0 0 0 1px;
+      }
+    }
+  }
+  .thumb-over {
+    margin-left: 4px;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    .overlay {
+      z-index: 1;
+    }
+  }
+  .thumb-hover-count {
+    font-size: 36px;
+    line-height: 36px;
+    z-index: 2;
+    height: 35px;
+    margin: auto;
+  }
+  .share {
+    min-width: 100px;
+    right: 0;
+  }
+  .icon-share {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    vertical-align: top;
+  }
+  .more-reviews {
+    border-top: solid 2px $b-sticky;
+    button{
+      margin:45px 0 45px 0;
+    }
+  }
+  .overall {
+    font-size: 15px;
+  }
+}
+}
+@include breakpoint (when-landscape-tablet) {
+  .customer-review {
+    .star-black {
+       padding-right: 22px;
+    }
+    .rating-left-inner{
+      width: 22%;
+    }
+    .rating-midle-inner {
+      width: 31%;
+      margin-left: 8%;
+    }
+    .grey-bar {
+       width: 73%;
+    }
+    .accmdtn-bar {
+      width: 50%;
+    }
+    .float-right-inner{
+      float: right;
+      text-align: right;
+      width: 37%;
+      margin: 0;
+    }
+    .accmdtn{
+      width: 110px;
+      text-align: left;
+    }
+    .customer-right{
+      width: 71%;
+      float: right;
+    }
+    .customer-inner{
+      width: 52%;
+      padding-right: 0;
+    }
+    .customer-rating{
+      padding-right: 40px;
+    }
+    .customer-help-inner{
+      padding-left: 30px;
+    }
+    .showall{
+      padding-left: 40px;
+      text-align: left;
+    }
+  }
+}
+@include breakpoint (when-portrait-tablet) {
+  .customer-review {
+    padding: 40px 0 0 0;
+    .rating-left-inner{
+      width: 100%;
+      padding-top: 15px;
+      .desc{
+        float: left;
+        padding: 44px 0 0 50px;
+      }
+    }
+    .hours-ago{
+      padding-top: 5px;
+    }
+    .customer-left{
+      width: 100%;
+    }
+    .customer-right{
+      width: 90%;
+    }
+    .customer-inner{
+      width: 55%;
+    }
+    .customer-info{
+      width: 60%;
+    }
+    .customer-help-inner{
+      padding-left: 20px;
+    }
+    .customer-rating{
+      padding-right: 32px;
+    }
+    .rating-midle-inner{
+      margin: 15px 0;
+      width: 43%;
+    }
+    .float-right-inner{
+      margin: 15px 0 0 40px;
+      width: 45%;
+    }
+    .thumb-over {
+      width: 60px;
+      height: 60px;
+    }
+    .showall{
+      padding-left: 15px;
+      text-align: left;
+    }
+    .ratings-left, .float-right-inner, .customer-icon-inner, .customer-info, .customer-info-left, .recommended{
+      float: left;
+    }
+    .recommended{
+      padding-top: 35px;
+      padding-left: 10px;
+    }
+    .thumb-hover-count{
+      font-size: 24px;
+      line-height: 24px;
+      height: 24px;
+    }
+    .customer-block{
+      margin: 0;
+    }
+    .write-review-sort{
+      clear: both;
+      padding-top: 30px;
+    }
+  }
+}
+@include breakpoint (mobile) {
+  .customer-review {
+    padding: 40px 0 0 0;
+    .content-middle {
+      padding: 0 20px;
+    }
+    .content-header {
+      padding-bottom: 10px;
+    }
+    .sub-title{
+      bottom: -45px;
+    }
+    .rating-midle-inner, .float-right-inner, .review-range-full, .sortby, .write{
+      width: 100%;
+    }
+    .content-header, .rating-midle-inner, .write, .customer-main {
+      border-bottom: solid 2px $b-light;
+    }
+    .customer-ratings, .recommended, .sub-title, .hours-ago{
+      position: absolute;
+    }
+    .customer-ratings, .recommended, .sub-title{
+      right: 0;
+    }
+    .hours-ago{
+      left: 60px;
+      top: -10px;
+    }
+    .content-header, .customer-left, .customer-info{
+      position: relative;
+    }
+    .rate-count-left, .desc, .verifid-travelr, .most{
+      @include opacity();
+    }
+    .more-reviews{
+      text-align: left;
+      button{
+      padding: 15px 25px;
+      margin: 0 0 20px 0;
+      font-size: 18px;
+      }
+    }
+    .customer-right{
+      padding-top: 20px;
+    }
+    .customer-main{
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    .share {
+      display: none;
+    }
+    .customer-help-inner{
+      padding: 20px 0 0 0;
+    }
+    .recommended{
+      bottom: 2px;
+      letter-spacing: -0.2px;
+    }
+    .customer-info{
+      width: 220px
+    }
+    .customer-ratings {
+      top: 0;
+      i {
+        font-size: 13px;
+        letter-spacing: 2px;
+      }
+      .fa-star-o{
+        color: $dis-link;
+        @include opacity();
+      }
+    }
+    .icon-yotpo{
+      width: 32px;
+      height: 32px;
+      margin-left: 10px;
+    }
+    .customer-block{
+      padding: 17px 0 17px 0;
+    }
+    .thumb-img {
+      padding: 28px 0 0 0;
+    }
+    .customer-icon-inner{
+      margin-right: 10px;
+    }
+    .rating-left-inner{
+      .desc{
+        width: 60%;
+      }
+    }
+    .rate-count-left {
+        padding-right: 5px;
+        width: 15px;
+    }
+    .rating-midle-inner, .float-right-inner{
+      padding: 20px 0 18px 0;
+     }
+     .rating-row, .right-row{
+       padding: 3px 0;
+     }
+     .customer-help {
+       font-size: 11px;
+       border: solid 1px $b-sticky;
+       @include border-radius(5px)
+       width: 120px;
+       margin: 6px 0 0 0;
+       a {
+         padding: 5px 10px;
+         .fa-thumbs-up {
+           padding: 5px 0 5px 5px;
+           color: $txt-light-green;
+         }
+         .fa-thumbs-down {
+           padding: 5px 0 5px 5px;
+           color: $txt-sunset;
+         }
+       }
+     }
+    .thumb-over {
+      margin-left: 2px;
+      overflow: hidden;
+      width: 54px;
+      height: 54px;
+    }
+     .recommended{
+       font-size: 11px;
+     }
+     .accmdtn, .showall, .verifid-travelr, .hours-ago, .customer-right p, .customer-help-inner > span{
+       font-size: 13px;
+     }
+     .most, .customer-name{
+       font-size: 15px;
+     }
+     .subject{
+       font-size: 20px;
+     }
+    .subject {
+      padding-bottom: 10px;
+    }
+     .customer-right p{
+       line-height: 18px;
+     }
+     .most{
+       padding-left: 14px;
+     }
+     .float-right-inner {
+       .txt-more{
+         padding-top: 10px;
+       }
+     }
+     .customer-right {
+       .txt-more{
+         padding-top: 0;
+       }
+     }
+     .sortby{
+       border: 1px solid $b-dark;
+       padding: 10px;
+       @include border-radius(2px)
+     }
+     .write{
+       display: table;
+       margin-bottom: 10px;
+     }
+     .arrow {
+       right: 10px;
+     }
+     .write-review-sort{
+       button{
+         padding: 14px 21px;
+         margin: 0 0 30px 0;
+         font-size: 18px;
+         line-height: 18px;
+       }
+     }
+     .sortby-list {
+       width: 100%;
+       z-index: 1;
+       left: 0;
+       top: 38px;
+       right: 0;
+       border-radius: 0;
+       border: solid 1px $b-light;
+       ul {
+         width: 100%;
+         padding: 10px 0;
+         li {
+           padding: 7px 20px;
+           font-size: 15px;
+           &:hover, &.active {
+             background: $body-bgnd;
+             color: $txt-cornflower-blue;
+           }
+         }
+       }
+     }
+
+     .checked {
+       @include check-box();
+       height: 13px;
+       width: 13px;
+       bottom: 4px;
+       right: 0;
+       border: 1px solid $b-white;
+     &:after{
+       top: 4px;
+       left: 3px;
+       width: 6px;
+       height: 3px;
+       border-width: 1px;
+       }
+     }
+     .accmdtn {
+       width: 110px;
+       text-align: left;
+    }
+    .accmdtn-bar {
+     width: 50%;
+    }
+    .ratings{
+      i{
+       font-size: 16px;
+      }
+    }
+    .icon-cstmr {
+      width: 48px;
+      height: 48px;
+    }
+    .overall{
+      padding: 5px 0 15px 0;
+    }
+    .star-black {
+      padding-right: 18px;
+      i{
+        font-size: 10px;
+      }
+    }
+    .write-review-sort, .sortby, .write{
+      clear: both;
+    }
+
+    .grey-bar {
+      width: 73%;
+    }
+    .grey-bar, .accmdtn-bar {
+      height: 5px;
+      > span {
+        height: 5px;
+      }
+    }
+    .review-range-full {
+      background: $bgnd-light-green;
+    }
+    .review-range-average {
+      background: $bgnd-orange;
+      width: 50%;
+    }
+    .review-range-medium {
+      background: $bgnd-light-sunset;
+      width: 50%;
+    }
+    .review-range-low {
+      background: $bgnd-sunset;
+      width: 30%;
+    }
+    .review-range-worst {
+      background: $bgnd-sunset;
+      width: 10%;
+    }
+    .review-green-full {
+      background: $bgnd-light-green;
+      width: 100%;
+    }
+    .review-green-average {
+      background: $bgnd-light-green;
+      width: 100%;
+    }
+    .review-green-medium {
+      background: $bgnd-light-green;
+      width: 50%;
+    }
+    .review-green-low {
+      background: $bgnd-light-green;
+      width: 30%;
+    }
+    .review-green-worst {
+      background: $bgnd-light-green;
+      width: 10%;
+    }
+    .rate-count-right{
+      font-size: 11px;
+      width: 30px;
+      @include opacity5();
+    }
+  }
+}
+/* customer */

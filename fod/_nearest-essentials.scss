@@ -1,0 +1,157 @@
+@include breakpoint(when-desktop) {
+.nearest-essentials {
+  padding-bottom:50px;
+  .content-header{
+    padding-bottom: 0;
+  }
+  .content-middle {
+    border-top: solid $b-sticky 1px;
+    padding-top: 30px;
+    > .float-left {
+        width:530px;
+        margin-top:40px;
+        position:relative;
+        .float-left {
+          margin-bottom:40px;
+          min-height:60px;
+        }
+        .near-left, .near-right{
+          margin-bottom: 0;
+        }
+    }
+    > .float-right {
+      width: 585px;
+      height: 320px;
+    }
+  }
+
+  .sub-hdng {
+    margin: 0 0 9px 0;
+    font-size:$default-size15;
+  }
+  .content {
+    width: 190px;
+    font-size:$default-size15;
+  }
+  .nearest-icons {
+    width: 24px;
+    height: 24px;
+    margin: 0 18px 0 0;
+  }
+  .more {
+    text-decoration: underline;
+    font-size:$default-size15;
+    padding-top: 0;
+    position:relative;
+    bottom:-15px;
+    left:0;
+  }
+  .small-tooltip {
+    @include small-tooltip();
+  }
+  .near-left, .near-right{
+    width: 50%;
+  }
+ }
+}
+@include breakpoint (when-landscape-tablet) {
+  .nearest-essentials {
+    .content-middle{
+     > .float-left{
+       width: 480px;
+       .float-left {
+         margin-right:0;
+       }
+     }
+     > .float-right{
+       width: 447px;
+     }
+  }
+ }
+}
+@include breakpoint (when-portrait-tablet) {
+  .nearest-essentials {
+    .content-header {
+      .title{
+        font-size: 24px;
+      }
+    }
+    .sub-hdng{
+      margin-bottom: 5px;
+    }
+    .content{
+      width: 120px;
+    }
+    .sub-hdng, .content{
+      font-size: 13px;
+    }
+    .content-middle{
+      > .float-left{
+        width: 390px;
+        .float-left {
+          margin-right:0;
+        }
+      }
+      > .float-right{
+        width: 269px;
+        height: 320px;
+      }
+    }
+  }
+}
+@include breakpoint (mobile) {
+  .nearest-essentials {
+      padding-bottom: 54px;
+      padding-top: 40px;
+    .content-middle{
+      padding: 0;
+    }
+    .content-header{
+      padding-bottom: 10px;
+      .title{
+          font-size: 20px;
+      }
+    }
+    .content-header, .nearest-left {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .nearest-left {
+      padding-top: 15px;
+    }
+    .small-tooltip{
+      font-size: 13px;
+      @include small-tooltip();
+    }
+    .nearest-icons, .common-left {
+      float: left;
+    }
+    .nearest-icons {
+      width: 24px;
+      height: 24px;
+      margin: 0 18px 0 0;
+    }
+    .icon-airport {
+      margin-top:-3px;
+    }
+    .more{
+      font-size: 15px;
+      padding-top: 35px;
+      text-decoration: underline;
+    }
+    [class*=near-box]{
+      width: 100%;
+      padding-top: 25px;
+      font-size: 15px;
+    }
+    .common-left{
+      width: 85%;
+    }
+    .sub-hdng{
+      margin-bottom: 10px;
+    }
+    .nearest-right{
+      width: 100%;
+    }
+  }
+}

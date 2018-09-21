@@ -1,0 +1,12 @@
+@mixin tt-dropdown-menu {
+  background:$bgnd-white;
+  margin-top:12px;
+  padding:25px;
+  width:100%;
+  font-size:15px;
+  @include box-shadow(0 12px 30px 0 $box-shadow-color!important);
+  border:solid 1px $grid-border;
+  .tt-suggestions div {
+    padding-bottom:15px;
+  }
+}

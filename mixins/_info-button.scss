@@ -1,0 +1,46 @@
+@mixin info-button {
+  background-color:$info-button;
+  padding:3px 4px 3px 9px;
+  font-size:12px;
+  @include border-radius(2px);
+  .fod-icons {
+    width:18px;
+    height:18px;
+    background-position:-354px -2px;
+    margin-left:15px;
+    &:after {
+      content:'';
+      position:absolute;
+      top:0;
+      bottom:0;
+      right:23px;
+      width:2px;
+      background-color: $bgnd-white;
+      opacity: 0.4;
+    }
+  }
+}
+
+
+@mixin info-button-serp {
+  background-color:$info-button;
+  padding:3px 4px 3px 9px;
+  font-size:12px;
+  @include border-radius(2px);
+  .serp-icons {
+    width:18px;
+    height:18px;
+    background-position:-84px 1px;
+    margin-left:15px;
+    &:after {
+      content:'';
+      position:absolute;
+      top:0;
+      bottom:0;
+      right:23px;
+      width:2px;
+      background-color: $bgnd-white;
+      opacity: 0.4;
+    }
+  }
+}

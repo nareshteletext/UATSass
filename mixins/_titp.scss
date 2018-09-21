@@ -1,0 +1,29 @@
+@mixin titp(){
+  bottom: 0;
+  left: 0;
+  padding: 10px 13px;
+  @include border-radius(2px);
+  background-color:$tooltip;
+  box-shadow:0 5px 27px 0 rgba(0, 0, 0, 0.16);
+  z-index:2;
+  &:before {
+    content:'';
+    position:absolute;
+    right:0;
+    bottom:-4px;
+    left:0;
+    margin:auto;
+    background-color:$tooltip;
+    width:20px;
+    height:20px;
+    transform:rotate(45deg);
+  }
+}
+
+@mixin titp-outer(){
+    top:-47px;
+    right:0;
+    left:0;
+    z-index:100;
+    display:none;
+}

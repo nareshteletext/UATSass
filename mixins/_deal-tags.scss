@@ -1,0 +1,11 @@
+.deal-tag {
+  top:20px;
+  left:0;
+  right:0;
+  z-index:12;
+  .tag-name {
+    font-size:15px;
+    padding:6px 20px;
+    @include border-radius(100px);
+  }
+}

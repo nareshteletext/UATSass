@@ -1,0 +1,10 @@
+@mixin flexible-check-box {
+  .flexible-option {
+    border-bottom:solid #e2e7ec 1px;
+    padding-bottom:20px;
+    margin-bottom:20px;
+  }
+  .flexible-label {
+    padding:2px 0 0 15px;
+  }
+}

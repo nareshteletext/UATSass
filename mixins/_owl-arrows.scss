@@ -1,0 +1,91 @@
+@mixin owl-arrows-with-box {
+  .owl-controls .owl-buttons div{
+    position: absolute;
+    top:46%;
+    z-index:2;
+    width:40px;
+    height:50px;
+    font-size:0px;
+    background-color:rgba(255,255,255,1);
+    @include border-radius(2px);
+    padding:0;
+    margin:0;
+    opacity:1;
+    @include animation-transition(all .3s ease-in-out);
+    &:hover {
+      background-color:rgba(255,255,255,0.5);
+    }
+    &:after {
+      content:'';
+      position:absolute;
+      width:15px;
+      height:15px;
+      border-top:solid $b-lynch 3px;
+      border-right:solid $b-lynch 3px;
+      top:18px;
+    }
+    &.disabled {
+      background-color:rgba(255,255,255,0.5);
+      &:hover {
+        background-color:rgba(255,255,255,0.5);
+      }
+    }
+  }
+  .owl-next {
+    right:10px;
+    &:after{
+      @include rotate(45deg);
+      left:10px;
+    }
+  }
+  .owl-prev {
+    left:10px;
+    &:after{
+      @include rotate(-135deg);
+      left:16px;
+    }
+  }
+}
+
+
+@mixin owl-arrows-only {
+  .owl-controls .owl-buttons div{
+    position: absolute;
+    top:38%;
+    z-index:2;
+    width:40px;
+    height:50px;
+    font-size:0px;
+    background-color:transparent;
+    @include border-radius(0px);
+    padding:0;
+    margin:0;
+    opacity:1;
+    &:after {
+      content:'';
+      position:absolute;
+      width:15px;
+      height:15px;
+      border-top:solid $b-white 3px;
+      border-right:solid $b-white 3px;
+      top:18px;
+    }
+    &.disabled {
+      opacity: 0.5;
+    }
+  }
+  .owl-next {
+    right:10px;
+    &:after{
+      @include rotate(45deg);
+      left:10px;
+    }
+  }
+  .owl-prev {
+    left:10px;
+    &:after{
+      @include rotate(-135deg);
+      left:16px;
+    }
+  }
+}

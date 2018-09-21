@@ -1,0 +1,24 @@
+.divbanners {
+  text-align:center;
+  bottom:3%;
+  left:0;
+  right:0;
+  .from-wrapper {
+    background:rgba(0,0,0,0.5);
+    padding:5px 8px;
+  }
+  .txt-from {
+    opacity:0.6;
+    font-size:13px;
+  }
+  .tth-pp {
+    top:-2px
+  }
+  .tth-price {
+    font-size:14px;
+  }
+  .tth-asterisk {
+    right:5px;
+    top:5px;
+  }
+}

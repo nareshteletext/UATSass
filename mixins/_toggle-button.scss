@@ -1,0 +1,21 @@
+@mixin toggle {
+  width:36px;
+  height:20px;
+  background-color:$bgnd-cornflower-blue;
+  @include border-radius(100px);
+  .pstn-abslt {
+    width:16px;
+    height:16px;
+    background-color:$bgnd-white;
+    left:2px;
+    top:2px;
+    content:'';
+    @include border-radius(100px);
+  }
+  &.toggle-active {
+    background-color:$bgnd-sunset;
+    .pstn-abslt {
+      left:18px;
+    }
+  }
+}

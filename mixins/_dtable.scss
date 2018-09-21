@@ -1,0 +1,17 @@
+@mixin dtable {
+    display:table;
+    width:100%;
+    >div {
+      display:table-cell;
+      padding:20px;
+    }
+}
+
+@mixin dtable-no-padding {
+    display:table;
+    width:100%;
+    >div {
+      display:table-cell;
+      vertical-align:top;
+    }
+}

@@ -1,0 +1,31 @@
+@mixin common-icons {
+  background-image:url(https://resources.teletextholidays.co.uk/drupal/images/sprite/common-icons.svgz);
+}
+@mixin serp-icons {
+  background-image:url(https://resources.teletextholidays.co.uk/drupal/images/sprite/v1/serp-icons.svgz);
+}
+@mixin fod-icons {
+  background-image:url(https://resources.teletextholidays.co.uk/drupal/images/sprite/fod-icons.svgz);
+}
+@mixin all-icons {
+  background-image:url(https://resources.teletextholidays.co.uk/drupal/images/sprite/line-icons/line-icons-v14.svgz);
+}
+@mixin sidemenu-sprite {
+  background-image:url(https://resources.teletextholidays.co.uk/drupal/images/sprite/v1/sidemenu-icons.svgz);
+}
+
+@mixin social-icons {
+  background-image:url(https://resources.teletextholidays.co.uk/drupal/images/sprite/footer-icons.svgz);
+}
+
+@mixin common-icons-v2 {
+  background-image:url(https://resources.teletextholidays.co.uk/drupal/images/sprite/v1/common-icons.svg);
+}
+
+@mixin hotel-only-icon{
+  background-image:url(https://resources.teletextholidays.co.uk/drupal/images/sprite/v9/hotel-only-icon.svg);
+}
+
+@mixin homepage-icons{
+  background-image:url(https://resources.teletextholidays.co.uk/drupal/images/sprite/test/homepage-icons.svg);
+}

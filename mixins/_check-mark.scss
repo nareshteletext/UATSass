@@ -1,0 +1,85 @@
+@mixin check-box{
+  width:16px;
+  height:16px;
+  border:solid 1px transparent;
+  &:after {
+    position:absolute;
+    width: 10px;
+    height: 5px;
+    border-left: solid $b-white 2px;
+    border-bottom: solid $b-white 2px;
+    @include rotate(-45deg);
+    top:3px;
+    left:2px;
+    content:'';
+  }
+}
+@mixin uncheck-box{
+  width:16px;
+  height:15px;
+  border:solid 1px $separator;
+  @include border-radius(2px);
+}
+@mixin flexible {
+  width:15px;
+  height:15px;
+  border:solid $b-green 1px;
+  background-color:$bgnd-emerald;
+  margin:7px;
+  @include border-radius(2px);
+  span {
+    position:absolute;
+    width:9px;
+    height:5px;
+    border-left:solid $b-white 2px;
+    border-bottom:solid $b-white 2px;
+    @include rotate(-45deg);
+    top:2px;
+    left:2px;
+  }
+  &.inactive {
+    background-color:transparent;
+    span {
+      display:none;
+    }
+  }
+}
+@mixin check-box-2{
+  height:17px;
+  width:17px;
+  border:solid $b-new 2px;
+  @include border-radius(2px);
+}
+
+@mixin check-box-2-active{
+  background-color:$bgnd-cornflower-blue;
+  &:after {
+    position:absolute;
+    width:9px;
+    height:5px;
+    border-left: solid $b-white 2px;
+    border-bottom: solid $b-white 2px;
+    @include rotate(-45deg);
+    top:3px;
+    left:2px;
+    content:'';
+  }
+}
+
+@mixin check-box-small{
+  width:12px;
+  height:12px;
+  left:0;
+  top:1px;
+  &:after {
+    position:absolute;
+    width: 6px;
+    height: 3px;
+    border-left: solid $b-white 1px;
+    border-bottom: solid $b-white 1px;
+    @include rotate(-45deg);
+    top:4px;
+    left:3px;
+    content:'';
+  }
+}

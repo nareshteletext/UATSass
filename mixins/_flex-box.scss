@@ -1,0 +1,50 @@
+@mixin flex-box {
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  > div {
+    display:block;
+    justify-content:space-around;
+  }
+}
+
+@mixin flex-box-wrapper {
+  display:flex;
+  align-items:stretch;
+  > div {
+    display:block;
+    justify-content:space-around;
+    flex:auto;
+  }
+}
+
+@mixin flex-box-2 {
+  display:flex;
+  align-items:center;
+  > div {
+    display:block;
+    justify-content:space-around;
+    flex:auto;
+  }
+}
+
+@mixin grid-flex {
+  display:flex;
+  justify-content:stretch;
+}
+
+@mixin item-flex ($values) {
+  -webkit-box-flex:$values;
+       -moz-box-flex:$values;
+        -webkit-flex:$values;
+    	  -ms-flex:$values;
+    	      flex:$values;
+}
+
+@mixin item-dflex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}

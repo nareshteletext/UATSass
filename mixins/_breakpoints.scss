@@ -1,0 +1,101 @@
+@mixin breakpoint($responsive) {
+  @if $responsive == desktop {
+    @media (max-width: 1440px) {
+      @content;
+    }
+  }
+
+  @else if $responsive == large-desktop {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+
+  @else if $responsive == small-desktop {
+    @media (max-width: 1140px) {
+      @content;
+    }
+  }
+
+  @else if $responsive == landscape-tablet {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @else if $responsive == when-medium-desktop {
+    @media (max-width: 1200px) and (min-width:767px) {
+      @content;
+    }
+  }
+
+  @else if $responsive == when-landscape-tablet {
+    @media (max-width: 1140px) and (min-width:767px) {
+      @content;
+    }
+  }
+
+  @else if $responsive == when-portrait-tablet {
+    @media (max-width: 991px) and (min-width:767px) {
+      @content;
+    }
+  }
+
+  @else if $responsive == portrait-tablet {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @else if $responsive == mobile {
+    @media (max-width: 767px) {
+       @content;
+    }
+  }
+
+  @else if $responsive == when-desktop {
+    @media (min-width: 767px) {
+       @content;
+    }
+  }
+
+  @else if $responsive == when-mobile {
+    @media (max-width: 767px) {
+       @content;
+    }
+  }
+
+  @else if $responsive == when-above-tablet {
+    @media (min-width: 991px) {
+       @content;
+    }
+  }
+
+  @else if $responsive == iPhonePlus {
+    @media (max-width: 425px) {
+       @content;
+    }
+  }
+
+  @else if $responsive == iPhone {
+    @media (max-width: 375px) {
+       @content;
+    }
+  }
+
+  @else if $responsive == medium-mobile {
+    @media (max-width: 360px) {
+       @content;
+    }
+  }
+
+  @else if $responsive == small-mobile {
+    @media (max-width: 320px) {
+       @content;
+    }
+  }
+
+  @else {
+    @warn "Breakpoints will be supported: desktop, small-desktop, landscape-tablet, portrait-tablet, mobile, iPhonePlus, iPhone, medium-mobile, small-mobile";
+  }
+}

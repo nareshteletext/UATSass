@@ -1,0 +1,17 @@
+button.bgnd-emerald {
+  &:hover {
+    background:#9ac854;
+  }
+}
+
+button.bgnd-sunset {
+  &:hover {
+    background: darken($bgnd-sunset, 8%);
+  }
+}
+
+button.bgnd-cornflower-blue {
+  &:hover {
+    background: darken($bgnd-cornflower-blue, 5%);
+  }
+}

@@ -1,0 +1,21 @@
+@mixin close-icon-box {
+  height:17px;
+  width:17px;
+  background-color:$b-new;
+  @include border-radius(2px);
+  &:after, &:before{
+    width:11px;
+    height:1px;
+    top:8px;
+    left:3px;
+    background-color:$bgnd-white;
+    position:absolute;
+    content:'';
+  }
+  &:after {
+    @include rotate(45deg);
+  }
+  &:before {
+    @include rotate(-45deg);
+  }
+}

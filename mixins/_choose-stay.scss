@@ -1,0 +1,18 @@
+@mixin choose-stay-desktop {
+  span {
+    font-size:20px;
+  }
+  @include slide-up();
+}
+
+@mixin choose-stay-mobile {
+  background:$bgnd-yellow;
+  @include button-shadow();
+  @include border-radius(100px);
+  margin:0 auto;
+  width:225px;
+  padding:10px 0;
+  span {
+    font-size:15px;
+  }
+}

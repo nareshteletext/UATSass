@@ -1,0 +1,32 @@
+@mixin deposit-today {
+  background: #6c54a3; /* Old browsers */
+  background: -moz-linear-gradient(left, #6c54a3 19%, #42afe3 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #6c54a3 19%,#42afe3 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #6c54a3 19%,#42afe3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c54a3', endColorstr='#42afe3',GradientType=1 ); /* IE6-9 */
+  border:solid 1px #479ad5;
+  @include border-radius(2px);
+  padding: 11px 0 9px 0;
+  margin-bottom:20px;
+  .deposite-count {
+    border: 2px solid $b-tree;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    padding: 4px;
+    margin-right: 20px;
+    span {
+      padding: 6px 4px 4px 4px;
+      background: $bgnd-tree;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+      letter-spacing: -0.6px;
+    }
+  }
+  .deposite {
+    font-size: 24px;
+    line-height: 0.75;
+  }
+}

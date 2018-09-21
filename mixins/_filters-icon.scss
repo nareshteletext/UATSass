@@ -1,0 +1,50 @@
+@mixin filters-icon {
+  width:20px;
+  span {
+    border-top:solid 2px $line;
+    &:nth-child(2) {
+      margin:5px 0;
+    }
+    &:nth-child(2):after {
+      left:3px;
+      right:auto;
+    }
+    &:after {
+      content:'';
+      position:absolute;
+      top:-4px;
+      right:3px;
+      width:6px;
+      height:6px;
+      background-color:$bgnd-white;
+      border:solid $line 1px;
+      @include border-radius(100px);
+    }
+  }
+}
+
+
+@mixin filters-icon-small {
+  width:16px;
+  span {
+    border-top:solid 1px $b-lynch;
+    &:nth-child(2) {
+      margin:4px 0;
+    }
+    &:nth-child(2):after {
+      left:3px;
+      right:auto;
+    }
+    &:after {
+      content:'';
+      position:absolute;
+      top:-3px;
+      right:3px;
+      width:4px;
+      height:4px;
+      background-color:$bgnd-white;
+      border:solid $b-lynch 1px;
+      @include border-radius(100px);
+    }
+  }
+}

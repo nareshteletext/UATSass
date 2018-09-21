@@ -1,0 +1,6 @@
+@mixin btn-disabled(){
+  color:$d-txt-color;
+  background-color: $disabled-bgnd-button;
+  opacity:0.3;
+  pointer-events: none;
+}

@@ -1,0 +1,25 @@
+@mixin owl-coins {
+  .owl-page {
+    span {
+      width:10px;
+      height:10px;
+      opacity:0.2;
+      background-color:$bgnd-lynch;
+      border:solid 1px $b-lynch;
+      margin:5px 4px;
+    }
+    &.active {
+      span {
+        background-color:$bgnd-white;
+        border-color:$b-blue;
+        opacity:1;
+      }
+      &:hover {
+        opacity:1;
+      }
+    }
+    &:hover {
+      opacity:0.3;
+    }
+  }
+}

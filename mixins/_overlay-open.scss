@@ -1,0 +1,7 @@
+@mixin overlay-open {
+  .overlay {
+    &.open {
+      display:block;
+    }
+  }
+}

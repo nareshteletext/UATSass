@@ -1,0 +1,15 @@
+@mixin owl-icon-big {
+  width:40px;
+  height:22px;
+  img  {
+    object-fit:inherit;
+  }
+}
+
+@mixin owl-icon-small {
+  width:30px;
+  height:19px;
+  img  {
+    object-fit:inherit;
+  }
+}

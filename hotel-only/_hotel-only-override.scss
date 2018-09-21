@@ -1,0 +1,144 @@
+.low-deposit-top span, .low-deposit-top a{vertical-align:baseline;}
+.low-deposit-top .txt-from {
+  top:0;
+}
+.legend-2, .call-us-top {
+  display:none;
+}
+.sidemenu-sprite {
+  @include sidemenu-sprite();
+}
+.footer-icons {
+  @include social-icons();
+}
+.hotel-only-icon {
+  @include hotel-only-icon();
+}
+.common-icons {
+  @include common-icons-v2();
+}
+.call-us {
+  .gutter-space  {
+    margin:0 22px 0 53px;
+  }
+}
+.calendar-control {
+  display:none;
+}
+.grid-search {
+  .mega-dropdown-wrapper {
+    .mega-dropdown-list-section {
+      width:25%;
+    }
+    .mega-dropdown-list-left {
+      width:100%;
+    }
+  }
+  .tt-dropdown-menu {
+    width:inherit;
+  }
+  .mega-dropdown-wrapper {
+    .mega-dropdown-section-header {
+      cursor:default;
+      &:hover {
+        color:inherit;
+      }
+    }
+  }
+
+}
+
+.wild-search {
+  .inputs-section {
+    .close--icon {
+      top:30px;
+    }
+  }
+}
+
+.icon-favorite {
+  width:22px;
+  height:22px;
+  top:84px;
+  right:31px;
+  z-index:1;
+}
+.thin-lowdeposit {
+    .full-image img {
+      object-fit:inherit;
+    }
+  }
+
+.hotel-only-callus {
+  .gutter-space {
+    margin:0 30px;
+  }
+}
+
+@include breakpoint (mobile) {
+  .thin-lowdeposit {
+    .tth-asterisk {
+        right:-4px;top:0;
+      }
+      .mobile-widget-call-us {
+        .deals-price {
+          padding-left:2px;
+        }
+        .call-us-set-2 {
+          margin:0 6%;
+        }
+      }
+    }
+  .grid-search {
+    .mega-dropdown-wrapper {
+      top:0;
+      @include box-shadow(none);
+      .mega-dropdown-list-section {
+        width:100%;
+        float:none;
+        min-height: inherit;
+        margin-bottom:35px;
+      }
+    }
+    .mobile-input-group .mobile-nghts-value {
+      opacity:1;
+    }
+  }
+}
+
+/* Top Hotel Deals */
+.hotel-deals {
+  border:none;
+  background-color:$bgnd-black-squeeze;
+}
+
+.hotel-deals {
+    &.no-recent-viewed {
+      padding-top: 150px;
+      margin-top: -115px;
+    }
+}
+.low-deposit-top .icon-download {
+  display:none;
+}
+.hide-on-mobile {
+  opacity:0.1;
+}
+
+@include breakpoint (landscape-tablet) {
+  .hotel-deals {
+    padding:40px 0 40px 0;
+  }
+}
+@include breakpoint (mobile) {
+  .hotel-deals {
+    padding:40px 0 30px 0;
+    .price-info {
+      padding: 25px 0 0 20px;
+      top: 0;
+    }
+  }
+  .thin-lowdeposit .low-depst-trust-rating ul li span {
+    top:0;
+  }
+}

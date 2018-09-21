@@ -1,0 +1,93 @@
+.banner-slide .content-middle{padding-top:198px;}
+.banner-slide .title-large{font-size:60px;line-height:1;}
+.banner-slide.fluid-wrapper{padding:0;}
+.banner-slide .title-small{font-size:32px;}
+.banner-slide .title-wrapper{padding-bottom:60px;}
+.banner-slide .overlay {
+      background: rgba(111, 133, 159, 0.3);
+      mix-blend-mode: multiply;
+      z-index:1;
+}
+.banner-slide {
+  background: url(https://resources.teletextholidays.co.uk/drupal/images/hotel/v2/1970_HotelOnly.jpg) no-repeat;
+  background-position: center bottom;
+}
+_:-ms-lang(x), .banner-slide .overlay{
+  background:rgba(0, 0, 0, 0.2);
+}
+.banner-slide .content-middle {
+  z-index:2
+}
+
+@media(max-width:1400px) {
+  .banner-slide {
+    background: url(https://resources.teletextholidays.co.uk/drupal/images/hotel/v2/1440_HotelOnly.jpg) no-repeat;
+	   background-position: center bottom;
+  }
+}
+
+@media(max-width:1200px) {
+  .banner-slide {
+    background: url(https://resources.teletextholidays.co.uk/drupal/images/hotel/v2/1200_HotelOnly.jpg) no-repeat;
+    background-position: center bottom;
+  }
+  .mega-dropdown-items2 {
+    max-width: 100%;
+    min-width: 100%
+  }
+}
+
+@media(max-width:1140px){
+  .banner-slide{height:auto;padding:20px 0 0 0;}
+  .banner-slide .title-small{font-size:27px;letter-spacing:-0.4px;}
+  .banner-slide .title-large{font-size:50px;line-height:1;letter-spacing:-1px;}
+  .banner-slide .content-middle{padding: 170px 100px 0 100px;}
+  .banner-slide .title-wrapper{padding-bottom:75px;}
+}
+
+@media(max-width:992px) {
+  .banner-slide {
+    background: url(https://resources.teletextholidays.co.uk/drupal/images/hotel/v2/1024_HotelOnly.jpg) no-repeat;
+	background-position: right bottom;
+  }
+  .banner-slide .content-middle{padding:170px 40px 0 40px;}
+  .banner-slide .title-large{letter-spacing:-1px;font-size:45px;}
+
+}
+
+@media(max-width:768px) {
+  .banner-slide {
+    background: url(https://resources.teletextholidays.co.uk/drupal/images/hotel/v2/768_HotelOnly.jpg) no-repeat;
+	background-position: right bottom;
+  }
+
+}
+
+@media(max-width:767px) {
+  .banner-slide {
+	   background-position: right -110px;
+  }
+  .banner-slide{height:auto;margin-bottom:30px;}
+  .banner-slide .content-middle{padding-top:70px;padding:80px 20px 0 20px;}
+  .banner-slide .title-small{font-size:15px;letter-spacing:normal}
+  .banner-slide .title-large{font-size:32px;line-height:1;padding-top:6px;letter-spacing:-1px;}
+  .banner-slide .title-wrapper{padding-bottom:65px;max-width:270px;}
+}
+
+@media(max-width:380px){
+  .banner-slide {background-position:-359px -50px;}
+  .banner-slide {background: url(https://resources.teletextholidays.co.uk/drupal/images/hotel/v2/375_HotelOnly.jpg) no-repeat; }
+}
+
+@media(max-width:320px){
+  .banner-slide {background: url(https://resources.teletextholidays.co.uk/drupal/images/hotel/v2/320_HotelOnly.jpg) no-repeat; }
+  .banner-slide .title-wrapper{padding-bottom:40px;}
+  .banner-slide .title-small{font-size:15px;letter-spacing:0.2px;}
+}
+
+@media(min-width:1970px) {
+	.banner-slide {
+		background-position: right center;
+		background-size:cover;
+	}
+}

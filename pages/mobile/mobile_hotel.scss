@@ -1,1 +1,31 @@
 
+@import '../../hp-sprite';
+@import '../../control';
+@import '../../bootstrap';
+@import '../../mobile-components/mobile-header';
+@import '../../sidemenu';
+@import '../../login-signup';
+//@import '../../mega-menu';
+@import '../../search-form';
+@import '../../wild-search';
+@import '../../hotel-only/wild-search-override';
+@import '../../calendar';
+@import '../../calendar-popup';
+@import '../../top-deals';
+@import '../../winter-deals';
+@import '../../ratings';
+@import '../../on-scroll-popup';
+@import '../../section-header';
+@import '../../ads';
+@import '../../low-deposit-top';
+@import '../../thin-lowdeposit';
+@import '../../accordion';
+@import '../../hp-reviews';
+@import '../../call-us';
+@import '../../discover';
+@import '../../recently-viewed-hotels';
+@import '../../newsletter';
+@import '../../footer';
+
+/* Top Hotel Deals */
+.hotel-deals{border:none;background-color:$bgnd-black-squeeze;}

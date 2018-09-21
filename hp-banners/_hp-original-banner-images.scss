@@ -1,0 +1,27 @@
+.banner-slide {background: url('https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/1970_version1.jpg') no-repeat;background-position: right bottom;}
+.votes-img {background: url('https://resources.teletextholidays.co.uk/drupal/images/votes/banner-desktop.png') no-repeat;height:70px;}
+
+@media(max-width:1400px) {
+  .banner-slide {background: url('https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/1970_version1.jpg') no-repeat;background-position: right bottom;}
+  .votes-img {background: url('https://resources.teletextholidays.co.uk/drupal/images/votes/banner-992.png') no-repeat;}
+}
+
+@media(max-width:1200px) {
+  .banner-slide {background: url('https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/1200_version1.jpg') no-repeat;background-position: right bottom;}
+}
+
+@media(max-width:1024px){
+.banner-slide {background:url('https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/992_version1.jpg') no-repeat;background-size:cover;background-position:right bottom}
+}
+
+@media(max-width:768px) {
+  .banner-slide {background: url('https://resources.teletextholidays.co.uk/drupal/images/hp-ab-testing/v1/768_version1.jpg') no-repeat;}
+  .banner-slide .title-large {letter-spacing: -1px;max-width: 450px;line-height:50px;}
+  .votes-img {background: url('https://resources.teletextholidays.co.uk/drupal/images/votes/banner-768.png') no-repeat;}
+}
+
+@media(max-width:767px) {
+  .banner-slide {background:url('https://resources.teletextholidays.co.uk/drupal/images/mobile-banner.jpg') no-repeat;background-position:center center;background-size:cover;}
+  .votes-img {background: url('https://resources.teletextholidays.co.uk/drupal/images/votes/banner-mobile-2x.png') no-repeat; background-size:contain;}
+  .votes-banner-outer .votes-banner {max-height:90px;}
+}

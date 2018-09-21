@@ -1,0 +1,227 @@
+@mixin slide-up {
+    animation:textSlideUp 0.5s cubic-bezier(0, 0.9, 0.63, 0.93);
+    animation-fill-mode: forwards;
+    top:15px;
+    opacity:0;
+}
+
+@mixin fade-slide-up {
+    animation:fadeSlideUp 0.2s cubic-bezier(0, 0.9, 0.63, 0.93);
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+@mixin fade-slide-up-container {
+    animation:fadeSlideUpContainer 0.2s cubic-bezier(0, 0.9, 0.63, 0.93);
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+
+@mixin fade-slide-right-container {
+    animation:fadeSlideRightContainer 0.2s cubic-bezier(0, 0.9, 0.63, 0.93);
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+
+@mixin slide-up-long {
+    animation:slideUpLong 0.5s cubic-bezier(0, 0.9, 0.63, 0.93);
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@mixin shake {
+    animation:shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    //animation-delay:2s;
+}
+
+@mixin height-animation {
+    animation:height 0.3s cubic-bezier(0, 0.9, 0.63, 0.93);
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+@mixin height2-animation {
+    animation:height2 0.3s cubic-bezier(0, 0.9, 0.63, 0.93);
+    animation-fill-mode: forwards;
+    opacity:0;
+    height:20px;
+}
+@mixin slide-in-right {
+    animation:slideInRight 0.5s cubic-bezier(0.01, 0.79, 0.53, 1.05);
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+@mixin rotating {
+    animation:rotating 0.5s cubic-bezier(0.01, 0.79, 0.53, 1.05);
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+@keyframes slideInRight {
+  0% {
+    right:-10px;
+    opacity:0;
+    transform:rotate(190deg);
+  }
+  100% {
+    opacity:1;
+    right:16px;
+    transform:rotate(0deg);
+  }
+}
+@keyframes rotating {
+  0% {
+    opacity:0;
+    transform:rotate(190deg);
+  }
+  100% {
+    opacity:1;;
+    transform:rotate(0deg);
+  }
+}
+@keyframes height {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@keyframes height2 {
+  0% {
+    height:20px;
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+    height:110px;
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+@keyframes textSlideUp {
+  0% {
+    top:15px;
+    opacity:0;
+  }
+  100% {
+    top:0;
+    opacity:1;
+  }
+}
+
+@keyframes slideUpLong {
+  0% {
+    top:30px;
+    opacity:0;
+  }
+  100% {
+    top:0;
+    opacity:1;
+  }
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    top:40px;
+    opacity:0;
+  }
+  100% {
+    top:0;
+    opacity:1;
+  }
+}
+
+@keyframes fadeSlideUpContainer {
+  0% {
+    top:60px;
+    opacity:0;
+    height:250px;
+  }
+  100% {
+    top:41px;
+    opacity:1;
+    height:500px;
+  }
+}
+@keyframes fadeSlideRightContainer {
+  0% {
+    top:60px;
+    opacity:0;
+    height:250px;
+  }
+  100% {
+    top:19px;
+    opacity:1;
+    height:500px;
+  }
+}
+
+@mixin transition {
+  transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
+}
+
+
+@mixin animation-transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+
+
+
+
+
+
+@mixin mobile-popups {
+  animation:mobilePopups 0.6s cubic-bezier(0.71, 0.01, 0.26, 1.02);
+  -webkit-animation:mobilePopups 0.6s cubic-bezier(0.71, 0.01, 0.26, 1.02);
+  -moz-animation:mobilePopups 0.6s cubic-bezier(0.71, 0.01, 0.26, 1.02);
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity:0;
+  top:100px;
+  bottom:100px;
+}
+
+@keyframes mobilePopups {
+  0% {
+    opacity:0;
+    top:200px;
+    bottom:200px;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    opacity:1;
+    top:50px;
+    bottom:50px;
+  }
+}

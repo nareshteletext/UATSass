@@ -1,0 +1,76 @@
+.fixed-nav-container {
+  height:50px;
+  text-align:center;
+  background: rgba(110, 61, 124, 0.7);
+  z-index: 111;
+  right:0;
+  left:0;
+  .tth-users-container {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 100px;
+    width: 57px;
+    height: 50px;
+    top: 0px;
+    right: 0px;
+    &img {
+      top: 11px;
+      width: 27px;
+      height: 27px;
+      border-radius: 100px;
+      position: relative;
+    }
+  }
+  .desktop-menu-icon {
+    left:10px;
+    top:9px;
+    width:30px;
+    height:30px;
+    position:absolute;
+  }
+  .tth-logo-desktop {
+    background-position:-260px -10px;
+    width:184px;
+    height:23px;
+    display:block;
+  }
+  .fixed-nav-left {
+    margin:auto;
+    width:184px;
+    right: 0;
+    left: 0;
+    top: 15px;
+    height:23px;
+    position:absolute;
+    a {
+      display:block;
+    }
+  }
+}
+.theme-user-notification {
+  display:none;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  line-height: 15px;
+  top: 8px;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  border-radius: 100px;
+  z-index: 111;
+  background: red;
+  .theme-holiday-count {
+    margin-left: 2px;
+  }
+  .theme-count-plus {
+    font-size: 12px;
+    font-family:arial;
+    top: 1px;
+    left: -1px;
+  }
+}
+
+.mega-menu-wrapper, .fixed-nav-lists {
+  display:none;
+}

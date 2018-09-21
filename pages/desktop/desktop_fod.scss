@@ -1,0 +1,64 @@
+/* Common */
+//@import '../../hp-sprite';
+@import '../../control';
+@import '../../bootstrap';
+@import '../../new-header';
+@import '../../new-header-mobile';
+@import '../../sidemenu';
+@import '../../login-signup';
+@import '../../mega-menu';
+@import '../../newsletter';
+@import '../../footer';
+@import '../../calendar';
+@import '../../calendar-dd';
+@import '../../adults-childs';
+@import '../../selectric';
+@import '../../on-scroll-popup';
+@import '../../call-us-mobile';
+@import '../../fonts';
+@import '../../call-us-top';
+
+/* FOD */
+@import '../../fod/fod-header';
+@import '../../fod/fod-carousel';
+@import '../../section-header';
+@import '../../fod/rooms-grid';
+@import '../../fod/rooms';
+@import '../../fod/fod-map';
+@import '../../fod/about-features';
+@import '../../fod/facilities';
+@import '../../fod/nearest-essentials';
+@import '../../things-to-do';
+@import '../../ratings';
+@import '../../fod/reviews';
+@import '../../fod/customer-reviews';
+@import '../../top-deals';
+@import '../../fod/fod-override';
+@import '../../mobile-fxd-nav-header';
+@import '../../notification';
+@import '../../mobile-gallery-overlay';
+@import '../../spinner.scss';
+@import '../../grid-search';
+@import '../../rooms-guets';
+@import '../../gray-input-box';
+@import '../../listing-popup';
+@import '../../modal-popup';
+@import '../../dropdowns';
+@import '../../yotpo';
+@import '../../slider-calendar';
+@import '../../legends';
+@import '../../travel-alert';
+
+
+/* Repeated both SERP and FOD */
+@import '../../sticky-breadcrumb';
+@import '../../accordion';
+@import '../../call-us';
+@import '../../cookies-banner';
+
+
+.app-download-btn, .legend-2, .call-us-top {
+  display:none;
+}
+.sidebarnav-wrapper .side-manu-banner {min-height:inherit;padding:16px 0 10px 0;}
+.sidebarnav-wrapper .sidemenu-banner--offers{display:none;}

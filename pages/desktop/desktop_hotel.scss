@@ -1,0 +1,47 @@
+//@import '../../hp-sprite';
+@import '../../control';
+@import '../../bootstrap';
+@import '../../new-header';
+@import '../../new-header-mobile';
+@import '../../sidemenu';
+@import '../../login-signup';
+@import '../../mega-menu';
+@import '../../search-form';
+@import '../../wild-search';
+@import '../../hotel-only/wild-search-override';
+@import '../../hotel-only/hotel-only-reviews';
+@import '../../calendar';
+@import '../../selectric';
+@import '../../calendar-popup';
+@import '../../top-deals';
+@import '../../winter-deals';
+@import '../../ratings';
+@import '../../on-scroll-popup';
+@import '../../call-us-mobile';
+@import '../../ads';
+@import '../../low-deposit-top';
+@import '../../thin-lowdeposit';
+@import '../../accordion';
+@import '../../call-us';
+@import '../../discover';
+@import '../../rooms-guets';
+@import '../../recently-viewed-hotels';
+@import '../../newsletter';
+@import '../../footer';
+@import '../../grid-search';
+@import '../../cookies-banner';
+@import '../../hotel-only/hotel-only-override.scss';
+@import '../../gray-input-box';
+@import '../../mobile-calendar';
+@import '../../slider-calendar';
+@import '../../legends';
+@import '../../fonts';
+@import '../../call-us-top';
+@import '../../travel-alert';
+
+
+.app-download-btn {
+  display:none;
+}
+.sidebarnav-wrapper .side-manu-banner {min-height:inherit;padding:16px 0 10px 0;}
+.sidebarnav-wrapper .sidemenu-banner--offers{display:none;}

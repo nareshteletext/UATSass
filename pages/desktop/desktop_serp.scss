@@ -1,0 +1,53 @@
+@import '../../control';
+@import '../../bootstrap';
+@import '../../new-header';
+@import '../../new-header-mobile';
+@import '../../sidemenu';
+@import '../../login-signup';
+@import '../../mega-menu';
+@import '../../newsletter';
+@import '../../footer';
+@import '../../on-scroll-popup';
+@import '../../slider-bars';
+@import '../../fonts';
+@import '../../call-us-top';
+
+
+/* SERP */
+@import '../../calendar';
+@import '../../selectric';
+@import '../../calendar-popup';
+@import '../../serp-info-strip';
+@import '../../serp-ribbon';
+@import '../../calendar-dd';
+@import '../../serp-short-by';
+@import '../../serp-results';
+@import '../../filters';
+@import '../../ratings';
+@import '../../sticky-breadcrumb';
+@import '../../accordion';
+@import '../../mobile-serp-sticky-nav';
+@import '../../fod/fod-map';
+@import '../../adults-childs';
+@import '../../iris-slider';
+@import '../../mobile-sort-options';
+@import '../../spinner.scss';
+@import '../../cookies-banner';
+@import '../../gray-input-box';
+@import '../../grid-search';
+@import '../../thin-search';
+@import '../../search-toggle-button';
+@import '../../rooms-guets';
+@import '../../serp/serp-override';
+@import '../../no-results';
+@import '../../unavailable-msg';
+@import '../../slider-calendar';
+@import '../../legends';
+@import '../../travel-alert';
+
+
+.app-download-btn, .legend-2, .call-us-top {
+  display:none;
+}
+.sidebarnav-wrapper .side-manu-banner {min-height:inherit;padding:16px 0 10px 0;}
+.sidebarnav-wrapper .sidemenu-banner--offers{display:none;}

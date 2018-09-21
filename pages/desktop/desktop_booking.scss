@@ -1,0 +1,46 @@
+@import '../../control';
+@import '../../bootstrap';
+@import '../../new-header';
+@import '../../new-header-mobile';
+@import '../../sidemenu';
+@import '../../login-signup';
+@import '../../mega-menu';
+@import '../../newsletter';
+@import '../../footer';
+@import '../../selectric';
+@import '../../on-scroll-popup';
+@import '../../accordion';
+@import '../../cookies-banner';
+@import '../../listing-popup';
+@import '../../spinner';
+@import '../../fonts';
+@import '../../gray-input-box';
+@import '../../call-us-top';
+@import '../../travel-alert';
+
+
+//@import '../../booking-summary';
+@import '../../review-pay';
+@import '../../booking-your-details';
+@import '../../booking-confirmation-banner';
+.app-download-btn, .legend-2, .call-us-top {
+  display:none;
+}
+
+.fixed-nav-container {
+  background-color:$bgnd-butterfly
+}
+
+.footer-icons {
+  @include social-icons();
+}
+
+.common-icons {
+  @include common-icons-v2();
+}
+
+.sidemenu-sprite {
+  @include sidemenu-sprite();
+}
+.sidebarnav-wrapper .side-manu-banner {min-height:inherit;padding:16px 0 10px 0;}
+.sidebarnav-wrapper .sidemenu-banner--offers{display:none;}

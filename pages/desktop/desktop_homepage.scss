@@ -1,0 +1,138 @@
+.non-critical-css {
+  display:block;
+}
+.banner-min-height {
+  min-height:initial;
+}
+#back-to-top {
+  display:none;
+}
+@import '../../variables';
+@import '../../mixins';
+//@import '../../control';
+@import '../../bootstrap';
+//@import '../../new-header';
+//@import '../../new-header-mobile';
+
+
+
+
+/* From Critical CSS
+@import '../../control';
+@import '../../new-header';
+@import '../../new-header-mobile';
+@import '../../ads';
+@import '../../call-us';
+@import '../../low-deposit-top';
+@import '../../thin-lowdeposit';
+@import '../../hp-banners/hp-banner';
+@import '../../call-us-top';
+/* End From Critical CSS */
+
+
+
+/* From Homepage Remain CSS */
+//@import '../../hp-banners/hp-original-banner';
+@import '../../hp-banners/hp-opt-banner-images';
+@import '../../fonts';
+
+
+
+
+
+@import '../../sidemenu';
+@import '../../login-signup';
+@import '../../mega-menu';
+@import '../../search-form';
+@import '../../wild-search';
+@import '../../top-deals';
+@import '../../winter-deals';
+@import '../../ratings';
+@import '../../deals';
+@import '../../on-scroll-popup';
+//@import '../../ads';
+//@import '../../low-deposit-top';
+//@import '../../thin-lowdeposit';
+@import '../../accordion';
+@import '../../hp-reviews';
+//@import '../../call-us';
+@import '../../newsletter';
+@import '../../footer';
+@import '../../grid-search';
+@import '../../cookies-banner';
+@import '../../call-us-mobile';
+@import '../../timer';
+@import '../../slider-calendar';
+@import '../../legends';
+@import '../../fonts';
+@import '../../interstitial';
+@import '../../tth-fonts';
+@import '../../vote';
+@import '../../back-to-top';
+//@import '../../travel-alerts';
+//@import '../../basic-filters';
+
+
+
+
+
+
+.grid-search {
+  &.ab-testing {
+    .mega-dropdown-wrapper {
+      //min-height:inherit;
+      .mega-dropdown-list-right {
+        border:none;
+        min-height:inherit;
+        max-width:inherit;
+        min-width:inherit;
+        width:25%;
+        padding: 0 0 20px 0;
+      }
+      .mega-dropdown-list-left {
+        width:75%;
+      }
+      .mega-dropdown-bottom-text {
+        display:inline-block;
+        margin:-10px 0 0 0;
+      }
+    }
+    .mega-dropdown-list {
+      overflow:hidden;
+    }
+    .mega-dropdown-list-section {
+      min-height:185px;
+      width:33.33333333333333%;
+    }
+    @include breakpoint(portrait-tablet) {
+      .mega-dropdown-wrapper {
+        .mega-dropdown-list-left {
+          width:66.66666666666667%;
+          .mega-dropdown-list-section {
+            width:50%;
+          }
+        }
+        .mega-dropdown-list-right {
+          width:33.33333333333333%;
+        }
+      }
+    }
+  }
+}
+
+
+.common-icons {
+  @include common-icons-v2();
+}
+.homepage-icons {
+  @include homepage-icons();
+}
+.sidemenu-sprite {
+  @include sidemenu-sprite();
+}
+.footer-icons {
+  @include social-icons();
+}
+.w-100 {
+  width:100%;
+}

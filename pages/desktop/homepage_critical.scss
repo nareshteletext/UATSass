@@ -1,0 +1,23 @@
+@import '../../control';
+@import '../../new-header';
+@import '../../new-header-mobile';
+@import '../../ads';
+@import '../../call-us';
+@import '../../low-deposit-top';
+@import '../../thin-lowdeposit';
+@import '../../hp-banners/hp-banner';
+@import '../../call-us-top';
+
+.banner-min-height {
+	min-height:454px;
+}
+
+.non-critical-css {
+  display:none;
+}
+.mega-menu-wrapper, .mega-menu-overlay, .sedebar-nav-overlay, .login-overlay, #afterLogin {
+	display:none;
+}
+body {
+  overflow-y:scroll;
+}
